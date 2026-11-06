@@ -1,0 +1,3 @@
+Fotos reais dos responsaveis (3.9).
+Nome do arquivo: nome-sobrenome em minusculas, sem acento, com hifen, extensao .jpg (ex.: natham-monteiro.jpg), quadrada.
+Depois de colocar o arquivo, acrescente o mesmo nome (sem .jpg) na lista FOTO no topo de abas/03-campos.js. Sem foto, o CRM usa o avatar.

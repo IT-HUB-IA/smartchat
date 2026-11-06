@@ -1,0 +1,60 @@
+/* Aba 14 Movimento: arranjo desta página. Os efeitos (entrada, contagem, subir, indicador, dica) vêm de base/movimento.js e base/componentes.css.
+   Cor, raio, sombra e espaço vêm de base/tokens.css. Reaproveita o menu (.mn) e as abas (.cs-aba) de 06-casca.css. */
+.mv-cabeca { display: grid; gap: var(--s-8); margin-bottom: var(--s-24); max-width: 72ch; }
+.mv-secao { display: grid; gap: var(--s-4); margin-bottom: var(--s-32); }
+.mv-secao > h2 { margin-bottom: var(--s-12); }
+.mv-leg { margin-bottom: var(--s-12); max-width: 72ch; }
+.mv-secao .card-titulo { margin-bottom: var(--s-12); }
+.mv-topo-item { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-8); margin-bottom: var(--s-12); }
+.mv-topo-item .card-titulo { margin: 0; }
+
+/* troca de tela: três mini CRMs. A variante vem de data-entra="a|b|c" (base/movimento.js) */
+.mv-trio { display: grid; grid-template-columns: minmax(0, 880px); gap: var(--s-16); }
+.mv-fig { margin: 0; display: grid; gap: var(--s-8); align-content: start; min-width: 0; }
+.mv-fig figcaption { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-4) var(--s-8); font-size: var(--t-14); }
+.mv-fig figcaption .card-fraco { flex: 1 1 100%; order: 3; }
+.mv-fig figcaption .mv-repetir { margin-left: auto; }
+.mv-crm { position: relative; display: flex; gap: var(--s-8); height: 540px; padding: var(--s-8); overflow: hidden; border-radius: var(--raio-c); background: var(--fundo); box-shadow: var(--sombra); }
+.mv-crm .mn { height: 100%; }
+.mv-area { position: relative; flex: 1; min-width: 0; overflow: hidden; border-radius: var(--raio-b); }
+.mv-tela { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-8); align-content: start; padding: var(--s-8); }
+.mv-tela > .mv-tela-t { grid-column: 1 / -1; }
+.mv-tela-t h3 { font-size: var(--t-20); font-weight: var(--titulo-peso); letter-spacing: var(--titulo-espaco); }
+.mv-tela-t p { font-size: var(--t-12); }
+.mv-kpi { display: grid; gap: var(--s-4); align-content: start; padding: var(--s-12); }
+.mv-n { font-size: var(--t-31); letter-spacing: -0.04em; line-height: 1; color: var(--acento-texto); font-variant-numeric: tabular-nums; }
+.mv-kpi > span { font-size: var(--t-12); color: var(--fraco); }
+.mv-kpi small { justify-self: start; }
+.mv-grafico { grid-column: 1 / -1; padding: var(--s-12); }
+.mv-grafico .card-titulo { font-size: var(--t-14); margin-bottom: var(--s-8); }
+.mv-barras { display: flex; align-items: flex-end; gap: 6px; height: 120px; }
+.mv-barras i { flex: 1; height: var(--h); border-radius: 4px 4px 0 0; background: var(--canal-meta); }
+.mv-col { display: grid; gap: var(--s-8); align-content: start; padding: var(--s-8); border-radius: var(--raio-b); background: var(--sup-2); }
+.mv-col header { display: flex; align-items: center; justify-content: space-between; gap: var(--s-8); }
+.mv-cont { font-size: var(--t-12); color: var(--fraco); }
+.mv-lead { display: grid; gap: 2px; padding: var(--s-8) var(--s-12); font-size: var(--t-12); }
+.mv-lead b { font-size: var(--t-14); }
+.mv-lista { grid-column: 1 / -1; padding: var(--s-4); }
+.mv-linhas { display: grid; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.mv-linha { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 0.8fr) minmax(0, 1fr) 150px; align-items: center; gap: var(--s-12); padding: 10px var(--s-12); border-radius: var(--raio-b); font-size: var(--t-14); }
+.mv-linha:nth-child(odd) { background: var(--sup-2); }
+.mv-linha b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mv-linha .etiqueta { justify-self: end; }
+.mv-numeros .bloco-numero { font-size: var(--t-39); white-space: nowrap; }
+.mv-valor { font-variant-numeric: tabular-nums; font-size: var(--t-12); }
+.mv-crm .mv-linha { grid-template-columns: minmax(0, 1fr) auto; }
+.mv-crm .mv-linha .card-fraco, .mv-crm .mv-linha .mv-linha .etiqueta { justify-self: end; }
+.mv-numeros .bloco-numero { font-size: var(--t-39); white-space: nowrap; }
+.mv-valor { display: none; }
+
+.mv-numeros { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--s-12); }
+.mv-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--s-16); padding: var(--s-8) 0; }
+.mv-cards .mv-kpi { background: var(--sup-2); }
+.mv-indicadores { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-24); }
+.mv-indicadores .cs-abas { flex: 1 1 360px; }
+.mv-menu-dica { display: flex; align-items: flex-start; gap: var(--s-24); }
+.mv-menu-dica .mn { height: 260px; }
+
+@media (max-width: 1100px) { .mv-crm { height: 480px; } }
+@media (max-width: 767px) { .mv-menu-dica { flex-direction: column; } .mv-indicadores { gap: var(--s-16); } }
+

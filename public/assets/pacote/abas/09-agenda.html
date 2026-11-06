@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM padrão · 9 Agenda</title>
+<script src="../base/casca.js?v=you1"></script>
+<script src="../base/icones.js?v=you1"></script>
+<link rel="stylesheet" href="../base/tokens.css?v=you1">
+<link rel="stylesheet" href="../base/componentes.css?v=you1">
+<link rel="stylesheet" href="09-agenda.css?v=you1">
+</head>
+<body>
+<main class="casca-pagina">
+  <header class="ag-cabeca">
+    <h1>Agenda</h1>
+    <p class="card-fraco">Reuniões e ligações por mês, semana ou dia. Clique em "+N mais" para ver o resto do dia. Dados de exemplo.</p>
+  </header>
+
+  <section class="card ag-painel" data-item="9.1 Mês (barra, grade, hoje e +N mais)" id="ag-mes">
+    <div class="ag-barra">
+      <div class="ag-nav">
+        <button class="btn btn-fantasma btn-icone btn-p" type="button" aria-label="Mês anterior"><svg class="ico" aria-hidden="true"><use href="#chevron-left"/></svg></button>
+        <button class="selecao-botao" type="button" popovertarget="ag-cal" style="anchor-name: --agcal"><span class="selecao-escolha">Outubro 2026</span><svg class="selecao-seta" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button>
+        <div id="ag-cal" popover class="selecao-pop cal-pop" style="position-anchor: --agcal"><div class="selecao-lista cal-painel" id="ag-cal-painel"></div></div>
+        <button class="btn btn-fantasma btn-icone btn-p" type="button" aria-label="Próximo mês"><svg class="ico" aria-hidden="true"><use href="#chevron-right"/></svg></button>
+        <button class="btn btn-2 btn-p" type="button">Hoje</button>
+      </div>
+      <div class="seg" role="group" aria-label="Visão da agenda">
+        <button type="button" aria-pressed="true" data-ir="ag-mes">Mês</button>
+        <button type="button" aria-pressed="false" data-ir="ag-semana">Semana</button>
+        <button type="button" aria-pressed="false" data-ir="ag-dia">Dia</button>
+      </div>
+    </div>
+    <div class="ag-legenda" data-legenda></div>
+    <div class="ag-mes" id="ag-mes-grade"></div>
+  </section>
+
+  <section class="card ag-painel" data-item="9.2 Semana (grade de horas, eventos por horário)" id="ag-semana">
+    <div class="ag-barra"><h2 class="ag-titulo">26 a 31 de outubro <span>2026</span></h2></div>
+    <div class="ag-tempo" id="ag-semana-grade"></div>
+  </section>
+
+  <section class="card ag-painel" data-item="9.3 Dia (grade de horas e lista)" id="ag-dia">
+    <div class="ag-barra"><h2 class="ag-titulo">30/10/2026 <span>hoje</span></h2></div>
+    <div class="ag-dia-corpo">
+      <div class="ag-tempo" id="ag-dia-grade"></div>
+      <ul class="ag-lista" id="ag-dia-lista"></ul>
+    </div>
+  </section>
+
+  <div class="ag-pecas">
+    <section class="card" data-item="9.4 Evento colorido (um por tipo)"><h3 class="card-titulo">Evento colorido</h3><div class="ag-tipos" id="ag-tipos"></div></section>
+    <section class="card" data-item="9.5 Legenda dos tipos"><h3 class="card-titulo">Legenda</h3><div class="ag-legenda" data-legenda></div></section>
+    <section class="card" data-item="9.6 Hoje e dia fora do mês"><h3 class="card-titulo">Hoje e dia fora do mês</h3>
+      <div class="ag-celulas-demo">
+        <div class="ag-cel ag-hoje"><span class="ag-num">30</span></div>
+        <div class="ag-cel"><span class="ag-num">29</span><button class="ag-ev" type="button"><i class="ag-pt" style="--c: var(--etiqueta-12)"></i>14:00 Juliane Rodrigues</button></div>
+        <div class="ag-cel ag-fora"><span class="ag-num">1</span></div>
+      </div>
+    </section>
+  </div>
+</main>
+<script src="09-agenda.dados.js?v=you1"></script>
+<script src="09-agenda.js?v=you1"></script>
+<script src="../base/aprovacao.js?v=you1"></script>
+</body>
+</html>

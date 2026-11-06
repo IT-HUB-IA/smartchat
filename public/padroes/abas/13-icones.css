@@ -1,0 +1,43 @@
+/* Aba 13 Ícones: só o arranjo. Cor e espaço vêm de base/tokens.css */
+.ic-cabeca { display: grid; gap: var(--s-8); margin-bottom: var(--s-24); max-width: 72ch; }
+.ic-secao { display: grid; gap: var(--s-4); margin-bottom: var(--s-32); }
+.ic-secao > h2 { margin-bottom: var(--s-12); }
+.ic-secao .card-titulo { margin-bottom: var(--s-12); }
+.ic-grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: var(--s-8); }
+.ic-tamanhos { display: flex; flex-wrap: wrap; gap: var(--s-12); align-items: flex-end; }
+.ic-cel { display: grid; justify-items: center; gap: var(--s-8); margin: 0; padding: var(--s-12) var(--s-4); border-radius: var(--raio-b); background: var(--sup-2); color: var(--texto); }
+.ic-cel .ico { width: 24px; height: 24px; }
+.ic-cel figcaption { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; color: var(--fraco); font-family: ui-monospace, monospace; }
+.ic-tamanhos .ic-cel { padding-inline: var(--s-16); }
+.ic-anim { display: inline-flex; width: 24px; height: 24px; color: var(--texto); }
+.ic-uso { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--s-12); }
+.ic-campo { min-width: 280px; }
+.ic-origens { display: flex; flex-wrap: wrap; gap: var(--s-16); }
+.ic-origens figure { display: grid; justify-items: center; gap: var(--s-8); margin: 0; padding: var(--s-12) var(--s-16); min-width: 96px; border-radius: var(--raio-b); background: var(--sup-2); }
+.ic-origens figcaption, .ic-logos figcaption, .ic-par small { font-size: var(--app-t-rotulo); color: var(--fraco); }
+.ic-opcoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--s-16); }
+.ic-opcao { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--s-24); padding: var(--s-16); border-radius: var(--raio-b); background: var(--sup-2); }
+.ic-par { display: grid; justify-items: center; gap: var(--s-8); }
+.ic-linhas { display: grid; gap: var(--s-8); }
+.ic-linha { display: flex; align-items: center; gap: var(--s-12); padding: var(--s-8) var(--s-12); border-radius: var(--raio-b); background: var(--sup-2); }
+.ic-linha .selo { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; }
+.ic-logos { display: flex; flex-wrap: wrap; gap: var(--s-16); }
+.ic-logos figure { display: grid; gap: var(--s-8); margin: 0; }
+.ic-logo-fundo { display: flex; align-items: center; justify-content: center; min-width: 160px; padding: var(--s-16); border-radius: var(--raio-b); background: var(--sup-2); }
+@media (max-width: 767px) { .ic-grade { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); } .ic-campo { min-width: 0; width: 100%; } }
+/* logo: versão clara some no escuro e o contrário */
+.logo-sobre-escuro { display: none; }
+[data-tema="escuro"] .logo-sobre-claro { display: none; }
+[data-tema="escuro"] .logo-sobre-escuro { display: inline; }
+
+/* células agora são botões (para os ícones animarem ao passar o mouse e ao clicar) */
+button.ic-cel { border: 0; font: inherit; cursor: pointer; transition: background-color var(--dur-rapida) var(--curva); }
+button.ic-cel:hover { background: var(--realce); }
+.ic-nome { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; color: var(--fraco); font-family: ui-monospace, monospace; }
+.ic-cel .ico.ic-grande { width: 28px; height: 28px; }
+.ic-topo-item { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-8); margin-bottom: var(--s-12); }
+.ic-topo-item .card-titulo { margin: 0; }
+.ic-parados { margin-top: var(--s-12); overflow-wrap: anywhere; }
+
+.ic-quadrada { border-radius: var(--raio-b); }
+.ic-sem-logo { min-height: 56px; color: var(--fraco); font-size: var(--app-t-rotulo); border: 1px dashed var(--borda-campo); background: none; }

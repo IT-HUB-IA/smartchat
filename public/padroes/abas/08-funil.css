@@ -1,0 +1,64 @@
+.fn-cabeca h1 { font-size: var(--app-t-titulo); letter-spacing: -0.02em; }
+.fn-barra { display: flex; flex-wrap: wrap; gap: var(--app-vao); margin: var(--s-16) 0; }
+.fn-busca { flex: 1 1 280px; max-width: 420px; }
+.fn-resumo { margin-bottom: var(--s-8); }
+.fn-sub { font-size: var(--app-t-secao); margin: var(--s-32) 0 var(--s-12); }
+
+/* quadro */
+.fn-quadro { display: grid; grid-template-columns: repeat(6, minmax(244px, 1fr)); gap: var(--s-8); align-items: stretch; overflow-x: auto; padding-bottom: var(--s-8); scrollbar-color: var(--borda) transparent; }
+.fn-col { --cor: var(--etapa-novo); min-width: 0; display: flex; flex-direction: column; max-height: 560px; border-radius: var(--raio-c); background: var(--sup-2); border: 1px solid var(--linha); transition: border-color var(--dur-rapida) var(--curva), background-color var(--dur-rapida) var(--curva); }
+.fn-col[data-etapa="novo"] { --cor: var(--etapa-novo); }
+.fn-col[data-etapa="qualificacao"] { --cor: var(--etapa-qualificacao); }
+.fn-col[data-etapa="reuniao"] { --cor: var(--etapa-reuniao); }
+.fn-col[data-etapa="nao-compareceu"] { --cor: var(--etapa-nao-compareceu); }
+.fn-col[data-etapa="negociacao"] { --cor: var(--etapa-negociacao); }
+.fn-col[data-etapa="follow"] { --cor: var(--etapa-follow); }
+.fn-col.fn-alvo { border-color: var(--acento); background: color-mix(in srgb, var(--acento) 10%, var(--fundo)); }
+.fn-col-cab { display: flex; align-items: center; gap: var(--s-8); padding: var(--s-12); font-weight: 600; font-size: var(--t-14); }
+.fn-col-cab::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--cor); flex: none; }
+.fn-col-nome { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fn-col-n { margin-left: auto; font-variant-numeric: var(--numero-variante); color: var(--fraco); font-weight: var(--numero-peso); font-size: var(--t-12); background: var(--sup); border-radius: 999px; padding: 2px 8px; }
+.fn-col-corpo:has(.fn-card) { background: radial-gradient(ellipse 95% 70% at 78% 18%, color-mix(in srgb, var(--cor) 22%, transparent), transparent 85%); }
+.fn-col-corpo { display: flex; flex-direction: column; gap: var(--s-8); padding: var(--s-8); overflow-y: auto; min-height: 96px; scrollbar-color: var(--borda) transparent; }
+.fn-vazio { display: grid; place-items: center; text-align: center; min-height: 96px; padding: var(--s-16); border: 1.5px dashed var(--borda); border-radius: var(--raio-b); color: var(--texto); font-size: var(--t-12); }
+
+/* card */
+.fn-card { display: flex; flex-direction: column; gap: var(--s-8); padding: var(--s-12); border-radius: var(--raio-b); background: color-mix(in srgb, var(--sup) 50%, transparent); -webkit-backdrop-filter: var(--vidro-desfoque); backdrop-filter: var(--vidro-desfoque); color: var(--texto); border: 1px solid var(--vidro-linha); box-shadow: inset 1px 1px 0 var(--vidro-linha), 0 10px 22px -16px color-mix(in srgb, var(--cor, var(--etapa-novo)) 50%, rgb(29 29 31 / .2)), var(--sombra); touch-action: none; cursor: grab; user-select: none; transition: border-color var(--dur-rapida) var(--curva), transform var(--dur-rapida) var(--curva); }
+.fn-card:hover { border-color: var(--borda); transform: translateY(-2px); }
+.fn-card.fn-destaque { border-color: var(--acento); }
+.fn-card-topo { display: flex; align-items: center; gap: var(--s-8); }
+.fn-nome { flex: 1; min-width: 0; font-weight: 600; font-size: var(--t-14); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fn-valor { font-size: var(--t-20); font-weight: var(--numero-peso); letter-spacing: -0.02em; font-variant-numeric: var(--numero-variante); }
+.fn-valor small { font-size: var(--t-12); font-weight: 500; color: var(--fraco); letter-spacing: 0; }
+.fn-info { font-size: var(--t-12); color: var(--fraco); display: flex; align-items: center; gap: var(--s-4); flex-wrap: wrap; }
+.fn-info .ico { width: 14px; height: 14px; }
+.fn-atrasada { color: var(--perigo); font-weight: 600; }
+.fn-card .contador { justify-content: space-between; height: 36px; }
+.fn-card .contador-rotulo { margin-right: auto; white-space: nowrap; }
+.fn-pe { display: flex; align-items: center; gap: var(--s-8); }
+.fn-pe img { width: 18px; height: 18px; }
+.fn-pe .lnk { margin-left: auto; font-size: var(--t-12); }
+.fn-pe .btn-icone { width: 28px; height: 28px; }
+
+/* arrastar: card de lado (rotate 3deg, 2D como no Tarefas) com sombra */
+.fn-card.fn-arrastando { position: fixed; z-index: 50; pointer-events: none; box-shadow: var(--sombra-alta); border-color: var(--acento); width: 264px; transform: rotate(3deg); }
+.fn-card.fn-fantasma { opacity: 0.35; }
+.fn-arrastando-demo .fn-card { box-shadow: var(--sombra-alta); border-color: var(--acento); transform: rotate(3deg); }
+
+/* peças */
+.fn-pecas { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--s-16); align-items: start; }
+.fn-peca { margin: 0; }
+.fn-col-demo { display: flex; flex-direction: column; gap: var(--s-8); }
+.fn-cabecas { gap: 0; }
+.fn-cabecas .fn-col { flex: none; max-height: none; margin-bottom: var(--s-8); }
+.fn-peca .fn-col { flex: none; }
+
+@media (max-width: 600px) { .fn-quadro { grid-template-columns: repeat(6, 85vw); } }
+
+/* lista do filtro: grupos da seleção múltipla da base */
+.fn-fgrupo { padding: var(--s-8) 10px 2px; font-size: var(--t-12); font-weight: 600; color: var(--fraco); letter-spacing: 0.02em; }
+.fn-fgrupo:first-child { padding-top: 4px; }
+#fn-filtro-btn .ico { width: 16px; height: 16px; }
+.fn-card .avatar:not(:has(img)) { color: var(--texto); }
+.fn-forigem { display: inline-flex; align-items: center; gap: var(--s-8); }
+.fn-forigem img { width: 18px; height: 18px; flex: none; }

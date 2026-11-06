@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM padrão · 7 Janelas</title>
+<script src="../base/casca.js?v=you1"></script>
+<script src="../base/icones.js?v=you1"></script>
+<link rel="stylesheet" href="../base/tokens.css?v=you1">
+<link rel="stylesheet" href="../base/componentes.css?v=you1">
+<link rel="stylesheet" href="07-janelas.css?v=you1">
+</head>
+<body>
+<main class="casca-pagina">
+  <header class="jn-cabeca">
+    <h1>Janelas e avisos</h1>
+    <p class="card-fraco">Notificações, ficha do lead, Novo lead, confirmação, aviso, dica e menu "...". Cada janela aparece aberta aqui para aprovar e também abre de verdade pelos botões (Esc ou clique fora fecham). Dados de exemplo.</p>
+  </header>
+
+  <section class="jn-secao">
+    <h2>Notificações e menu</h2>
+    <div class="card jn-sobre-fundo" data-item="7.1 Notificações: 154 novas atividades">
+      <h3 class="card-titulo">Notificações <span class="card-fraco">(lista que abre com o mesmo efeito de toda seleção)</span></h3>
+      <div class="jn-linha">
+        <button class="selecao-botao jn-notif" type="button" popovertarget="pop-notif" style="anchor-name:--notif" aria-label="154 novas atividades, abrir lista">
+          <svg class="ico" aria-hidden="true"><use href="#bell"/></svg><b class="numero jn-notif-n">154</b>
+          <svg class="selecao-seta" aria-hidden="true"><use href="#chevron-down"/></svg>
+        </button>
+        <div id="pop-notif" popover class="selecao-pop jn-pop-notif" style="position-anchor:--notif">
+          <div class="selecao-lista" role="list">
+            <div class="jn-notif-cab"><b>Hoje</b><button class="lnk" type="button">Marcar todas como lidas</button></div>
+            <button class="selecao-opcao jn-item" type="button" role="listitem"><span class="jn-ic jn-ic-info"><svg class="ico" aria-hidden="true"><use href="#user-plus"/></svg></span><span class="jn-item-t"><b>Lead novo: Love Monika</b><small>Meta · há 6 min</small></span><span class="jn-ponto" aria-label="Não lida"></span></button>
+            <button class="selecao-opcao jn-item" type="button" role="listitem"><span class="jn-ic jn-ic-ok"><svg class="ico" aria-hidden="true"><use href="#calendar"/></svg></span><span class="jn-item-t"><b>Reunião agendada: Marcelo Gamba</b><small>26/10/2026 às 14h30 · há 1 h</small></span><span class="jn-ponto" aria-label="Não lida"></span></button>
+            <button class="selecao-opcao jn-item" type="button" role="listitem"><span class="jn-ic jn-ic-atencao"><svg class="ico" aria-hidden="true"><use href="#triangle-alert"/></svg></span><span class="jn-item-t"><b>Contato atrasado: Savio Oliveira</b><small>Próxima ação era 25/10/2026</small></span></button>
+            <button class="selecao-opcao jn-item" type="button" role="listitem"><span class="jn-ic jn-ic-ok"><svg class="ico" aria-hidden="true"><use href="#circle-check"/></svg></span><span class="jn-item-t"><b>Ganho: Juliane Rodrigues</b><small>R$ 650/mês · ontem às 16h02</small></span></button>
+            <button class="selecao-opcao selecao-acao" type="button">Ver todas as atividades</button>
+          </div>
+        </div>
+        <button class="btn btn-2 btn-icone" type="button" aria-label="Som das notificações" title="Som"><svg class="ico" aria-hidden="true"><use href="#volume-2"/></svg></button>
+      </div>
+    </div>
+
+    <div class="card jn-sobre-fundo" data-item='7.2 Menu "..." de ações'>
+      <h3 class="card-titulo">Menu "..." <span class="card-fraco">(ações de um lead ou cliente; excluir fica em vermelho no fim)</span></h3>
+      <div class="jn-linha">
+        <button class="btn btn-2 btn-icone" type="button" popovertarget="pop-mais" style="anchor-name:--mais" aria-label="Mais ações"><svg class="ico" aria-hidden="true"><use href="#ellipsis"/></svg></button>
+        <div id="pop-mais" popover class="selecao-pop jn-pop-mais" style="position-anchor:--mais">
+          <div class="selecao-lista">
+            <button class="selecao-opcao" type="button"><svg class="ico" aria-hidden="true"><use href="#external-link"/></svg><span class="selecao-opcao-rotulo">Abrir ficha</span></button>
+            <button class="selecao-opcao" type="button"><svg class="ico" aria-hidden="true"><use href="#pencil"/></svg><span class="selecao-opcao-rotulo">Editar lead</span></button>
+            <button class="selecao-opcao" type="button"><svg class="ico" aria-hidden="true"><use href="#message-circle"/></svg><span class="selecao-opcao-rotulo">Abrir conversa</span></button>
+            <button class="selecao-opcao" type="button"><svg class="ico" aria-hidden="true"><use href="#copy"/></svg><span class="selecao-opcao-rotulo">Copiar telefone</span></button>
+            <button class="selecao-opcao" type="button" data-separar><svg class="ico" aria-hidden="true"><use href="#archive"/></svg><span class="selecao-opcao-rotulo">Arquivar</span></button>
+            <button class="selecao-opcao selecao-perigo" type="button" data-abrir="#j-confirmar"><svg class="ico" aria-hidden="true"><use href="#trash-2"/></svg><span class="selecao-opcao-rotulo">Excluir lead</span></button>
+          </div>
+        </div>
+        <span class="card-fraco">Clique no botão de três pontos.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="jn-secao">
+    <h2>Ficha do lead</h2>
+    <div class="card jn-sobre-fundo" data-item="7.3 Abrir a ficha como janela e como painel lateral">
+      <h3 class="card-titulo">Abrir de verdade <span class="card-fraco">(janela central ou painel lateral, mesmo conteúdo)</span></h3>
+      <div class="jn-linha">
+        <button class="btn" type="button" data-abrir="#j-ficha">Abrir ficha em janela</button>
+        <button class="btn btn-2" type="button" data-abrir="#j-ficha-lateral">Abrir ficha em painel lateral</button>
+      </div>
+    </div>
+
+    <div class="jn-previa jn-previa-ficha" data-dialogo="j-ficha" data-dialogo2="j-ficha-lateral">
+      <div class="janela-topo"><h2>Ficha do lead</h2><button class="btn btn-fantasma btn-icone btn-p" type="button" data-fechar aria-label="Fechar"><svg class="ico" aria-hidden="true"><use href="#x"/></svg></button></div>
+      <div class="janela-corpo jn-pilha">
+        <section class="card jn-card" data-item="7.4 Ficha: cabeçalho do lead">
+          <div class="jn-cab">
+            <span class="avatar avatar-g jn-cab-av"><img src="../icones/avatares/b/mulher-1.svg" alt=""></span>
+            <div class="jn-cab-meio">
+              <h3 class="jn-nome">Love Monika</h3>
+              <div class="jn-linha jn-linha-p">
+                <span class="jn-fone"><span class="jn-fone-v"><span class="jn-ddd">(21)</span> 99860-2201</span><span class="dica" data-dica="Copiar telefone"><button class="btn btn-fantasma btn-icone btn-p" type="button" data-copiar="(21) 99860-2201" aria-label="Copiar telefone"><svg class="ico" aria-hidden="true"><use href="#copy"/></svg></button></span></span>
+                <span class="card-fraco">Rio de Janeiro</span>
+              </div>
+              <div class="jn-linha jn-linha-p">
+                <span class="etiqueta" data-etapa="novo">Lead · Lead novo</span>
+                <span class="selo"><img class="jn-orig" src="../icones/origens/meta.svg" alt="">Meta</span>
+              </div>
+            </div>
+            <div class="jn-cab-acoes">
+              <button class="btn btn-2 btn-p" type="button" data-abrir="#j-confirmar">Lead perdido</button>
+              <div class="jn-linha jn-linha-p">
+                <button class="btn btn-2 btn-p" type="button"><svg class="ico" aria-hidden="true"><use href="#external-link"/></svg>CRM</button>
+                <button class="btn btn-2 btn-p" type="button"><svg class="ico" aria-hidden="true"><use href="#message-circle"/></svg>WhatsApp</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card jn-card" data-item="7.15 Ficha: Observação e retrato do lead">
+          <h3 class="jn-sec">Observação <span class="jn-cap">Retrato do lead</span></h3>
+          <p class="jn-rot">Faturamento</p>
+          <p><span class="faixa" data-faixa="bronze">Bronze · R$ 20 a 50 mil</span></p>
+          <p class="jn-rot">Cidade</p>
+          <p>Rio de Janeiro</p>
+        </section>
+
+        <section class="card jn-card" data-item="7.6 Ficha: Briefing carregando">
+          <h3 class="jn-sec">Briefing <span class="jn-cap">Dores e desejos do lead</span></h3>
+          <div class="jn-esq" aria-label="Carregando"><i></i><i></i><i class="jn-esq-c"></i></div>
+          <p class="card-fraco">Carregando…</p>
+        </section>
+
+        <section class="card jn-card" data-item="7.7 Ficha: Briefing preenchido">
+          <h3 class="jn-sec">Briefing <span class="jn-cap">Dores e desejos do lead</span></h3>
+          <ul class="jn-lista">
+            <li>Vende no Mercado Livre e na Shopee, quer abrir CNPJ antes de estourar o limite do MEI.</li>
+            <li>Paga imposto demais e o contador atual só manda guia.</li>
+            <li>Quer emitir nota fiscal sem depender de planilha.</li>
+          </ul>
+        </section>
+
+        <section class="card jn-card jn-nota" data-item="7.8 Ficha: Nota do lead com pontos">
+          <div class="jn-nota-topo">
+            <div>
+              <h3 class="jn-sec">Nota do lead</h3>
+              <p class="jn-nota-total numero" data-nota-total>20</p>
+            </div>
+            <span class="dica" data-dica="Editar pontuação"><button class="btn btn-fantasma btn-icone btn-p" type="button" aria-label="Editar pontuação"><svg class="ico" aria-hidden="true"><use href="#pencil"/></svg></button></span>
+          </div>
+          <ul class="jn-pontos">
+            <li><label class="marcar"><input type="checkbox" data-pts="35"><span class="marcar-caixa"></span><span class="jn-pt-t">Fatura mais de 50 mil por mês</span><b>35 pts</b></label></li>
+            <li><label class="marcar"><input type="checkbox" data-pts="20" checked><span class="marcar-caixa"></span><span class="jn-pt-t">Fatura de 20 a 50 mil por mês</span><b>20 pts</b></label></li>
+            <li><label class="marcar"><input type="checkbox" data-pts="20"><span class="marcar-caixa"></span><span class="jn-pt-t">Vende na Shopee ou Shein</span><b>20 pts</b></label></li>
+            <li><label class="marcar"><input type="checkbox" data-pts="10"><span class="marcar-caixa"></span><span class="jn-pt-t">Vende no Mercado Livre</span><b>10 pts</b></label></li>
+            <li><label class="marcar"><input type="checkbox" data-pts="20"><span class="marcar-caixa"></span><span class="jn-pt-t">Medo do CNPJ travar / passou do limite do MEI</span><b>20 pts</b></label></li>
+            <li><label class="marcar"><input type="checkbox" data-pts="15"><span class="marcar-caixa"></span><span class="jn-pt-t">Paga muito imposto</span><b>15 pts</b></label></li>
+            <li><label class="marcar"><input type="checkbox" data-pts="10"><span class="marcar-caixa"></span><span class="jn-pt-t">Contador atual não é especialista</span><b>10 pts</b></label></li>
+            <li><label class="marcar"><input type="checkbox" data-pts="10"><span class="marcar-caixa"></span><span class="jn-pt-t">Quer trocar de contador</span><b>10 pts</b></label></li>
+          </ul>
+        </section>
+
+        <section class="card jn-card" data-item="7.9 Ficha: Origem">
+          <div class="jn-nota-topo"><h3 class="jn-sec">Origem</h3><button class="btn btn-2 btn-p" type="button">Ver caminho</button></div>
+          <p class="jn-rot">Origem</p>
+          <p><span class="selo"><img class="jn-orig" src="../icones/origens/meta.svg" alt="">Meta</span></p>
+          <p class="jn-rot">Porta</p>
+          <p>WhatsApp</p>
+          <p class="jn-rot">Campanha</p>
+          <p>LEADS - [FORMULÁRIO]</p>
+          <p class="jn-rot">Conjunto de anúncios</p>
+          <p>006 - [BR] [22-60] [LL1%-LISTA-YOU]</p>
+          <p class="jn-rot">Tentativas de contato</p>
+          <p>1 de 10</p>
+        </section>
+
+        <section class="card jn-card" data-item="7.10 Ficha: Formulário com as respostas">
+          <h3 class="jn-sec">Formulário <span class="jn-cap">Respostas · Meta</span></h3>
+          <dl class="jn-form">
+            <div><dt>Data/hora do envio</dt><dd>30/10/2026 às 08:25</dd></div>
+            <div><dt>E-mail</dt><dd>monikapaula@hotmail.com</dd></div>
+            <div><dt>Nome completo</dt><dd>Love Monika</dd></div>
+            <div><dt>Telefone</dt><dd>+55 (21) 99860-2201</dd></div>
+            <div><dt>Cidade</dt><dd>Rio de Janeiro</dd></div>
+            <div><dt>Qual seu segmento?</dt><dd>e-commerce</dd></div>
+            <div><dt>Vende online?</dt><dd>sim</dd></div>
+            <div><dt>Coloque seu faturamento atual</dt><dd>20 mil até 50 mil</dd></div>
+          </dl>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section class="jn-secao">
+    <h2>Novo lead e confirmação</h2>
+    <div class="jn-previa jn-previa-novo" data-dialogo="j-novo" data-item="7.16 Janela Novo lead">
+      <div class="janela-topo"><h2>Novo lead</h2><button class="btn btn-fantasma btn-icone btn-p" type="button" data-fechar aria-label="Fechar"><svg class="ico" aria-hidden="true"><use href="#x"/></svg></button></div>
+      <form class="janela-corpo jn-form-novo" novalidate onsubmit="return false">
+        <p class="campo-ajuda">Origem é obrigatória. Origem "Indicação" entra direto no funil de Indicação.</p>
+        <fieldset class="jn-grupo"><legend>Contato</legend>
+          <div class="campo"><span class="campo-rotulo">Nome do contato <span class="campo-obrigatorio">*</span></span><input class="campo-input" id="nl-nome" placeholder="Ex.: Marcos Prado"></div>
+          <div class="campo"><span class="campo-rotulo">Empresa</span><div class="jn-sel" data-selecao data-img="logo" data-opcoes="You Contabilidade~../icones/empresas/you-icone-claro.svg|Beec~../icones/empresas/beec.svg~../icones/empresas/beec-icone-claro.svg|Realizze~../icones/empresas/realizze.png|Tu Ecom~../icones/empresas/tu-ecom.svg|Winny~../icones/empresas/winny.svg~../icones/empresas/winny-icone-claro.svg|Lavoro Piu~../icones/empresas/lavoro-piu-logo.png|NeoWear~../icones/empresas/neowear-logo.png" data-padrao="0"></div></div>
+          <div class="campo"><label class="campo-rotulo" for="nl-wa">WhatsApp</label><input class="campo-input" id="nl-wa" inputmode="tel" placeholder="+55 (11) 90000-0000"></div>
+          <div class="campo"><label class="campo-rotulo" for="nl-mail">E-mail</label><input class="campo-input" id="nl-mail" type="email" placeholder="nome@empresa.com.br"></div>
+        </fieldset>
+        <fieldset class="jn-grupo"><legend>Origem e funil</legend>
+          <div class="campo"><label class="campo-rotulo" for="nl-orig">Origem <span class="campo-obrigatorio">*</span></label><div class="jn-sel" data-selecao data-opcoes="Meta|Google|WhatsApp|Site|Bio|Indicação" data-vazio="Selecione a origem…"></div></div>
+          <div class="campo"><span class="campo-rotulo">Funil <span class="campo-obrigatorio">*</span></span><div class="jn-sel" data-selecao data-opcoes="Tráfego Pago|Indicação" data-padrao="0"></div></div>
+          <div class="campo jn-larga"><span class="campo-rotulo">Responsável <span class="campo-obrigatorio">*</span></span><div class="jn-sel" data-selecao data-img="avatar" data-opcoes="Natham Monteiro~../icones/avatares/b/homem-1.svg|Ana Paula Ribeiro~../icones/avatares/b/mulher-1.svg" data-padrao="0"></div></div>
+        </fieldset>
+        <fieldset class="jn-grupo"><legend>Financeiro</legend>
+          <div class="campo"><span class="campo-rotulo">Faturamento (R$/mês)</span><div class="jn-sel" data-selecao data-opcoes="Ferro até R$ 20 mil|Bronze R$ 20 a 50 mil|Prata R$ 50 a 100 mil|Ouro R$ 100 a 300 mil|Platina R$ 300 a 500 mil|Diamante acima de R$ 500 mil|Sem faixa (não apurado)" data-padrao="6"></div></div>
+          <div class="campo"><label class="campo-rotulo" for="nl-men">Mensalidade (R$/mês) <span class="campo-obrigatorio">*</span></label><div class="campo-com-icone"><span class="campo-prefixo">R$</span><input class="campo-input" id="nl-men" inputmode="decimal" value="650"></div></div>
+        </fieldset>
+      </form>
+      <div class="janela-pe"><button class="btn btn-2" type="button" data-fechar>Cancelar</button><button class="btn" type="button" data-toast="sucesso" data-fechar>Criar lead</button></div>
+    </div>
+    <div class="jn-linha jn-abrir"><button class="btn" type="button" data-abrir="#j-novo">Abrir Novo lead</button></div>
+
+    <div class="jn-previa jn-previa-peq" data-dialogo="j-confirmar" data-item="7.12 Janela de confirmação">
+      <div class="janela-topo"><span class="jn-ic jn-ic-perigo"><svg class="ico" aria-hidden="true"><use href="#triangle-alert"/></svg></span><h2>Marcar como lead perdido?</h2></div>
+      <div class="janela-corpo"><p>Love Monika sai de Lead novo e vai para Perdido. O histórico fica guardado e dá para reabrir depois.</p></div>
+      <div class="janela-pe"><button class="btn btn-2" type="button" data-fechar>Cancelar</button><button class="btn btn-perigo" type="button" data-toast="info" data-fechar>Marcar como perdido</button></div>
+    </div>
+    <div class="jn-linha jn-abrir"><button class="btn btn-perigo" type="button" data-abrir="#j-confirmar">Abrir confirmação</button></div>
+  </section>
+
+  <section class="jn-secao">
+    <h2>Aviso e dica</h2>
+    <div class="card jn-sobre-fundo" data-item="7.13 Aviso (toast): sucesso, erro, informação, com desfazer">
+      <h3 class="card-titulo">Aviso <span class="card-fraco">(canto de baixo à direita, some em 4 segundos; o com Desfazer fica 8)</span></h3>
+      <div class="jn-toasts">
+        <div class="toast" data-tipo="sucesso" role="status"><svg class="ico" aria-hidden="true"><use href="#circle-check"/></svg><span class="toast-t"><b>Lead criado</b><small>Love Monika entrou em Lead novo.</small></span></div>
+        <div class="toast" data-tipo="erro" role="alert"><svg class="ico" aria-hidden="true"><use href="#circle-alert"/></svg><span class="toast-t"><b>Não foi possível salvar</b><small>Confira a conexão e tente de novo.</small></span><button class="lnk" type="button">Tentar de novo</button></div>
+        <div class="toast" data-tipo="info" role="status"><svg class="ico" aria-hidden="true"><use href="#info"/></svg><span class="toast-t"><b>Telefone copiado</b><small>(21) 99860-2201</small></span></div>
+        <div class="toast" data-tipo="atencao" role="status"><svg class="ico" aria-hidden="true"><use href="#triangle-alert"/></svg><span class="toast-t"><b>Lead movido para Perdido</b><small>Você pode desfazer agora.</small></span><button class="lnk" type="button">Desfazer</button></div>
+      </div>
+      <div class="jn-linha">
+        <button class="btn btn-2" type="button" data-toast="sucesso">Mostrar sucesso</button>
+        <button class="btn btn-2" type="button" data-toast="erro">Mostrar erro</button>
+        <button class="btn btn-2" type="button" data-toast="info">Mostrar informação</button>
+        <button class="btn btn-2" type="button" data-toast="desfazer">Mostrar com Desfazer</button>
+      </div>
+    </div>
+
+    <div class="card" data-item="7.14 Dica ao passar o mouse ou focar">
+      <h3 class="card-titulo">Dica <span class="card-fraco">(aparece no mouse e no foco do teclado; some com Esc)</span></h3>
+      <div class="jn-linha jn-dicas">
+        <span class="dica dica-fixa" data-dica="Copiar telefone"><button class="btn btn-2 btn-icone" type="button" aria-label="Copiar telefone"><svg class="ico" aria-hidden="true"><use href="#copy"/></svg></button></span>
+        <span class="dica" data-dica="Notificações"><button class="btn btn-2 btn-icone" type="button" aria-label="Notificações"><svg class="ico" aria-hidden="true"><use href="#bell"/></svg></button></span>
+        <span class="dica" data-dica="Editar pontuação"><button class="btn btn-2 btn-icone" type="button" aria-label="Editar pontuação"><svg class="ico" aria-hidden="true"><use href="#pencil"/></svg></button></span>
+        <span class="dica" data-dica="Contato atrasado desde 25/10/2026"><span class="selo selo-perigo" tabindex="0">Atrasada</span></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="toast-area" id="toast-area" aria-live="polite"></div>
+<dialog class="janela jn-j-ficha" id="j-ficha" aria-label="Ficha do lead"></dialog>
+<dialog class="janela janela-lateral" id="j-ficha-lateral" aria-label="Ficha do lead"></dialog>
+<dialog class="janela jn-j-novo" id="j-novo" aria-label="Novo lead"></dialog>
+<dialog class="janela jn-j-peq" id="j-confirmar" aria-label="Confirmar"></dialog>
+
+<script src="07-janelas.js?v=you1"></script>
+<script src="../base/aprovacao.js?v=you1"></script>
+</body>
+</html>

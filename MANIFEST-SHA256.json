@@ -1,0 +1,2142 @@
+[
+  {
+    "file": ".gitignore",
+    "bytes": 41,
+    "sha256": "b8a7dea4dfb83aa05675b16c5f944090bbc5679bd856f42dc5589634fc76965c"
+  },
+  {
+    "file": "package-lock.json",
+    "bytes": 27685,
+    "sha256": "310bc0a7c5cc90102d4fd38e741a86c1ad95007692e8a2a7782cdf992cb5233d"
+  },
+  {
+    "file": "package.json",
+    "bytes": 346,
+    "sha256": "e50b0490f127faf0bd05af69026bfd5648d00013c172adbd367c47614ec93ac3"
+  },
+  {
+    "file": "public/app.css",
+    "bytes": 57169,
+    "sha256": "274997cc8fc2413f310d54314063ea608d48da226e50564f61cc6f484cca95bc"
+  },
+  {
+    "file": "public/app.js",
+    "bytes": 337422,
+    "sha256": "1e4bbfdbabdaa04e01dbe22cc5149c0ce4fc55d1cc4b00cd8744d647ed53667e"
+  },
+  {
+    "file": "public/assets/brand.css",
+    "bytes": 2642,
+    "sha256": "8ba064e194447ae20dfcd008b87ae138c8abae0e2c316e9f77c6052bc1798990"
+  },
+  {
+    "file": "public/assets/brand/v3/hero-studio.webp",
+    "bytes": 83626,
+    "sha256": "f94c54263e209de186984c4b441cad433ef3cfb6bdee7add2c067c50313716a0"
+  },
+  {
+    "file": "public/assets/brand/v3/smartchat-logo-light.svg",
+    "bytes": 3767,
+    "sha256": "22971f8d2eedae79258263d959fe8d16f413a1875b5a5fc72e6fcad15d153834"
+  },
+  {
+    "file": "public/assets/brand/v3/smartchat-logo.svg",
+    "bytes": 3767,
+    "sha256": "5162b29e1d9c93f17da7e12349168e85d200a50a82d21f6866c64a87a1ba984d"
+  },
+  {
+    "file": "public/assets/brand/v3/smartchat-symbol-ink.svg",
+    "bytes": 456,
+    "sha256": "017e37ebd74031581061a725442a9a185f9c49e8997de65ce6377ddeaf8cf7d0"
+  },
+  {
+    "file": "public/assets/brand/v3/smartchat-symbol.svg",
+    "bytes": 456,
+    "sha256": "0253eca4e29789e65dcd2b886b20a8b2157b5740876030394b1299159905e4fc"
+  },
+  {
+    "file": "public/assets/catalogo.css",
+    "bytes": 168,
+    "sha256": "2fe1ba393a968f62e2484caea7183ae0b938dca295c4d76f06214d837b3f21d1"
+  },
+  {
+    "file": "public/assets/catalogo.js",
+    "bytes": 149,
+    "sha256": "a1c590e4b8d7b6dd567af9f6054957978babfd25ef91494e1e6cb8726aaa0ae4"
+  },
+  {
+    "file": "public/assets/fonts/dm-sans-latin-400-normal.woff2",
+    "bytes": 14200,
+    "sha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006"
+  },
+  {
+    "file": "public/assets/fonts/dm-sans-latin-500-normal.woff2",
+    "bytes": 14304,
+    "sha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d"
+  },
+  {
+    "file": "public/assets/fonts/dm-sans-latin-600-normal.woff2",
+    "bytes": 14144,
+    "sha256": "6bb2b2645ba5eeaecf56322c543fa3a75b87b927977b9c03b1dabc4205089120"
+  },
+  {
+    "file": "public/assets/fonts/dm-sans-latin-700-normal.woff2",
+    "bytes": 14348,
+    "sha256": "35c5efa0e5daa52ee5c6500f5be354bf751fb65c4e49e1d6806c6eb5883e8fe9"
+  },
+  {
+    "file": "public/assets/fonts/inter-latin-300-normal.woff2",
+    "bytes": 23916,
+    "sha256": "be0276550393a72b94d673505567dceba801511d5e1ca5a87793190dc5d5a6ca"
+  },
+  {
+    "file": "public/assets/fonts/inter-latin-400-normal.woff2",
+    "bytes": 23664,
+    "sha256": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc"
+  },
+  {
+    "file": "public/assets/fonts/inter-latin-500-normal.woff2",
+    "bytes": 24272,
+    "sha256": "f3779f1efccc4bdcdf9c0a02ab95bf6bd092ed09c48c08cedc725889edd1d19f"
+  },
+  {
+    "file": "public/assets/fonts/inter-latin-600-normal.woff2",
+    "bytes": 24452,
+    "sha256": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a"
+  },
+  {
+    "file": "public/assets/fonts/inter-latin-700-normal.woff2",
+    "bytes": 24356,
+    "sha256": "6f56409fd3d64bb85f7d070bce20749db2d66b6d63cec586cc22d1c761be2491"
+  },
+  {
+    "file": "public/assets/fonts/OFL-DM-Sans.txt",
+    "bytes": 4502,
+    "sha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7"
+  },
+  {
+    "file": "public/assets/fonts/OFL-Outfit.txt",
+    "bytes": 4387,
+    "sha256": "0e5fcef5d93bfcae273c11c00f0bb453d3b5491860e1ac8b658767b7577c938f"
+  },
+  {
+    "file": "public/assets/fonts/OFL.txt",
+    "bytes": 4477,
+    "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345"
+  },
+  {
+    "file": "public/assets/fonts/outfit-latin-400-normal.woff2",
+    "bytes": 14032,
+    "sha256": "71f028fd2349990b3f8aa643abe767e82e0f596be407ae66f0004ff164121bdb"
+  },
+  {
+    "file": "public/assets/fonts/outfit-latin-500-normal.woff2",
+    "bytes": 13528,
+    "sha256": "fc9bff941def6d924a71632bd8a93190528872eae6414844f3c367ff948d92fd"
+  },
+  {
+    "file": "public/assets/fonts/outfit-latin-600-normal.woff2",
+    "bytes": 14140,
+    "sha256": "8cfe15c2c6de6ef8efff3eedbd52a383ac9ef23d6c23f6cd9f9b838f5f37dc36"
+  },
+  {
+    "file": "public/assets/fonts/outfit-latin-700-normal.woff2",
+    "bytes": 14060,
+    "sha256": "5d5e3734089a74707292ce8a3e186def34cd63e33879f9ac3689a8d8da9d0706"
+  },
+  {
+    "file": "public/assets/native/componentes.css",
+    "bytes": 44224,
+    "sha256": "6e4ea5c6da9e806c2c97616eb4a52a771d495490ed7bd5d397183ed8b73a1e12"
+  },
+  {
+    "file": "public/assets/native/icones.js",
+    "bytes": 14623,
+    "sha256": "d440120c0ab15d9faf2aad5d723050b9e66b16cf534aea11197c09a71e6151f0"
+  },
+  {
+    "file": "public/assets/native/movimento.js",
+    "bytes": 9270,
+    "sha256": "b4949e3f5d8f48012c5fe0373b51bf899dfe8037b291d8c4c84961a8cf894d1e"
+  },
+  {
+    "file": "public/assets/native/tokens.css",
+    "bytes": 21604,
+    "sha256": "3e443292b55c48e7d9d5c6613aa89340de4de399e5dd2a0f594565aa0003ec67"
+  },
+  {
+    "file": "public/assets/pacote/abas/_trechos/1-7-canais.html",
+    "bytes": 834,
+    "sha256": "2ab2a84695ac88bf305889eb1743ae65e33335e9c7236b4c8fb3ae30bc8318f1"
+  },
+  {
+    "file": "public/assets/pacote/abas/01-base.css",
+    "bytes": 4408,
+    "sha256": "c4ecbff6fa80ec4a2b9610807ac759c5547711ba97ad0d0714a1513566ca8631"
+  },
+  {
+    "file": "public/assets/pacote/abas/01-base.html",
+    "bytes": 13161,
+    "sha256": "aa71e82f9cf972dd3a8b511231b8f01b902157a6756b565a1945cabf8dfe0ce7"
+  },
+  {
+    "file": "public/assets/pacote/abas/01-base.js",
+    "bytes": 6000,
+    "sha256": "fffebcc21d1c126d1d2466bd9950288223cc3fc424d9a7a2931a456b43bd1396"
+  },
+  {
+    "file": "public/assets/pacote/abas/02-botoes.css",
+    "bytes": 2342,
+    "sha256": "487f7a25e1246083911e648f74a7bd4f80c5362d15e3fb57c24102b126441d2a"
+  },
+  {
+    "file": "public/assets/pacote/abas/02-botoes.html",
+    "bytes": 17878,
+    "sha256": "a506d77605df60c7fa61efb2582661d6303460b0a56819268343b5203f3a2215"
+  },
+  {
+    "file": "public/assets/pacote/abas/02-botoes.js",
+    "bytes": 4366,
+    "sha256": "a460aaf25bfecd5fb411e2caab4f06039cedcd833e5aa34fb7af2cf968d7dc91"
+  },
+  {
+    "file": "public/assets/pacote/abas/03-campos.css",
+    "bytes": 2901,
+    "sha256": "11a28c2195ae2babc8273850b7abc44f457363a6c8a63e297796e18c7f57dfca"
+  },
+  {
+    "file": "public/assets/pacote/abas/03-campos.html",
+    "bytes": 13984,
+    "sha256": "f8ab8b20559e1bdd7dc674ba6a15aa7a9b1e2aa886c7ea094250c8d57f437f07"
+  },
+  {
+    "file": "public/assets/pacote/abas/03-campos.js",
+    "bytes": 14338,
+    "sha256": "7add054931d43b396caf8ee1e99bb43ecb91a5bd3d8d20a0add87e585a1248be"
+  },
+  {
+    "file": "public/assets/pacote/abas/04-avatar.js",
+    "bytes": 1791,
+    "sha256": "82debfffe0638accef7be82ecc0ccdd6bf2554dff6797b658f9133c7e16d95f0"
+  },
+  {
+    "file": "public/assets/pacote/abas/04-cards.css",
+    "bytes": 4832,
+    "sha256": "c079d80e45c5f95a3d6b59343de51757a46e126f7af807dc246f4ce385b740fe"
+  },
+  {
+    "file": "public/assets/pacote/abas/04-cards.html",
+    "bytes": 7578,
+    "sha256": "b63b1f61ad57f5e695df59bbc0d838cb55b863a13ffc6a2ed1afc2e32e463923"
+  },
+  {
+    "file": "public/assets/pacote/abas/04-cards.js",
+    "bytes": 1924,
+    "sha256": "9d842efef173772ace2df595b15fb7936fa3a956c2123039434de3b6c6571991"
+  },
+  {
+    "file": "public/assets/pacote/abas/04-faixas.js",
+    "bytes": 2169,
+    "sha256": "c54e07e51ba2977e1070b920a936d010c5087fe259cb93b454ec6d91f5c12a05"
+  },
+  {
+    "file": "public/assets/pacote/abas/05-graficos.css",
+    "bytes": 1869,
+    "sha256": "ad30f830774a30db8df577c7027ec4be2f9af1f4c43b83873e113b190ea0de84"
+  },
+  {
+    "file": "public/assets/pacote/abas/05-graficos.html",
+    "bytes": 9152,
+    "sha256": "68eedcdc691d5de179655105b872b8ebf7eefa60ee4905b290782392b7b509f4"
+  },
+  {
+    "file": "public/assets/pacote/abas/05-graficos.js",
+    "bytes": 41850,
+    "sha256": "2b97ae5910725acde5dddecd2c0db700fadfea30fe248dfb78dc8b3dd24eb596"
+  },
+  {
+    "file": "public/assets/pacote/abas/06-casca.css",
+    "bytes": 9436,
+    "sha256": "33f9ea1f9ec9324a5e0d05f344efb8e4a8d048d1068ffbb098f4906d1123f122"
+  },
+  {
+    "file": "public/assets/pacote/abas/06-casca.html",
+    "bytes": 2844,
+    "sha256": "878a547eb944f0cda48957e367b8e3574b67b6294c70a46c35383fa61c7e8a5e"
+  },
+  {
+    "file": "public/assets/pacote/abas/06-casca.js",
+    "bytes": 13322,
+    "sha256": "590e83072dd0a0dba161a67ff5b486e6b73322043bd80c61b7129f9960211973"
+  },
+  {
+    "file": "public/assets/pacote/abas/07-janelas.css",
+    "bytes": 8674,
+    "sha256": "7cc5d1546ed0c112ea2bd619488589f16c9d6b7ced9fb32563f60f841145df5c"
+  },
+  {
+    "file": "public/assets/pacote/abas/07-janelas.html",
+    "bytes": 21054,
+    "sha256": "c932074f57aa8d3f298ffe481fa4e0693e39b48c435d509208780facc18eba31"
+  },
+  {
+    "file": "public/assets/pacote/abas/07-janelas.js",
+    "bytes": 6652,
+    "sha256": "4d7f84b60e000374b4eb1bca35ee036f419f3d26b5146e850691df29686f46f9"
+  },
+  {
+    "file": "public/assets/pacote/abas/08-funil.css",
+    "bytes": 5739,
+    "sha256": "5e372156e3e2ea3122fad02beede9087523e0d09b8176a15c5cf998295c3f32a"
+  },
+  {
+    "file": "public/assets/pacote/abas/08-funil.dados.js",
+    "bytes": 2782,
+    "sha256": "506dca85df52616dde3b21b2896ceae7b3fcdab940ed49cccbd700c7279d7bdb"
+  },
+  {
+    "file": "public/assets/pacote/abas/08-funil.html",
+    "bytes": 3253,
+    "sha256": "d660e39fba0e530f0637e87b41f616dc5256f338e420349eaec74ef07ac42a1b"
+  },
+  {
+    "file": "public/assets/pacote/abas/08-funil.js",
+    "bytes": 8996,
+    "sha256": "e3419a09d4380bda124d5a5cf30d94a621c2c3885e8635582e66774a87ede267"
+  },
+  {
+    "file": "public/assets/pacote/abas/09-agenda.css",
+    "bytes": 6428,
+    "sha256": "7334903e2762b6a8f72d84c3916acc3347299da8f8e9b64a0dc84f464ae3f8a3"
+  },
+  {
+    "file": "public/assets/pacote/abas/09-agenda.dados.js",
+    "bytes": 2947,
+    "sha256": "165d32d6d58e7e52eb974bd4a980edc620ee0f99ee81933e3d0561b31c7cf5de"
+  },
+  {
+    "file": "public/assets/pacote/abas/09-agenda.html",
+    "bytes": 3871,
+    "sha256": "cf33881bb095e52a58220e9fd5443a4eaa270d431a8eb0e0494ff125acb1a883"
+  },
+  {
+    "file": "public/assets/pacote/abas/09-agenda.js",
+    "bytes": 7534,
+    "sha256": "60f626d66292ec8070c5078da8351c47da833acfbc8d4c1683ed39df41e00212"
+  },
+  {
+    "file": "public/assets/pacote/abas/10-tabela.css",
+    "bytes": 3290,
+    "sha256": "02c066a1bf903caad174246b3817f71fa013eaad00e7587437b5bb9b38fc1c83"
+  },
+  {
+    "file": "public/assets/pacote/abas/10-tabela.html",
+    "bytes": 3659,
+    "sha256": "31ac0d9a4ffcdafec8a4f7c21d384bbe04e4dee0d082f55b80a99882bfe9165a"
+  },
+  {
+    "file": "public/assets/pacote/abas/10-tabela.js",
+    "bytes": 2507,
+    "sha256": "2e1e8e91af1ba0193756afbc0948201cd1bcbcb3876e6275a8b93fb8dd63821b"
+  },
+  {
+    "file": "public/assets/pacote/abas/11-whatsapp.css",
+    "bytes": 13767,
+    "sha256": "d5a05695f56deae6c7bdb3b300cba7893a31deec649e6d60b58f88d6766c10a2"
+  },
+  {
+    "file": "public/assets/pacote/abas/11-whatsapp.html",
+    "bytes": 4351,
+    "sha256": "7a8f76eaf536ce5216c6b17d2f9c12ffcb7098353a24dee56aa779ee8e0a2077"
+  },
+  {
+    "file": "public/assets/pacote/abas/11-whatsapp.js",
+    "bytes": 23260,
+    "sha256": "f2ea2977d6c6108576f939803e3bee77eb4cf1ee58407d1c8b0e5442bb6e41f9"
+  },
+  {
+    "file": "public/assets/pacote/abas/12-estados.css",
+    "bytes": 5386,
+    "sha256": "796d5c4d62f9f020b929dee98bc2c9d993f9f3e896f71666475fcccd8c9f0358"
+  },
+  {
+    "file": "public/assets/pacote/abas/12-estados.html",
+    "bytes": 9653,
+    "sha256": "fe924ca5f0af819ab4535d668dfe1940d143702c2336b8f64af031f6993e1af5"
+  },
+  {
+    "file": "public/assets/pacote/abas/12-estados.js",
+    "bytes": 3019,
+    "sha256": "bf20cd9d95eaf7e30de9b2299b66623fdb0cb6708f8603726518144d43642818"
+  },
+  {
+    "file": "public/assets/pacote/abas/13-icones.css",
+    "bytes": 3866,
+    "sha256": "b64733678456068d997a05fde2f186705ae4dec754bd18bbfa316de679354fde"
+  },
+  {
+    "file": "public/assets/pacote/abas/13-icones.dados.js",
+    "bytes": 11009,
+    "sha256": "11124cd968959da3150792a15646cc48ab0a4419de864c1d974e662aa854939d"
+  },
+  {
+    "file": "public/assets/pacote/abas/13-icones.html",
+    "bytes": 6781,
+    "sha256": "37c3bbe8dfe0a59113684bcb55ef52b8459eba5938a12dd83843b660c4664ddf"
+  },
+  {
+    "file": "public/assets/pacote/abas/13-icones.js",
+    "bytes": 3449,
+    "sha256": "2df731cea598b121c4ef56a2e10ae12477e5202dc18f2e6c6d73575db2bf1271"
+  },
+  {
+    "file": "public/assets/pacote/abas/14-movimento.css",
+    "bytes": 4789,
+    "sha256": "958c4751463ef5c8b9b045db491d332d0d7557707cb9957a3a9803422622129c"
+  },
+  {
+    "file": "public/assets/pacote/abas/14-movimento.dados.js",
+    "bytes": 3366,
+    "sha256": "38ec703513d9ec98794b0811479005443c3fdb8cffd23abd277655117e824693"
+  },
+  {
+    "file": "public/assets/pacote/abas/14-movimento.html",
+    "bytes": 4634,
+    "sha256": "e8a7281791c0244024075955d462e93e8f68ae516fbabc6940d84e8e37d5c667"
+  },
+  {
+    "file": "public/assets/pacote/abas/14-movimento.js",
+    "bytes": 7365,
+    "sha256": "4d98c6e8eed5b3749f3610a1acdb3ae2fc4c0feff21c2d9e4ca219bdb6107d92"
+  },
+  {
+    "file": "public/assets/pacote/abas/15-you-cores.css",
+    "bytes": 7789,
+    "sha256": "a8d16001e508279e12a1f9924bec99af8b0424c0feae53db90c294a677bdd4c0"
+  },
+  {
+    "file": "public/assets/pacote/abas/15-you-cores.html",
+    "bytes": 7393,
+    "sha256": "eea3bc458c5da22b061f5c271bbde9648e517549b91637640d3fcdd88ca0dc88"
+  },
+  {
+    "file": "public/assets/pacote/abas/15-you-cores.js",
+    "bytes": 3017,
+    "sha256": "1e2b53ec30b536e43f26c8cc958256115f0bca874716547b222fe33130856937"
+  },
+  {
+    "file": "public/assets/pacote/base/aprovacao.js",
+    "bytes": 11308,
+    "sha256": "8ad7e04e4293c14f8213a42826603a70d7bc3c405501f7683247fa611b7ea76f"
+  },
+  {
+    "file": "public/assets/pacote/base/casca.js",
+    "bytes": 8913,
+    "sha256": "d4a13c0ac65832cacaa44358ed3705feccd50540d6c0d88bb341b4a7c6c67c69"
+  },
+  {
+    "file": "public/assets/pacote/base/componentes.css",
+    "bytes": 44224,
+    "sha256": "6e4ea5c6da9e806c2c97616eb4a52a771d495490ed7bd5d397183ed8b73a1e12"
+  },
+  {
+    "file": "public/assets/pacote/base/gerar-icones.js",
+    "bytes": 1823,
+    "sha256": "8739cb659f3f903a7dc7447f45514da36ce6bd0706b7838c6af2e157bfab12bf"
+  },
+  {
+    "file": "public/assets/pacote/base/icones.js",
+    "bytes": 14623,
+    "sha256": "d440120c0ab15d9faf2aad5d723050b9e66b16cf534aea11197c09a71e6151f0"
+  },
+  {
+    "file": "public/assets/pacote/base/movimento.js",
+    "bytes": 9270,
+    "sha256": "b4949e3f5d8f48012c5fe0373b51bf899dfe8037b291d8c4c84961a8cf894d1e"
+  },
+  {
+    "file": "public/assets/pacote/base/rodas.js",
+    "bytes": 2967,
+    "sha256": "43580479c7f64327d46da364fe3c937a90c8434188c32ba391abe29b7e4b682d"
+  },
+  {
+    "file": "public/assets/pacote/base/tokens.css",
+    "bytes": 21604,
+    "sha256": "3e443292b55c48e7d9d5c6613aa89340de4de399e5dd2a0f594565aa0003ec67"
+  },
+  {
+    "file": "public/assets/pacote/icones/animateicons-react.js",
+    "bytes": 404409,
+    "sha256": "f6c1a8060267a869879fbd38caddbac3d6560f91551fe754e4d87fdd9ea3c37f"
+  },
+  {
+    "file": "public/assets/pacote/icones/animateicons.js",
+    "bytes": 404161,
+    "sha256": "f52fee26856d805250a5cd9dbc29c56e13e65754bea6d2ab9f152fa39e0f82d6"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/b/homem-1.svg",
+    "bytes": 4612,
+    "sha256": "15f14e282e1c1df42950194b463a56982550af28eeaf548890048dbe354f1676"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/b/homem-2.svg",
+    "bytes": 5547,
+    "sha256": "177c33a40d143d692dee7f8e3c5b72c769a5266e07fceb46e085553c5a6cac8e"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/b/homem-3.svg",
+    "bytes": 4439,
+    "sha256": "82022b18fb41acad857432a3851346fc5dd32a109876f2f4d266cfc945c8724d"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/b/mulher-1.svg",
+    "bytes": 6453,
+    "sha256": "d23f9a21511edd314cfa720a73b79c93c0cc410512dcb9e7a27c9b0a878ff31b"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/b/mulher-2.svg",
+    "bytes": 6649,
+    "sha256": "08703089df0e639176efeeed40de8690278ccda5e010b3190e32944ec1558585"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/b/mulher-3.svg",
+    "bytes": 5932,
+    "sha256": "fe55c9a8fce7998349f1bef97640326d2e2a5bab08816e6cba19a50bbfc611f6"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/c/homem-1.svg",
+    "bytes": 8294,
+    "sha256": "5b65cf70a42c12ad623f429fabd050eae57f8bf79deb619de688beb22951f3f2"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/c/homem-2.svg",
+    "bytes": 12441,
+    "sha256": "ea8b810201be1883469977fdf1dcaccb35726dca913b07dd90ab33c26cfec752"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/c/homem-3.svg",
+    "bytes": 10447,
+    "sha256": "b2544c7987174733780707bb897d971c2eacedab3c6f6f66be6ec03c06a578f4"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/c/mulher-1.svg",
+    "bytes": 18852,
+    "sha256": "9c86a86b18ddfab14cbc8ae6bcc3ed16e9561d2e0e04a21d41be169091017a05"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/c/mulher-2.svg",
+    "bytes": 14303,
+    "sha256": "5c95f5779685ac7c414373e6f28c083f0c944f8311ac7cac864925a53412b27a"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/c/mulher-3.svg",
+    "bytes": 11092,
+    "sha256": "a6ff3efdb023c470a8fb1e0c01a20b2d007509ef8b711c19e6bd0ddee73b53ae"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/CREDITOS.txt",
+    "bytes": 483,
+    "sha256": "1c8cb9148009f3d3bf80f10037ad3b9971d7dc35568e0c220ad94dd4a3178a27"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/homem.svg",
+    "bytes": 4612,
+    "sha256": "15f14e282e1c1df42950194b463a56982550af28eeaf548890048dbe354f1676"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/mulher.svg",
+    "bytes": 6453,
+    "sha256": "d23f9a21511edd314cfa720a73b79c93c0cc410512dcb9e7a27c9b0a878ff31b"
+  },
+  {
+    "file": "public/assets/pacote/icones/avatares/sem-nome.svg",
+    "bytes": 8294,
+    "sha256": "5b65cf70a42c12ad623f429fabd050eae57f8bf79deb619de688beb22951f3f2"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/beec-icone-claro.svg",
+    "bytes": 290,
+    "sha256": "31fa740bb2dee59f26af584ac342ae688a4a57a747ce99792248640299e3e2d7"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/beec-logo-claro.svg",
+    "bytes": 1574,
+    "sha256": "dcecdedd9080a03d6d34f6d33320c5399ce94336f9796256176b1235e33f92f7"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/beec-logo.svg",
+    "bytes": 1563,
+    "sha256": "ead4572b5c1f2cb4e09e3436b9a841cfacdff40eb2134d30f72e05f865d3da94"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/beec.svg",
+    "bytes": 290,
+    "sha256": "947edcc4c184a1ffecf226223a6f32e09579f6e626830913747f5f24da11a436"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/lavoro-piu-logo-claro.png",
+    "bytes": 32086,
+    "sha256": "a2fad833c4ecc53b81c5936f0296551ec75e14ad7afeca715ef7f8667ee0c327"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/lavoro-piu-logo.png",
+    "bytes": 32845,
+    "sha256": "db807b392c3b06c0ff824fa0e9775c9f34d994e3362ee8aa6cd0bcd290e66ae8"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/neowear-logo.png",
+    "bytes": 1329885,
+    "sha256": "b4464574320d7535c4cc7fabb76bc5a3d8f5d9b2a36101d47f407450f4519770"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/realizze-logo-claro.png",
+    "bytes": 34392,
+    "sha256": "5af53b2f911d32e25ccd2876e058299370855b29591412fa059905ea27ceb8ac"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/realizze-logo.png",
+    "bytes": 21590,
+    "sha256": "f848cfcee2c9df7d5c13f0075e6f9d55abc00a8f4e9a66e68d4a5902a585cf63"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/realizze.png",
+    "bytes": 13126,
+    "sha256": "d09ab7f718a860e7d675a4fae8848d88ca826004a676cdb1901273a2acc16bc4"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/tu-ecom.svg",
+    "bytes": 254,
+    "sha256": "588c68abc29cdab13871d8b692fdc67c0da5bf98561e3ed869ec85e4fd8f268d"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/winny-icone-claro.svg",
+    "bytes": 2764,
+    "sha256": "ce8c98f07c53f58d4309f877bfee7bd772193f4be8f15b60f329fcd1d5f6dc7f"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/winny-logo-claro.svg",
+    "bytes": 7278,
+    "sha256": "ccb0fa31070866be2ef6ab2f857d15f09a1d7e8a6e86f77b844355bc61f93753"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/winny-logo.svg",
+    "bytes": 7278,
+    "sha256": "5adc8ad40c129b5081088c8eba021121d364119ee087ba6e891436e5de82ccb9"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/winny.svg",
+    "bytes": 2764,
+    "sha256": "6ee9e57053e7f2bde30fa7fac0239888d2d28c7e3d05de99f692fa3bda42e758"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/you-icone-claro.svg",
+    "bytes": 396,
+    "sha256": "c066840ad765b5c3850b868ba1a33f288a73d1173064379bf78c587a77556d23"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/you-logo-claro.svg",
+    "bytes": 8917,
+    "sha256": "629be63b18991e874596e8ee6350a4bc5ef6c3bedcc1853845fa2c6344972a31"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/you-logo.svg",
+    "bytes": 8918,
+    "sha256": "4ed7878de186651c853f49478350f5b95da55dfe772d3734fc03a7e12738a333"
+  },
+  {
+    "file": "public/assets/pacote/icones/empresas/you.svg",
+    "bytes": 397,
+    "sha256": "3d2996b4395f720bce9323d37af4bcab5f1a2ea31e67290c104bcd9186cfb808"
+  },
+  {
+    "file": "public/assets/pacote/icones/LISTA.md",
+    "bytes": 5005,
+    "sha256": "117ca25b73581f62c73abd1e16197ac52f77f8c23ebea9714e00d91fa1bec9f1"
+  },
+  {
+    "file": "public/assets/pacote/icones/origens/bio.svg",
+    "bytes": 374,
+    "sha256": "4c1cbb701ac7fa6a886e62e764d317f60e4208c9d540845eb580e1716d143fde"
+  },
+  {
+    "file": "public/assets/pacote/icones/origens/google-organico-b.svg",
+    "bytes": 296,
+    "sha256": "3bddc18967c308d57038295686f250c8f5188128cfa3f1114340c54ea0feaf28"
+  },
+  {
+    "file": "public/assets/pacote/icones/origens/google-organico.svg",
+    "bytes": 1323,
+    "sha256": "4f0b7cea6e7cc57b2e37af4fa3c1e414e3628dee13d49bd3f594f04926ba58ec"
+  },
+  {
+    "file": "public/assets/pacote/icones/origens/google.svg",
+    "bytes": 962,
+    "sha256": "ef27ad4ad01003168549e253f08b7bed3958018d626bb352d635a80af3d06a2f"
+  },
+  {
+    "file": "public/assets/pacote/icones/origens/indicacao.svg",
+    "bytes": 529,
+    "sha256": "2412da94aae1f5e9c23f9d3340e7c4cec00e20ed1c1b27a3aee9b6ea94bb7ad7"
+  },
+  {
+    "file": "public/assets/pacote/icones/origens/meta.svg",
+    "bytes": 1363,
+    "sha256": "3955a71edf1cd14f79dfafe0311c4e2bfcbb3c315613950ab092935a0eb55e57"
+  },
+  {
+    "file": "public/assets/pacote/icones/origens/site.svg",
+    "bytes": 348,
+    "sha256": "0b98de6c19c1d4b8d6ba116f035c4e177eede6a88ce025e686de823f215493ed"
+  },
+  {
+    "file": "public/assets/pacote/icones/origens/whatsapp.svg",
+    "bytes": 1255,
+    "sha256": "8c8b70bafd8f0e400c8db9489b7aba5f3f4690f3936717dd5f761f555bae2393"
+  },
+  {
+    "file": "public/assets/pacote/icones/pessoas/LEIA-ME.txt",
+    "bytes": 296,
+    "sha256": "1205c89d7dc8480fb38889d2281e0a8c971bd60745189bd378c75352ea7aac4d"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/archive.svg",
+    "bytes": 358,
+    "sha256": "0e68ca7352ee30598270e2b4216ba746d388417cb44c2d93525e5cb988103976"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/arrow-down.svg",
+    "bytes": 279,
+    "sha256": "0aaf71e3c08ec01c4098dfa0d8c4ec8a0820375be53617e7db31cce6606c53db"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/arrow-right.svg",
+    "bytes": 278,
+    "sha256": "0bc7f86e1c66a50f06d53aeda9df0d59f0a02d1f689434ba19ed0c7e951500f8"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/arrow-up-down.svg",
+    "bytes": 332,
+    "sha256": "a543da60158f1f181a19bf7f75c8202c2fd344b5f7606526c63e458e9e9eecfa"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/arrow-up.svg",
+    "bytes": 278,
+    "sha256": "127aa5a9e54700b46dc496188bc824d480a953a739cf0c597af38fb9164ff5ac"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/bell.svg",
+    "bytes": 410,
+    "sha256": "6666b2b27bab2d4baff709b3d882e068ff95c1e0d129b0dce19fea2ba562c41b"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/building-2.svg",
+    "bytes": 493,
+    "sha256": "affeffb718bd742807cebec4630f61962ccfa1d12cfe4bed65bcee0024fba598"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/calendar-days.svg",
+    "bytes": 509,
+    "sha256": "827584cf1f1e00f13b1390dd75c5b05889cfe90c6186bd7a0b9d903540230411"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/calendar.svg",
+    "bytes": 349,
+    "sha256": "7819240aea04e0a3b67966949b692d3d3bbc5a280a7f13a9e75e69a9d1abcc52"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/chart-line.svg",
+    "bytes": 298,
+    "sha256": "912edba437da50ac2cb53dd1a0b7ee5e13d482c65dd7737dfd615216b6b9c685"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/check-check.svg",
+    "bytes": 292,
+    "sha256": "84b717f725fc38a0a8e37fd45407766809b707240fd5b17d7d62429d61bc10d4"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/check.svg",
+    "bytes": 255,
+    "sha256": "f148f0dadf530da037c9c3aa1a7792733dd65a3d5c3c2b0eb55eec7ac4005f6f"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/chevron-down.svg",
+    "bytes": 252,
+    "sha256": "c7b09eee9bd4fdd2da7927076cfa3f863706c48050d5e09cffa2ccea22d79af1"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/chevron-left.svg",
+    "bytes": 254,
+    "sha256": "94467997d1ef8d8c4a743929bae4117fc17872dca10c77a9d3f28ce913a66974"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/chevron-right.svg",
+    "bytes": 253,
+    "sha256": "84be66b92af091219c1595e6bd233a0db8a770c6fc548f6b37a65333b3cbcb70"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/chevron-up.svg",
+    "bytes": 254,
+    "sha256": "6b219b99ca4198d53edef78db33d8af46e55b7195205e1cb8e43749d75e0450a"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/circle-alert.svg",
+    "bytes": 350,
+    "sha256": "ca10ffbd42b1137d34ab9348733929ab168a594eaadf384d47f439d51a88cc5e"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/circle-check.svg",
+    "bytes": 290,
+    "sha256": "0d00ddac79c8cfe72392ba2775c917f87527554f050580548ad006428e0a4ba4"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/clock.svg",
+    "bytes": 302,
+    "sha256": "889d44c2283288e4e9f30e909c203662c16547de6f8ac39f1ec795ff728a5989"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/copy.svg",
+    "bytes": 356,
+    "sha256": "46b760e27a131cbfdf7568e58935b41ceb5da8d478881e26df219213a20d4d1d"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/download.svg",
+    "bytes": 366,
+    "sha256": "9f3ce22a720f19abc81a59ffdb26b0832d2363365303ca9eed43b1d191f8ad19"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/ellipsis.svg",
+    "bytes": 330,
+    "sha256": "b9a418eef59a5481099ae723db8813e7acf8a73a07ab4ce64a0c0d1cae9ae52f"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/external-link.svg",
+    "bytes": 350,
+    "sha256": "023c7063ecad59ac95c194422da9b315e6dbf7e07ac7a7db084a37b0d7eff93a"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/eye-off.svg",
+    "bytes": 523,
+    "sha256": "b692ac9b45522316c39449c97f8dfbf794a01cfa04dfb2d373fd5a4fb92ea8b3"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/eye.svg",
+    "bytes": 377,
+    "sha256": "0d88583edbf205ec16d9c5d6daf9b199de1b1cb8a9ac924aaa10c9528295b57e"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/file-text.svg",
+    "bytes": 412,
+    "sha256": "606cd71c55db3a7b7083c3c45724d2a4aae59872d5656eab6f768f5ed010b9d6"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/funnel.svg",
+    "bytes": 353,
+    "sha256": "410d8d56318144ecfc1c842db0e768f9060cd866e7fa10619bba2ebb64684211"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/grip-vertical.svg",
+    "bytes": 434,
+    "sha256": "3bfc5faccda32784a9d06155188dbdde15a30283b5efb34b3d0fa209f4bf1e9a"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/image.svg",
+    "bytes": 376,
+    "sha256": "a6432c3c5a4e0cacbb0d349cb9f528005db59dc7c4b86f11ebfe89495741fbb7"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/info.svg",
+    "bytes": 312,
+    "sha256": "29c0ae69ec66768ce844b6733b92eb2ffb90721df281aa13947d041a6268027d"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/layout-dashboard.svg",
+    "bytes": 435,
+    "sha256": "beecfa460e45798797ece1e7a77816ed0f4d98f1f144b53268c50cd115f12fea"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/list-filter.svg",
+    "bytes": 297,
+    "sha256": "4377164bfd059c53927748f9c246d2440de13f392974d98b026cb2ca6cde748f"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/loader-circle.svg",
+    "bytes": 267,
+    "sha256": "fe4e151f6e323976be3e4f2d30532ce7d72a2e525e8374d5131999a60f2aeffd"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/lock.svg",
+    "bytes": 326,
+    "sha256": "96c39bda68f5e7c485b4ae393eeb570f7b536dccb5aa3939db8f6ca385c433cf"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/log-out.svg",
+    "bytes": 364,
+    "sha256": "e7b13a80deed65b350bca568f9eb13b5d555538358c6ccbf71358977326c9a29"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/mail.svg",
+    "bytes": 335,
+    "sha256": "63844a7894cd618c76e3bbf6e0e61479eca6a58c9279ccda4d612e1f4a5828a5"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/menu.svg",
+    "bytes": 350,
+    "sha256": "ddf4ec502ffa26790c38af710c9172bb6631aaf5e1aa5dfc9ad6dd98b1278fc2"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/message-circle.svg",
+    "bytes": 270,
+    "sha256": "2100e2ddd635c8c100b9feacb95f05e641b2a6413f2d346fc37543282bbeaf0b"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/mic.svg",
+    "bytes": 379,
+    "sha256": "82e20359c9834574c8f2c85c62bb3b446153dbe1eb977dd46f43e63475f5344f"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/minus.svg",
+    "bytes": 248,
+    "sha256": "a01cbaefdb932231ef36a144eb22a22c005282ac1527ffbe995633f12a7567fc"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/moon.svg",
+    "bytes": 274,
+    "sha256": "266ede6ea4be559e263b48725c18181b249da68894f2e852e43455b32bc68db3"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/panel-left.svg",
+    "bytes": 301,
+    "sha256": "869c8eaaaeebf789a99b17cdee26a7527a908ea294c07511f4209aeca20ab552"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/paperclip.svg",
+    "bytes": 415,
+    "sha256": "45f30c0bcae66b3b24e36a39b8977b2d9771ed87d7fa29147c2c59de0b7f87e3"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/pause.svg",
+    "bytes": 330,
+    "sha256": "4c98acd8bfc869b103d55eda804e3bd1b128db00fa9ca0192b880299214c1539"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/pencil.svg",
+    "bytes": 394,
+    "sha256": "a82cd3f9b788dd0439e9f1be7021fd8c9bbe03c22d77aaa29fdb6838110a4ec6"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/phone.svg",
+    "bytes": 525,
+    "sha256": "88f9adb38c9175ad573e60957abfa060ef8179336a04c466f03045d951180c59"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/play.svg",
+    "bytes": 266,
+    "sha256": "b5ed133d1360392a8fe508ad33d1643a7a24f7ee32e22d087d2d72448e37474b"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/plus.svg",
+    "bytes": 273,
+    "sha256": "a17ff03878ee439b4a90523046e6d769c71f64e2dbf438ae72c93c6f4b3b0491"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/refresh-cw.svg",
+    "bytes": 411,
+    "sha256": "9bd2167b7e722e05af03f45202524abbfb0ecf5c7d1bb768f2afde2e98ad127e"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/save.svg",
+    "bytes": 435,
+    "sha256": "e3b2d9fa7c46c3f6351eb0ae3f2d468f536614e943c7d7e984e5489a0d92333b"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/search.svg",
+    "bytes": 290,
+    "sha256": "fe75df30e718f9cb55e989e22bf924d385fa49f62584aa81dfc8fdcd68abdcc0"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/send.svg",
+    "bytes": 410,
+    "sha256": "595f70e413b4b2779e6541e6c5a6b2ec12c4660296a84fdbdc86b29cf99c55a7"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/settings.svg",
+    "bytes": 841,
+    "sha256": "5598b011ecbc0d865e773d1d61bccb18d2fa86cb35806429c72736cc9c916351"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/smile.svg",
+    "bytes": 388,
+    "sha256": "646c68a50a57f0482a5710a7baece022f4d395eedf34e12a669707cb90c0132c"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/star.svg",
+    "bytes": 604,
+    "sha256": "8e44cda204d007cae6ce78020f1d51369330977aa53feab9a13003794b15738c"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/sun.svg",
+    "bytes": 509,
+    "sha256": "b8c9e202ae3078eb001783b1444f27673e96bd666966c6d870d24b10de0f81c6"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/tag.svg",
+    "bytes": 447,
+    "sha256": "9b802c959cab538392d12b5043185e051dfbb893cfbc332901fd27a2ed4f32fa"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/trash-2.svg",
+    "bytes": 440,
+    "sha256": "27ded98584a858c80e60b435c9bf257727fc534efb9f2d1b269628b84d81e22a"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/trending-down.svg",
+    "bytes": 319,
+    "sha256": "e74fb60270b788888432dbf5fd62f03abe4700a5bd32aa032894d31025b2be51"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/trending-up.svg",
+    "bytes": 318,
+    "sha256": "fe656c4a2cd55c40f82d10839a277951d62cdc71b83863f20eea2bcc2851df98"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/triangle-alert.svg",
+    "bytes": 363,
+    "sha256": "b56de0263c5b01c6852339081fdd34e54705f436a1a9556e5091cad1ab13ab31"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/upload.svg",
+    "bytes": 363,
+    "sha256": "a94a57870f9a715b2184ae579b74a68562b6ccf2d5ea4c824ddd90d25f50cf78"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/user-plus.svg",
+    "bytes": 402,
+    "sha256": "8a315988cc35a4922bdc8578d92735159171716a42857f37894caaf8c22b4a2c"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/user.svg",
+    "bytes": 316,
+    "sha256": "67f5b24df89c9b642a8adda06c5cfde21ffabb08ff0c8ee9dcc457a539be7700"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/users.svg",
+    "bytes": 400,
+    "sha256": "eba428daca96487ec990c295c0e0994aa1f5504835cb3d2a680c7d13bca3f71e"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/volume-2.svg",
+    "bytes": 494,
+    "sha256": "74e4b80c17bc9032681108d216fd1777366e9de46b4630d19bab559af8615b0c"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/volume-x.svg",
+    "bytes": 494,
+    "sha256": "e9aba5d04848786e482eab37133c187109bdc2b3db8c88e5411bbf66f3918361"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/wifi-off.svg",
+    "bytes": 516,
+    "sha256": "a0de1253bec80faf68ffd4bc2ecad1cf300d81253fe2b31a7f10fa5b9c7a89a2"
+  },
+  {
+    "file": "public/assets/pacote/icones/ui/x.svg",
+    "bytes": 277,
+    "sha256": "8fdf1eaee9c85674006d85d96a85072965ccf080794b559f8054f67807c837c2"
+  },
+  {
+    "file": "public/assets/smartchat-tokens.css",
+    "bytes": 4111,
+    "sha256": "33d1348c191c14f9d2036c8fffa33461c9643eaed8a2d6046859146cf54eafdc"
+  },
+  {
+    "file": "public/componentes/layout.css",
+    "bytes": 1846,
+    "sha256": "42ba5c013ba3a357680147a797edcfb0fba81a208fc7642c1a4d6c0890e3c34a"
+  },
+  {
+    "file": "public/componentes/tarefas.css",
+    "bytes": 61292,
+    "sha256": "141cd6d6547131efc7770081d6f02335df6ee6bdd00a6cf184e7034d7db46300"
+  },
+  {
+    "file": "public/componentes/tarefas.html",
+    "bytes": 772,
+    "sha256": "0e6656eac370d9763e1c22d9a5094cbd2c4eb4bc28e25844b808d2e61be0b0bf"
+  },
+  {
+    "file": "public/componentes/tarefas.js",
+    "bytes": 410238,
+    "sha256": "36ea6e9bb2194a6d2808b3f1252cca220d37b62016dcd7803a894e9bc6475f21"
+  },
+  {
+    "file": "public/index.html",
+    "bytes": 1219,
+    "sha256": "cff5a311fcde3916662ded1845c33e0f0fba8b830c90823bd192ae5da41884e1"
+  },
+  {
+    "file": "public/marca/empresas/beec-logo.svg",
+    "bytes": 1563,
+    "sha256": "ead4572b5c1f2cb4e09e3436b9a841cfacdff40eb2134d30f72e05f865d3da94"
+  },
+  {
+    "file": "public/marca/empresas/beec.svg",
+    "bytes": 290,
+    "sha256": "947edcc4c184a1ffecf226223a6f32e09579f6e626830913747f5f24da11a436"
+  },
+  {
+    "file": "public/marca/empresas/smartchat.svg",
+    "bytes": 456,
+    "sha256": "0253eca4e29789e65dcd2b886b20a8b2157b5740876030394b1299159905e4fc"
+  },
+  {
+    "file": "public/marca/empresas/tu-ecom.png",
+    "bytes": 919536,
+    "sha256": "38d00bfc40fb8ce13c4b2107d141717931a92a0bf3370abc102599666f6a3573"
+  },
+  {
+    "file": "public/marca/empresas/you-logo.svg",
+    "bytes": 8918,
+    "sha256": "4ed7878de186651c853f49478350f5b95da55dfe772d3734fc03a7e12738a333"
+  },
+  {
+    "file": "public/marca/empresas/you.svg",
+    "bytes": 397,
+    "sha256": "3d2996b4395f720bce9323d37af4bcab5f1a2ea31e67290c104bcd9186cfb808"
+  },
+  {
+    "file": "public/marca/fivecon.png",
+    "bytes": 34021,
+    "sha256": "d113c1f99a28a3851a84e46da3546b985afb38ee618bea6f56b6122488fb42f9"
+  },
+  {
+    "file": "public/marca/LEIAME.md",
+    "bytes": 1487,
+    "sha256": "8e640241ba236c27096b36fa131d1bbbc797b32fe76f11c663acb31431eeabba"
+  },
+  {
+    "file": "public/marca/redes/facebook.svg",
+    "bytes": 557,
+    "sha256": "9828719f42ef1c5ecf1e53c9682f5dfa19eb978d1732cef0cc344f0a70e8a123"
+  },
+  {
+    "file": "public/marca/redes/instagram.svg",
+    "bytes": 2116,
+    "sha256": "0f9ccaca602908bac61bb0a89c33af1e2ee5234df6efc0ad6e312ec2810689d7"
+  },
+  {
+    "file": "public/marca/redes/kwai.svg",
+    "bytes": 1176,
+    "sha256": "f5e15a4e4464326f4b950326fa993090694a17482673881b9e7c2af29731a37a"
+  },
+  {
+    "file": "public/marca/redes/tiktok.svg",
+    "bytes": 722,
+    "sha256": "efe0e87eeaaf4a2081933ddbf48b135376983a5ef59b9e226b328349147d4649"
+  },
+  {
+    "file": "public/marca/redes/youtube.svg",
+    "bytes": 474,
+    "sha256": "26f2ce61378ba27909ae138be71e36a3bdcc833bb125810511c4926c2e85df25"
+  },
+  {
+    "file": "public/origem-componentes.json",
+    "bytes": 31850,
+    "sha256": "aad85266b8e2338de359da59f3f159e05fdb688f0b8004186b944b10ef2cdbf9"
+  },
+  {
+    "file": "public/padroes/abas/_trechos/1-7-canais.html",
+    "bytes": 834,
+    "sha256": "2ab2a84695ac88bf305889eb1743ae65e33335e9c7236b4c8fb3ae30bc8318f1"
+  },
+  {
+    "file": "public/padroes/abas/01-base.css",
+    "bytes": 4408,
+    "sha256": "c4ecbff6fa80ec4a2b9610807ac759c5547711ba97ad0d0714a1513566ca8631"
+  },
+  {
+    "file": "public/padroes/abas/01-base.html",
+    "bytes": 13263,
+    "sha256": "b509a844828d9ecfaa898e1d72ec665b8a49d258736460acfe68541ebf8a790d"
+  },
+  {
+    "file": "public/padroes/abas/01-base.js",
+    "bytes": 6000,
+    "sha256": "fffebcc21d1c126d1d2466bd9950288223cc3fc424d9a7a2931a456b43bd1396"
+  },
+  {
+    "file": "public/padroes/abas/02-botoes.css",
+    "bytes": 2342,
+    "sha256": "487f7a25e1246083911e648f74a7bd4f80c5362d15e3fb57c24102b126441d2a"
+  },
+  {
+    "file": "public/padroes/abas/02-botoes.html",
+    "bytes": 17980,
+    "sha256": "fd9e1e7303d2ab5a25c3b7fb8af15f04bae5e74e98a01213ca66c86dc97ed348"
+  },
+  {
+    "file": "public/padroes/abas/02-botoes.js",
+    "bytes": 4366,
+    "sha256": "a460aaf25bfecd5fb411e2caab4f06039cedcd833e5aa34fb7af2cf968d7dc91"
+  },
+  {
+    "file": "public/padroes/abas/03-campos.css",
+    "bytes": 2901,
+    "sha256": "11a28c2195ae2babc8273850b7abc44f457363a6c8a63e297796e18c7f57dfca"
+  },
+  {
+    "file": "public/padroes/abas/03-campos.html",
+    "bytes": 14086,
+    "sha256": "d7250b3a499fd93ce3427ce2bb2631c14c880c494e5b96c6791b9a5eb09d25f0"
+  },
+  {
+    "file": "public/padroes/abas/03-campos.js",
+    "bytes": 14338,
+    "sha256": "7add054931d43b396caf8ee1e99bb43ecb91a5bd3d8d20a0add87e585a1248be"
+  },
+  {
+    "file": "public/padroes/abas/04-avatar.js",
+    "bytes": 1791,
+    "sha256": "82debfffe0638accef7be82ecc0ccdd6bf2554dff6797b658f9133c7e16d95f0"
+  },
+  {
+    "file": "public/padroes/abas/04-cards.css",
+    "bytes": 4832,
+    "sha256": "c079d80e45c5f95a3d6b59343de51757a46e126f7af807dc246f4ce385b740fe"
+  },
+  {
+    "file": "public/padroes/abas/04-cards.html",
+    "bytes": 7680,
+    "sha256": "eeed6165f8db107e1ecffdebd9a6bab74baa7510d8a0ad012c9895f5598408af"
+  },
+  {
+    "file": "public/padroes/abas/04-cards.js",
+    "bytes": 1924,
+    "sha256": "9d842efef173772ace2df595b15fb7936fa3a956c2123039434de3b6c6571991"
+  },
+  {
+    "file": "public/padroes/abas/04-faixas.js",
+    "bytes": 2169,
+    "sha256": "c54e07e51ba2977e1070b920a936d010c5087fe259cb93b454ec6d91f5c12a05"
+  },
+  {
+    "file": "public/padroes/abas/05-graficos.css",
+    "bytes": 1869,
+    "sha256": "ad30f830774a30db8df577c7027ec4be2f9af1f4c43b83873e113b190ea0de84"
+  },
+  {
+    "file": "public/padroes/abas/05-graficos.html",
+    "bytes": 9254,
+    "sha256": "1beee1c88599d79ef604a0ab2284546690fd9b002d6be8990fefdd7e44a3ce73"
+  },
+  {
+    "file": "public/padroes/abas/05-graficos.js",
+    "bytes": 41822,
+    "sha256": "81cb57c906ef298bd7e432dac3d6e03c19a708ab592e921039d8eacba1c89ecc"
+  },
+  {
+    "file": "public/padroes/abas/06-casca.css",
+    "bytes": 9436,
+    "sha256": "33f9ea1f9ec9324a5e0d05f344efb8e4a8d048d1068ffbb098f4906d1123f122"
+  },
+  {
+    "file": "public/padroes/abas/06-casca.html",
+    "bytes": 2946,
+    "sha256": "d32eef48b4d2b5448841b5660bb530bab7b9b7ae9d1306d23026bfe6eb236da2"
+  },
+  {
+    "file": "public/padroes/abas/06-casca.js",
+    "bytes": 13322,
+    "sha256": "590e83072dd0a0dba161a67ff5b486e6b73322043bd80c61b7129f9960211973"
+  },
+  {
+    "file": "public/padroes/abas/07-janelas.css",
+    "bytes": 8674,
+    "sha256": "7cc5d1546ed0c112ea2bd619488589f16c9d6b7ced9fb32563f60f841145df5c"
+  },
+  {
+    "file": "public/padroes/abas/07-janelas.html",
+    "bytes": 21156,
+    "sha256": "4be11c87ca37425233a3cd71ebcbd72d92ee7a79577abaa91abe558018d167a1"
+  },
+  {
+    "file": "public/padroes/abas/07-janelas.js",
+    "bytes": 6652,
+    "sha256": "4d7f84b60e000374b4eb1bca35ee036f419f3d26b5146e850691df29686f46f9"
+  },
+  {
+    "file": "public/padroes/abas/08-funil.css",
+    "bytes": 5739,
+    "sha256": "5e372156e3e2ea3122fad02beede9087523e0d09b8176a15c5cf998295c3f32a"
+  },
+  {
+    "file": "public/padroes/abas/08-funil.dados.js",
+    "bytes": 2782,
+    "sha256": "506dca85df52616dde3b21b2896ceae7b3fcdab940ed49cccbd700c7279d7bdb"
+  },
+  {
+    "file": "public/padroes/abas/08-funil.html",
+    "bytes": 3355,
+    "sha256": "6f371d80b45acf199bcfb76bd24e14f2c9e8e8c6fe3141929965dd42b02dd149"
+  },
+  {
+    "file": "public/padroes/abas/08-funil.js",
+    "bytes": 8996,
+    "sha256": "e3419a09d4380bda124d5a5cf30d94a621c2c3885e8635582e66774a87ede267"
+  },
+  {
+    "file": "public/padroes/abas/09-agenda.css",
+    "bytes": 6428,
+    "sha256": "7334903e2762b6a8f72d84c3916acc3347299da8f8e9b64a0dc84f464ae3f8a3"
+  },
+  {
+    "file": "public/padroes/abas/09-agenda.dados.js",
+    "bytes": 2947,
+    "sha256": "165d32d6d58e7e52eb974bd4a980edc620ee0f99ee81933e3d0561b31c7cf5de"
+  },
+  {
+    "file": "public/padroes/abas/09-agenda.html",
+    "bytes": 3973,
+    "sha256": "b0e2594037744cbd045f9c440d4c99d66dcb8e24cf16d8baf6f3078b4794fb9a"
+  },
+  {
+    "file": "public/padroes/abas/09-agenda.js",
+    "bytes": 7534,
+    "sha256": "60f626d66292ec8070c5078da8351c47da833acfbc8d4c1683ed39df41e00212"
+  },
+  {
+    "file": "public/padroes/abas/10-tabela.css",
+    "bytes": 3290,
+    "sha256": "02c066a1bf903caad174246b3817f71fa013eaad00e7587437b5bb9b38fc1c83"
+  },
+  {
+    "file": "public/padroes/abas/10-tabela.html",
+    "bytes": 3761,
+    "sha256": "fd6fcf987d4ae3abd047fab6e21d7bc00171ad7cb36b83a3713ef4b83b5224dc"
+  },
+  {
+    "file": "public/padroes/abas/10-tabela.js",
+    "bytes": 2507,
+    "sha256": "2e1e8e91af1ba0193756afbc0948201cd1bcbcb3876e6275a8b93fb8dd63821b"
+  },
+  {
+    "file": "public/padroes/abas/11-whatsapp.css",
+    "bytes": 13767,
+    "sha256": "d5a05695f56deae6c7bdb3b300cba7893a31deec649e6d60b58f88d6766c10a2"
+  },
+  {
+    "file": "public/padroes/abas/11-whatsapp.html",
+    "bytes": 4453,
+    "sha256": "8c6a5d74a052c36db4318d595fbb52c05a4575a6f9ef9dab7aa50b36f21766a6"
+  },
+  {
+    "file": "public/padroes/abas/11-whatsapp.js",
+    "bytes": 23260,
+    "sha256": "f2ea2977d6c6108576f939803e3bee77eb4cf1ee58407d1c8b0e5442bb6e41f9"
+  },
+  {
+    "file": "public/padroes/abas/12-estados.css",
+    "bytes": 5386,
+    "sha256": "796d5c4d62f9f020b929dee98bc2c9d993f9f3e896f71666475fcccd8c9f0358"
+  },
+  {
+    "file": "public/padroes/abas/12-estados.html",
+    "bytes": 9755,
+    "sha256": "47c8abc0dfdf2815405a9c752cba7365725908bc318237b92c28bef339f4eab9"
+  },
+  {
+    "file": "public/padroes/abas/12-estados.js",
+    "bytes": 3019,
+    "sha256": "bf20cd9d95eaf7e30de9b2299b66623fdb0cb6708f8603726518144d43642818"
+  },
+  {
+    "file": "public/padroes/abas/13-icones.css",
+    "bytes": 3866,
+    "sha256": "b64733678456068d997a05fde2f186705ae4dec754bd18bbfa316de679354fde"
+  },
+  {
+    "file": "public/padroes/abas/13-icones.dados.js",
+    "bytes": 11009,
+    "sha256": "11124cd968959da3150792a15646cc48ab0a4419de864c1d974e662aa854939d"
+  },
+  {
+    "file": "public/padroes/abas/13-icones.html",
+    "bytes": 6883,
+    "sha256": "1bea3fdbffa5debb0cc00f4c29777f6936c3333032acd3b3c77706ba033ef18a"
+  },
+  {
+    "file": "public/padroes/abas/13-icones.js",
+    "bytes": 3449,
+    "sha256": "2df731cea598b121c4ef56a2e10ae12477e5202dc18f2e6c6d73575db2bf1271"
+  },
+  {
+    "file": "public/padroes/abas/14-movimento.css",
+    "bytes": 4789,
+    "sha256": "958c4751463ef5c8b9b045db491d332d0d7557707cb9957a3a9803422622129c"
+  },
+  {
+    "file": "public/padroes/abas/14-movimento.dados.js",
+    "bytes": 3366,
+    "sha256": "38ec703513d9ec98794b0811479005443c3fdb8cffd23abd277655117e824693"
+  },
+  {
+    "file": "public/padroes/abas/14-movimento.html",
+    "bytes": 4736,
+    "sha256": "9680230924f1ebc80e67e60d31c05a499d9a79a900ed252b849df34a424016dd"
+  },
+  {
+    "file": "public/padroes/abas/14-movimento.js",
+    "bytes": 7365,
+    "sha256": "4d98c6e8eed5b3749f3610a1acdb3ae2fc4c0feff21c2d9e4ca219bdb6107d92"
+  },
+  {
+    "file": "public/padroes/abas/15-you-cores.css",
+    "bytes": 7789,
+    "sha256": "a8d16001e508279e12a1f9924bec99af8b0424c0feae53db90c294a677bdd4c0"
+  },
+  {
+    "file": "public/padroes/abas/15-you-cores.html",
+    "bytes": 7495,
+    "sha256": "de970508cc5f15776c9ed89b2255f95843bf33b78f00d85700709770d89eba48"
+  },
+  {
+    "file": "public/padroes/abas/15-you-cores.js",
+    "bytes": 3017,
+    "sha256": "1e2b53ec30b536e43f26c8cc958256115f0bca874716547b222fe33130856937"
+  },
+  {
+    "file": "public/padroes/base/aprovacao.js",
+    "bytes": 11308,
+    "sha256": "8ad7e04e4293c14f8213a42826603a70d7bc3c405501f7683247fa611b7ea76f"
+  },
+  {
+    "file": "public/padroes/base/casca.js",
+    "bytes": 8873,
+    "sha256": "f3fb82283bfe4aa2c55e0cb2c3f031c15bfc6af20dc4ec9c02212732407ecb87"
+  },
+  {
+    "file": "public/padroes/base/componentes.css",
+    "bytes": 44224,
+    "sha256": "6e4ea5c6da9e806c2c97616eb4a52a771d495490ed7bd5d397183ed8b73a1e12"
+  },
+  {
+    "file": "public/padroes/base/gerar-icones.js",
+    "bytes": 1823,
+    "sha256": "8739cb659f3f903a7dc7447f45514da36ce6bd0706b7838c6af2e157bfab12bf"
+  },
+  {
+    "file": "public/padroes/base/icones.js",
+    "bytes": 14623,
+    "sha256": "d440120c0ab15d9faf2aad5d723050b9e66b16cf534aea11197c09a71e6151f0"
+  },
+  {
+    "file": "public/padroes/base/movimento.js",
+    "bytes": 9270,
+    "sha256": "b4949e3f5d8f48012c5fe0373b51bf899dfe8037b291d8c4c84961a8cf894d1e"
+  },
+  {
+    "file": "public/padroes/base/rodas.js",
+    "bytes": 2967,
+    "sha256": "43580479c7f64327d46da364fe3c937a90c8434188c32ba391abe29b7e4b682d"
+  },
+  {
+    "file": "public/padroes/base/tokens.css",
+    "bytes": 21604,
+    "sha256": "3e443292b55c48e7d9d5c6613aa89340de4de399e5dd2a0f594565aa0003ec67"
+  },
+  {
+    "file": "public/padroes/icones/animateicons.js",
+    "bytes": 404161,
+    "sha256": "f52fee26856d805250a5cd9dbc29c56e13e65754bea6d2ab9f152fa39e0f82d6"
+  },
+  {
+    "file": "public/padroes/icones/avatares/b/homem-1.svg",
+    "bytes": 4612,
+    "sha256": "15f14e282e1c1df42950194b463a56982550af28eeaf548890048dbe354f1676"
+  },
+  {
+    "file": "public/padroes/icones/avatares/b/homem-2.svg",
+    "bytes": 5547,
+    "sha256": "177c33a40d143d692dee7f8e3c5b72c769a5266e07fceb46e085553c5a6cac8e"
+  },
+  {
+    "file": "public/padroes/icones/avatares/b/homem-3.svg",
+    "bytes": 4439,
+    "sha256": "82022b18fb41acad857432a3851346fc5dd32a109876f2f4d266cfc945c8724d"
+  },
+  {
+    "file": "public/padroes/icones/avatares/b/mulher-1.svg",
+    "bytes": 6453,
+    "sha256": "d23f9a21511edd314cfa720a73b79c93c0cc410512dcb9e7a27c9b0a878ff31b"
+  },
+  {
+    "file": "public/padroes/icones/avatares/b/mulher-2.svg",
+    "bytes": 6649,
+    "sha256": "08703089df0e639176efeeed40de8690278ccda5e010b3190e32944ec1558585"
+  },
+  {
+    "file": "public/padroes/icones/avatares/b/mulher-3.svg",
+    "bytes": 5932,
+    "sha256": "fe55c9a8fce7998349f1bef97640326d2e2a5bab08816e6cba19a50bbfc611f6"
+  },
+  {
+    "file": "public/padroes/icones/avatares/c/homem-1.svg",
+    "bytes": 8294,
+    "sha256": "5b65cf70a42c12ad623f429fabd050eae57f8bf79deb619de688beb22951f3f2"
+  },
+  {
+    "file": "public/padroes/icones/avatares/c/homem-2.svg",
+    "bytes": 12441,
+    "sha256": "ea8b810201be1883469977fdf1dcaccb35726dca913b07dd90ab33c26cfec752"
+  },
+  {
+    "file": "public/padroes/icones/avatares/c/homem-3.svg",
+    "bytes": 10447,
+    "sha256": "b2544c7987174733780707bb897d971c2eacedab3c6f6f66be6ec03c06a578f4"
+  },
+  {
+    "file": "public/padroes/icones/avatares/c/mulher-1.svg",
+    "bytes": 18852,
+    "sha256": "9c86a86b18ddfab14cbc8ae6bcc3ed16e9561d2e0e04a21d41be169091017a05"
+  },
+  {
+    "file": "public/padroes/icones/avatares/c/mulher-2.svg",
+    "bytes": 14303,
+    "sha256": "5c95f5779685ac7c414373e6f28c083f0c944f8311ac7cac864925a53412b27a"
+  },
+  {
+    "file": "public/padroes/icones/avatares/c/mulher-3.svg",
+    "bytes": 11092,
+    "sha256": "a6ff3efdb023c470a8fb1e0c01a20b2d007509ef8b711c19e6bd0ddee73b53ae"
+  },
+  {
+    "file": "public/padroes/icones/avatares/CREDITOS.txt",
+    "bytes": 483,
+    "sha256": "1c8cb9148009f3d3bf80f10037ad3b9971d7dc35568e0c220ad94dd4a3178a27"
+  },
+  {
+    "file": "public/padroes/icones/avatares/homem.svg",
+    "bytes": 4612,
+    "sha256": "15f14e282e1c1df42950194b463a56982550af28eeaf548890048dbe354f1676"
+  },
+  {
+    "file": "public/padroes/icones/avatares/mulher.svg",
+    "bytes": 6453,
+    "sha256": "d23f9a21511edd314cfa720a73b79c93c0cc410512dcb9e7a27c9b0a878ff31b"
+  },
+  {
+    "file": "public/padroes/icones/avatares/sem-nome.svg",
+    "bytes": 8294,
+    "sha256": "5b65cf70a42c12ad623f429fabd050eae57f8bf79deb619de688beb22951f3f2"
+  },
+  {
+    "file": "public/padroes/icones/empresas/beec-icone-claro.svg",
+    "bytes": 290,
+    "sha256": "31fa740bb2dee59f26af584ac342ae688a4a57a747ce99792248640299e3e2d7"
+  },
+  {
+    "file": "public/padroes/icones/empresas/beec-logo-claro.svg",
+    "bytes": 1574,
+    "sha256": "dcecdedd9080a03d6d34f6d33320c5399ce94336f9796256176b1235e33f92f7"
+  },
+  {
+    "file": "public/padroes/icones/empresas/beec-logo.svg",
+    "bytes": 1563,
+    "sha256": "ead4572b5c1f2cb4e09e3436b9a841cfacdff40eb2134d30f72e05f865d3da94"
+  },
+  {
+    "file": "public/padroes/icones/empresas/beec.svg",
+    "bytes": 290,
+    "sha256": "947edcc4c184a1ffecf226223a6f32e09579f6e626830913747f5f24da11a436"
+  },
+  {
+    "file": "public/padroes/icones/empresas/lavoro-piu-logo-claro.png",
+    "bytes": 32086,
+    "sha256": "a2fad833c4ecc53b81c5936f0296551ec75e14ad7afeca715ef7f8667ee0c327"
+  },
+  {
+    "file": "public/padroes/icones/empresas/lavoro-piu-logo.png",
+    "bytes": 32845,
+    "sha256": "db807b392c3b06c0ff824fa0e9775c9f34d994e3362ee8aa6cd0bcd290e66ae8"
+  },
+  {
+    "file": "public/padroes/icones/empresas/neowear-logo.png",
+    "bytes": 1329885,
+    "sha256": "b4464574320d7535c4cc7fabb76bc5a3d8f5d9b2a36101d47f407450f4519770"
+  },
+  {
+    "file": "public/padroes/icones/empresas/realizze-logo-claro.png",
+    "bytes": 34392,
+    "sha256": "5af53b2f911d32e25ccd2876e058299370855b29591412fa059905ea27ceb8ac"
+  },
+  {
+    "file": "public/padroes/icones/empresas/realizze-logo.png",
+    "bytes": 21590,
+    "sha256": "f848cfcee2c9df7d5c13f0075e6f9d55abc00a8f4e9a66e68d4a5902a585cf63"
+  },
+  {
+    "file": "public/padroes/icones/empresas/realizze.png",
+    "bytes": 13126,
+    "sha256": "d09ab7f718a860e7d675a4fae8848d88ca826004a676cdb1901273a2acc16bc4"
+  },
+  {
+    "file": "public/padroes/icones/empresas/tu-ecom.svg",
+    "bytes": 254,
+    "sha256": "588c68abc29cdab13871d8b692fdc67c0da5bf98561e3ed869ec85e4fd8f268d"
+  },
+  {
+    "file": "public/padroes/icones/empresas/winny-icone-claro.svg",
+    "bytes": 2764,
+    "sha256": "ce8c98f07c53f58d4309f877bfee7bd772193f4be8f15b60f329fcd1d5f6dc7f"
+  },
+  {
+    "file": "public/padroes/icones/empresas/winny-logo-claro.svg",
+    "bytes": 7278,
+    "sha256": "ccb0fa31070866be2ef6ab2f857d15f09a1d7e8a6e86f77b844355bc61f93753"
+  },
+  {
+    "file": "public/padroes/icones/empresas/winny-logo.svg",
+    "bytes": 7278,
+    "sha256": "5adc8ad40c129b5081088c8eba021121d364119ee087ba6e891436e5de82ccb9"
+  },
+  {
+    "file": "public/padroes/icones/empresas/winny.svg",
+    "bytes": 2764,
+    "sha256": "6ee9e57053e7f2bde30fa7fac0239888d2d28c7e3d05de99f692fa3bda42e758"
+  },
+  {
+    "file": "public/padroes/icones/empresas/you-icone-claro.svg",
+    "bytes": 396,
+    "sha256": "c066840ad765b5c3850b868ba1a33f288a73d1173064379bf78c587a77556d23"
+  },
+  {
+    "file": "public/padroes/icones/empresas/you-logo-claro.svg",
+    "bytes": 8917,
+    "sha256": "629be63b18991e874596e8ee6350a4bc5ef6c3bedcc1853845fa2c6344972a31"
+  },
+  {
+    "file": "public/padroes/icones/empresas/you-logo.svg",
+    "bytes": 8918,
+    "sha256": "4ed7878de186651c853f49478350f5b95da55dfe772d3734fc03a7e12738a333"
+  },
+  {
+    "file": "public/padroes/icones/empresas/you.svg",
+    "bytes": 397,
+    "sha256": "3d2996b4395f720bce9323d37af4bcab5f1a2ea31e67290c104bcd9186cfb808"
+  },
+  {
+    "file": "public/padroes/icones/LISTA.md",
+    "bytes": 5005,
+    "sha256": "117ca25b73581f62c73abd1e16197ac52f77f8c23ebea9714e00d91fa1bec9f1"
+  },
+  {
+    "file": "public/padroes/icones/origens/bio.svg",
+    "bytes": 374,
+    "sha256": "4c1cbb701ac7fa6a886e62e764d317f60e4208c9d540845eb580e1716d143fde"
+  },
+  {
+    "file": "public/padroes/icones/origens/google-organico-b.svg",
+    "bytes": 296,
+    "sha256": "3bddc18967c308d57038295686f250c8f5188128cfa3f1114340c54ea0feaf28"
+  },
+  {
+    "file": "public/padroes/icones/origens/google-organico.svg",
+    "bytes": 1323,
+    "sha256": "4f0b7cea6e7cc57b2e37af4fa3c1e414e3628dee13d49bd3f594f04926ba58ec"
+  },
+  {
+    "file": "public/padroes/icones/origens/google.svg",
+    "bytes": 962,
+    "sha256": "ef27ad4ad01003168549e253f08b7bed3958018d626bb352d635a80af3d06a2f"
+  },
+  {
+    "file": "public/padroes/icones/origens/indicacao.svg",
+    "bytes": 529,
+    "sha256": "2412da94aae1f5e9c23f9d3340e7c4cec00e20ed1c1b27a3aee9b6ea94bb7ad7"
+  },
+  {
+    "file": "public/padroes/icones/origens/meta.svg",
+    "bytes": 1363,
+    "sha256": "3955a71edf1cd14f79dfafe0311c4e2bfcbb3c315613950ab092935a0eb55e57"
+  },
+  {
+    "file": "public/padroes/icones/origens/site.svg",
+    "bytes": 348,
+    "sha256": "0b98de6c19c1d4b8d6ba116f035c4e177eede6a88ce025e686de823f215493ed"
+  },
+  {
+    "file": "public/padroes/icones/origens/whatsapp.svg",
+    "bytes": 1255,
+    "sha256": "8c8b70bafd8f0e400c8db9489b7aba5f3f4690f3936717dd5f761f555bae2393"
+  },
+  {
+    "file": "public/padroes/icones/pessoas/LEIA-ME.txt",
+    "bytes": 296,
+    "sha256": "1205c89d7dc8480fb38889d2281e0a8c971bd60745189bd378c75352ea7aac4d"
+  },
+  {
+    "file": "public/padroes/icones/ui/archive.svg",
+    "bytes": 358,
+    "sha256": "0e68ca7352ee30598270e2b4216ba746d388417cb44c2d93525e5cb988103976"
+  },
+  {
+    "file": "public/padroes/icones/ui/arrow-down.svg",
+    "bytes": 279,
+    "sha256": "0aaf71e3c08ec01c4098dfa0d8c4ec8a0820375be53617e7db31cce6606c53db"
+  },
+  {
+    "file": "public/padroes/icones/ui/arrow-right.svg",
+    "bytes": 278,
+    "sha256": "0bc7f86e1c66a50f06d53aeda9df0d59f0a02d1f689434ba19ed0c7e951500f8"
+  },
+  {
+    "file": "public/padroes/icones/ui/arrow-up-down.svg",
+    "bytes": 332,
+    "sha256": "a543da60158f1f181a19bf7f75c8202c2fd344b5f7606526c63e458e9e9eecfa"
+  },
+  {
+    "file": "public/padroes/icones/ui/arrow-up.svg",
+    "bytes": 278,
+    "sha256": "127aa5a9e54700b46dc496188bc824d480a953a739cf0c597af38fb9164ff5ac"
+  },
+  {
+    "file": "public/padroes/icones/ui/bell.svg",
+    "bytes": 410,
+    "sha256": "6666b2b27bab2d4baff709b3d882e068ff95c1e0d129b0dce19fea2ba562c41b"
+  },
+  {
+    "file": "public/padroes/icones/ui/building-2.svg",
+    "bytes": 493,
+    "sha256": "affeffb718bd742807cebec4630f61962ccfa1d12cfe4bed65bcee0024fba598"
+  },
+  {
+    "file": "public/padroes/icones/ui/calendar-days.svg",
+    "bytes": 509,
+    "sha256": "827584cf1f1e00f13b1390dd75c5b05889cfe90c6186bd7a0b9d903540230411"
+  },
+  {
+    "file": "public/padroes/icones/ui/calendar.svg",
+    "bytes": 349,
+    "sha256": "7819240aea04e0a3b67966949b692d3d3bbc5a280a7f13a9e75e69a9d1abcc52"
+  },
+  {
+    "file": "public/padroes/icones/ui/chart-line.svg",
+    "bytes": 298,
+    "sha256": "912edba437da50ac2cb53dd1a0b7ee5e13d482c65dd7737dfd615216b6b9c685"
+  },
+  {
+    "file": "public/padroes/icones/ui/check-check.svg",
+    "bytes": 292,
+    "sha256": "84b717f725fc38a0a8e37fd45407766809b707240fd5b17d7d62429d61bc10d4"
+  },
+  {
+    "file": "public/padroes/icones/ui/check.svg",
+    "bytes": 255,
+    "sha256": "f148f0dadf530da037c9c3aa1a7792733dd65a3d5c3c2b0eb55eec7ac4005f6f"
+  },
+  {
+    "file": "public/padroes/icones/ui/chevron-down.svg",
+    "bytes": 252,
+    "sha256": "c7b09eee9bd4fdd2da7927076cfa3f863706c48050d5e09cffa2ccea22d79af1"
+  },
+  {
+    "file": "public/padroes/icones/ui/chevron-left.svg",
+    "bytes": 254,
+    "sha256": "94467997d1ef8d8c4a743929bae4117fc17872dca10c77a9d3f28ce913a66974"
+  },
+  {
+    "file": "public/padroes/icones/ui/chevron-right.svg",
+    "bytes": 253,
+    "sha256": "84be66b92af091219c1595e6bd233a0db8a770c6fc548f6b37a65333b3cbcb70"
+  },
+  {
+    "file": "public/padroes/icones/ui/chevron-up.svg",
+    "bytes": 254,
+    "sha256": "6b219b99ca4198d53edef78db33d8af46e55b7195205e1cb8e43749d75e0450a"
+  },
+  {
+    "file": "public/padroes/icones/ui/circle-alert.svg",
+    "bytes": 350,
+    "sha256": "ca10ffbd42b1137d34ab9348733929ab168a594eaadf384d47f439d51a88cc5e"
+  },
+  {
+    "file": "public/padroes/icones/ui/circle-check.svg",
+    "bytes": 290,
+    "sha256": "0d00ddac79c8cfe72392ba2775c917f87527554f050580548ad006428e0a4ba4"
+  },
+  {
+    "file": "public/padroes/icones/ui/clock.svg",
+    "bytes": 302,
+    "sha256": "889d44c2283288e4e9f30e909c203662c16547de6f8ac39f1ec795ff728a5989"
+  },
+  {
+    "file": "public/padroes/icones/ui/copy.svg",
+    "bytes": 356,
+    "sha256": "46b760e27a131cbfdf7568e58935b41ceb5da8d478881e26df219213a20d4d1d"
+  },
+  {
+    "file": "public/padroes/icones/ui/download.svg",
+    "bytes": 366,
+    "sha256": "9f3ce22a720f19abc81a59ffdb26b0832d2363365303ca9eed43b1d191f8ad19"
+  },
+  {
+    "file": "public/padroes/icones/ui/ellipsis.svg",
+    "bytes": 330,
+    "sha256": "b9a418eef59a5481099ae723db8813e7acf8a73a07ab4ce64a0c0d1cae9ae52f"
+  },
+  {
+    "file": "public/padroes/icones/ui/external-link.svg",
+    "bytes": 350,
+    "sha256": "023c7063ecad59ac95c194422da9b315e6dbf7e07ac7a7db084a37b0d7eff93a"
+  },
+  {
+    "file": "public/padroes/icones/ui/eye-off.svg",
+    "bytes": 523,
+    "sha256": "b692ac9b45522316c39449c97f8dfbf794a01cfa04dfb2d373fd5a4fb92ea8b3"
+  },
+  {
+    "file": "public/padroes/icones/ui/eye.svg",
+    "bytes": 377,
+    "sha256": "0d88583edbf205ec16d9c5d6daf9b199de1b1cb8a9ac924aaa10c9528295b57e"
+  },
+  {
+    "file": "public/padroes/icones/ui/file-text.svg",
+    "bytes": 412,
+    "sha256": "606cd71c55db3a7b7083c3c45724d2a4aae59872d5656eab6f768f5ed010b9d6"
+  },
+  {
+    "file": "public/padroes/icones/ui/funnel.svg",
+    "bytes": 353,
+    "sha256": "410d8d56318144ecfc1c842db0e768f9060cd866e7fa10619bba2ebb64684211"
+  },
+  {
+    "file": "public/padroes/icones/ui/grip-vertical.svg",
+    "bytes": 434,
+    "sha256": "3bfc5faccda32784a9d06155188dbdde15a30283b5efb34b3d0fa209f4bf1e9a"
+  },
+  {
+    "file": "public/padroes/icones/ui/image.svg",
+    "bytes": 376,
+    "sha256": "a6432c3c5a4e0cacbb0d349cb9f528005db59dc7c4b86f11ebfe89495741fbb7"
+  },
+  {
+    "file": "public/padroes/icones/ui/info.svg",
+    "bytes": 312,
+    "sha256": "29c0ae69ec66768ce844b6733b92eb2ffb90721df281aa13947d041a6268027d"
+  },
+  {
+    "file": "public/padroes/icones/ui/layout-dashboard.svg",
+    "bytes": 435,
+    "sha256": "beecfa460e45798797ece1e7a77816ed0f4d98f1f144b53268c50cd115f12fea"
+  },
+  {
+    "file": "public/padroes/icones/ui/list-filter.svg",
+    "bytes": 297,
+    "sha256": "4377164bfd059c53927748f9c246d2440de13f392974d98b026cb2ca6cde748f"
+  },
+  {
+    "file": "public/padroes/icones/ui/loader-circle.svg",
+    "bytes": 267,
+    "sha256": "fe4e151f6e323976be3e4f2d30532ce7d72a2e525e8374d5131999a60f2aeffd"
+  },
+  {
+    "file": "public/padroes/icones/ui/lock.svg",
+    "bytes": 326,
+    "sha256": "96c39bda68f5e7c485b4ae393eeb570f7b536dccb5aa3939db8f6ca385c433cf"
+  },
+  {
+    "file": "public/padroes/icones/ui/log-out.svg",
+    "bytes": 364,
+    "sha256": "e7b13a80deed65b350bca568f9eb13b5d555538358c6ccbf71358977326c9a29"
+  },
+  {
+    "file": "public/padroes/icones/ui/mail.svg",
+    "bytes": 335,
+    "sha256": "63844a7894cd618c76e3bbf6e0e61479eca6a58c9279ccda4d612e1f4a5828a5"
+  },
+  {
+    "file": "public/padroes/icones/ui/menu.svg",
+    "bytes": 350,
+    "sha256": "ddf4ec502ffa26790c38af710c9172bb6631aaf5e1aa5dfc9ad6dd98b1278fc2"
+  },
+  {
+    "file": "public/padroes/icones/ui/message-circle.svg",
+    "bytes": 270,
+    "sha256": "2100e2ddd635c8c100b9feacb95f05e641b2a6413f2d346fc37543282bbeaf0b"
+  },
+  {
+    "file": "public/padroes/icones/ui/mic.svg",
+    "bytes": 379,
+    "sha256": "82e20359c9834574c8f2c85c62bb3b446153dbe1eb977dd46f43e63475f5344f"
+  },
+  {
+    "file": "public/padroes/icones/ui/minus.svg",
+    "bytes": 248,
+    "sha256": "a01cbaefdb932231ef36a144eb22a22c005282ac1527ffbe995633f12a7567fc"
+  },
+  {
+    "file": "public/padroes/icones/ui/moon.svg",
+    "bytes": 274,
+    "sha256": "266ede6ea4be559e263b48725c18181b249da68894f2e852e43455b32bc68db3"
+  },
+  {
+    "file": "public/padroes/icones/ui/panel-left.svg",
+    "bytes": 301,
+    "sha256": "869c8eaaaeebf789a99b17cdee26a7527a908ea294c07511f4209aeca20ab552"
+  },
+  {
+    "file": "public/padroes/icones/ui/paperclip.svg",
+    "bytes": 415,
+    "sha256": "45f30c0bcae66b3b24e36a39b8977b2d9771ed87d7fa29147c2c59de0b7f87e3"
+  },
+  {
+    "file": "public/padroes/icones/ui/pause.svg",
+    "bytes": 330,
+    "sha256": "4c98acd8bfc869b103d55eda804e3bd1b128db00fa9ca0192b880299214c1539"
+  },
+  {
+    "file": "public/padroes/icones/ui/pencil.svg",
+    "bytes": 394,
+    "sha256": "a82cd3f9b788dd0439e9f1be7021fd8c9bbe03c22d77aaa29fdb6838110a4ec6"
+  },
+  {
+    "file": "public/padroes/icones/ui/phone.svg",
+    "bytes": 525,
+    "sha256": "88f9adb38c9175ad573e60957abfa060ef8179336a04c466f03045d951180c59"
+  },
+  {
+    "file": "public/padroes/icones/ui/play.svg",
+    "bytes": 266,
+    "sha256": "b5ed133d1360392a8fe508ad33d1643a7a24f7ee32e22d087d2d72448e37474b"
+  },
+  {
+    "file": "public/padroes/icones/ui/plus.svg",
+    "bytes": 273,
+    "sha256": "a17ff03878ee439b4a90523046e6d769c71f64e2dbf438ae72c93c6f4b3b0491"
+  },
+  {
+    "file": "public/padroes/icones/ui/refresh-cw.svg",
+    "bytes": 411,
+    "sha256": "9bd2167b7e722e05af03f45202524abbfb0ecf5c7d1bb768f2afde2e98ad127e"
+  },
+  {
+    "file": "public/padroes/icones/ui/save.svg",
+    "bytes": 435,
+    "sha256": "e3b2d9fa7c46c3f6351eb0ae3f2d468f536614e943c7d7e984e5489a0d92333b"
+  },
+  {
+    "file": "public/padroes/icones/ui/search.svg",
+    "bytes": 290,
+    "sha256": "fe75df30e718f9cb55e989e22bf924d385fa49f62584aa81dfc8fdcd68abdcc0"
+  },
+  {
+    "file": "public/padroes/icones/ui/send.svg",
+    "bytes": 410,
+    "sha256": "595f70e413b4b2779e6541e6c5a6b2ec12c4660296a84fdbdc86b29cf99c55a7"
+  },
+  {
+    "file": "public/padroes/icones/ui/settings.svg",
+    "bytes": 841,
+    "sha256": "5598b011ecbc0d865e773d1d61bccb18d2fa86cb35806429c72736cc9c916351"
+  },
+  {
+    "file": "public/padroes/icones/ui/smile.svg",
+    "bytes": 388,
+    "sha256": "646c68a50a57f0482a5710a7baece022f4d395eedf34e12a669707cb90c0132c"
+  },
+  {
+    "file": "public/padroes/icones/ui/star.svg",
+    "bytes": 604,
+    "sha256": "8e44cda204d007cae6ce78020f1d51369330977aa53feab9a13003794b15738c"
+  },
+  {
+    "file": "public/padroes/icones/ui/sun.svg",
+    "bytes": 509,
+    "sha256": "b8c9e202ae3078eb001783b1444f27673e96bd666966c6d870d24b10de0f81c6"
+  },
+  {
+    "file": "public/padroes/icones/ui/tag.svg",
+    "bytes": 447,
+    "sha256": "9b802c959cab538392d12b5043185e051dfbb893cfbc332901fd27a2ed4f32fa"
+  },
+  {
+    "file": "public/padroes/icones/ui/trash-2.svg",
+    "bytes": 440,
+    "sha256": "27ded98584a858c80e60b435c9bf257727fc534efb9f2d1b269628b84d81e22a"
+  },
+  {
+    "file": "public/padroes/icones/ui/trending-down.svg",
+    "bytes": 319,
+    "sha256": "e74fb60270b788888432dbf5fd62f03abe4700a5bd32aa032894d31025b2be51"
+  },
+  {
+    "file": "public/padroes/icones/ui/trending-up.svg",
+    "bytes": 318,
+    "sha256": "fe656c4a2cd55c40f82d10839a277951d62cdc71b83863f20eea2bcc2851df98"
+  },
+  {
+    "file": "public/padroes/icones/ui/triangle-alert.svg",
+    "bytes": 363,
+    "sha256": "b56de0263c5b01c6852339081fdd34e54705f436a1a9556e5091cad1ab13ab31"
+  },
+  {
+    "file": "public/padroes/icones/ui/upload.svg",
+    "bytes": 363,
+    "sha256": "a94a57870f9a715b2184ae579b74a68562b6ccf2d5ea4c824ddd90d25f50cf78"
+  },
+  {
+    "file": "public/padroes/icones/ui/user-plus.svg",
+    "bytes": 402,
+    "sha256": "8a315988cc35a4922bdc8578d92735159171716a42857f37894caaf8c22b4a2c"
+  },
+  {
+    "file": "public/padroes/icones/ui/user.svg",
+    "bytes": 316,
+    "sha256": "67f5b24df89c9b642a8adda06c5cfde21ffabb08ff0c8ee9dcc457a539be7700"
+  },
+  {
+    "file": "public/padroes/icones/ui/users.svg",
+    "bytes": 400,
+    "sha256": "eba428daca96487ec990c295c0e0994aa1f5504835cb3d2a680c7d13bca3f71e"
+  },
+  {
+    "file": "public/padroes/icones/ui/volume-2.svg",
+    "bytes": 494,
+    "sha256": "74e4b80c17bc9032681108d216fd1777366e9de46b4630d19bab559af8615b0c"
+  },
+  {
+    "file": "public/padroes/icones/ui/volume-x.svg",
+    "bytes": 494,
+    "sha256": "e9aba5d04848786e482eab37133c187109bdc2b3db8c88e5411bbf66f3918361"
+  },
+  {
+    "file": "public/padroes/icones/ui/wifi-off.svg",
+    "bytes": 516,
+    "sha256": "a0de1253bec80faf68ffd4bc2ecad1cf300d81253fe2b31a7f10fa5b9c7a89a2"
+  },
+  {
+    "file": "public/padroes/icones/ui/x.svg",
+    "bytes": 277,
+    "sha256": "8fdf1eaee9c85674006d85d96a85072965ccf080794b559f8054f67807c837c2"
+  },
+  {
+    "file": "public/pessoas/adrian.png",
+    "bytes": 109059,
+    "sha256": "7eb01ac130510c322c72a66df059849b8829b50fc6dec79dd92bf2c05515e5fa"
+  },
+  {
+    "file": "public/pessoas/LEIAME.md",
+    "bytes": 870,
+    "sha256": "3dd3d1138b4ec54be83f8e55a80d42fe3ab411f95b7b396132f8cf856179f577"
+  },
+  {
+    "file": "public/pessoas/lucas.png",
+    "bytes": 96457,
+    "sha256": "f3691c7cf4fcb94569d128b67185f0d1be5a721162e49480788aab6a18164e74"
+  },
+  {
+    "file": "public/pessoas/matheus.png",
+    "bytes": 78694,
+    "sha256": "dd752502b19def218457d435e8c180432455f05556334871a73cab2d575eedcc"
+  },
+  {
+    "file": "public/pessoas/natham.png",
+    "bytes": 79228,
+    "sha256": "755faf56bb1eee3b052b09007240fb86dfd2c943604539724ab2081b58f9a646"
+  },
+  {
+    "file": "README.md",
+    "bytes": 2303,
+    "sha256": "e4f441ac03f319412335a65f921b28ad94b298a5dd9247c113953c771b9e2735"
+  },
+  {
+    "file": "scripts/build.mjs",
+    "bytes": 829,
+    "sha256": "445e5d3b5de9da3e93b9235850e38a77566f01741efe139095b29c63fec20804"
+  },
+  {
+    "file": "src/app.css",
+    "bytes": 23651,
+    "sha256": "f49096c490e4ad430ee4f0517edc1bbcdf555f8fdf1c6acab20198fd3bfa78cf"
+  },
+  {
+    "file": "src/Dashboard.jsx",
+    "bytes": 5854,
+    "sha256": "47e3ec042553ea10631ef05b8c56e6305bb3fd52821922b1b398b8e44392b3b2"
+  },
+  {
+    "file": "src/DataTable.jsx",
+    "bytes": 2273,
+    "sha256": "a09847102f504f5b6163d474f64587a10a4d3f72ddaf8bbadf4875f06277c03d"
+  },
+  {
+    "file": "src/formatters.js",
+    "bytes": 892,
+    "sha256": "0baccff83cd3c5e2e4fae6e3a0c8606b996adb60ae063d16a0f76810a7b981e7"
+  },
+  {
+    "file": "src/main.jsx",
+    "bytes": 37990,
+    "sha256": "fd788ddabe568f34c9e338461c8f3dc9b1c56ac09ba5e78b5622d307ce4759e4"
+  },
+  {
+    "file": "src/pacote-layout.css",
+    "bytes": 31432,
+    "sha256": "644d837337793850379d6538132b234d5a61e653c7e8f6b72175301abca5b03f"
+  },
+  {
+    "file": "src/Recovery.jsx",
+    "bytes": 2004,
+    "sha256": "806a0c02d1c3d6520ab75827ff3908cb0333f3120fc94bce5d668d1b7ea620ec"
+  },
+  {
+    "file": "src/Shell.jsx",
+    "bytes": 6433,
+    "sha256": "46aedddf52b80b237f97790450e92a9a3ef81d55c20c8fa617b2e54a249d9dbb"
+  },
+  {
+    "file": "src/smartchat-tokens.css",
+    "bytes": 4111,
+    "sha256": "33d1348c191c14f9d2036c8fffa33461c9643eaed8a2d6046859146cf54eafdc"
+  },
+  {
+    "file": "src/ui.jsx",
+    "bytes": 7616,
+    "sha256": "b1eb33ccef1514d080da7296ec9a83baa07744f2355313d267591b4029e0a212"
+  },
+  {
+    "file": "src/VisualLibrary.jsx",
+    "bytes": 4258,
+    "sha256": "4379ec8b13657cc8e6e8c8175ef0ff32d7e087828707aa3e4db8cb4bcea5b097"
+  },
+  {
+    "file": "vendor/tarefas/components/pastas/arte.ts",
+    "bytes": 9710,
+    "sha256": "5d379d6fe69f9c3fb14cb2a2f53c7cb3354d20cb9349d49f40770bdbea54cd18"
+  },
+  {
+    "file": "vendor/tarefas/components/pastas/ArteCanvas.tsx",
+    "bytes": 2859,
+    "sha256": "fc9aadaf8faf815a0e0d36f2c12fe1ade5d2b625b52e537002f5bee5f5a25c06"
+  },
+  {
+    "file": "vendor/tarefas/components/pastas/PastaDeVidro.tsx",
+    "bytes": 11891,
+    "sha256": "0e6dc0217129e94ca45cbc98862fb2400e5c4e5a565b0d7429a0bcc2b6158d46"
+  },
+  {
+    "file": "vendor/tarefas/components/pastas/pastas.css",
+    "bytes": 32544,
+    "sha256": "a6ed6fcd8f1b8fb581aa9e81bf75202ed1425483e2ce6e0821bcd98bc7b59a30"
+  },
+  {
+    "file": "vendor/tarefas/lib/cores-empresa.ts",
+    "bytes": 1963,
+    "sha256": "950cbad1c18a1db8a2f20cd0cb64c34f23a9e5384a45a2b6e104743f55118c18"
+  },
+  {
+    "file": "vercel.json",
+    "bytes": 1360,
+    "sha256": "73862822275bbab62eecd6f7881cb3183eca3afb4ceb5ec1376a43f7bf1a106e"
+  }
+]

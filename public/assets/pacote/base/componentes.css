@@ -1,0 +1,532 @@
+/* CRM padrão · base/componentes.css · 30/10/2026 · Dono: Alicerce
+   Peças comuns no desenho Névoa. As abas USAM estas classes; ninguém redesenha botão, seleção, campo, card ou janela.
+   Precisa de variação? maestri ask "Maestro" "...". Toda cor vem de base/tokens.css; a cor que troca com a empresa é o --acento. */
+
+/* ===== Página ===== */
+*, *::before, *::after { box-sizing: border-box; }
+html { background: var(--fundo); scrollbar-color: var(--borda) transparent; accent-color: var(--acento); caret-color: var(--acento); }
+body { margin: 0; background: var(--fundo); color: var(--texto); font-family: var(--fonte); font-size: var(--app-t-texto); line-height: var(--texto-entrelinha); -webkit-font-smoothing: antialiased; }
+::selection { background: var(--acento); color: var(--no-acento); }
+h1, h2, h3 { margin: 0; font-family: var(--fonte); font-weight: var(--titulo-peso); letter-spacing: var(--titulo-espaco); line-height: var(--titulo-entrelinha); }
+h1 { font-size: var(--app-t-titulo); }
+h2 { font-size: var(--app-t-secao); }
+p { margin: 0; }
+button, input, select, textarea { font: inherit; color: inherit; }
+[hidden] { display: none !important; }   /* hidden vence o display da peça (crmTroca esconde a tela velha com hidden) */
+
+/* Foco: um contorno só, 1px no acento, 1px para fora, e um halo leve (Névoa, itens 72 e 77) */
+:focus-visible { outline: 1px solid var(--cor-foco, var(--acento-texto)); outline-offset: 1px; }
+:where(:focus-visible) { box-shadow: 0 0 0 4px var(--acento-claro); }
+
+/* ===== Botões (.btn principal, .btn-2 vidro, .btn-claro sobre o acento, .lnk) =====
+   Variações: .btn-perigo, .btn-fantasma, .btn-icone (só ícone, quadrado), [aria-busy="true"] carregando, :disabled.
+   Ícone dentro: <svg class="ico"> (16px, traço). */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s-8); flex: none;
+  height: var(--app-controle); padding: 0 var(--s-16); border: 1px solid transparent; border-radius: var(--raio-b);
+  font: 500 var(--t-14) / 1 var(--fonte); text-decoration: none; white-space: nowrap; cursor: pointer;
+  background: var(--acento); color: var(--no-acento); box-shadow: var(--acento-sombra-btn);
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color var(--dur-rapida) var(--curva), border-color var(--dur-rapida) var(--curva),
+    box-shadow var(--dur-rapida) var(--curva), transform var(--dur-rapida) var(--curva), color var(--dur-rapida) var(--curva);
+}
+.btn:hover { background: var(--acento-hover); }
+.btn:active { transform: scale(0.97); }
+.btn-2 { background: var(--vidro); border-color: var(--vidro-linha); color: var(--texto); box-shadow: var(--sombra); }
+.btn-2:hover { background: var(--sup); border-color: var(--sup); }
+/* fundo escurece o acento em vez de clarear: branco 0,14 por cima dava 4,39 na Névoa (Lupa 1.A); preto 0,12 dá 6,87 Névoa e 8,02 Beec */
+.btn-claro { background: var(--veu, rgb(0 0 0 / 0.12)); border-color: var(--veu-borda, rgb(255 255 255 / 0.35)); color: var(--no-acento); box-shadow: none; }
+.btn-claro:hover { background: var(--veu-hover, rgb(0 0 0 / 0.2)); }
+.btn-perigo { background: var(--etapa-nao-compareceu); color: var(--no-etapa); box-shadow: none; }
+.btn-perigo:hover { background: var(--perigo-hover); }
+.btn-fantasma { background: transparent; color: var(--texto); box-shadow: none; }
+.btn-fantasma:hover { background: var(--realce); }
+.btn-icone { width: var(--app-controle); padding: 0; }
+.btn-p { height: 32px; padding: 0 var(--s-12); font-size: var(--t-12); }
+.btn-p.btn-icone { width: 32px; padding: 0; }
+.btn:disabled, .btn[aria-disabled="true"] { opacity: 0.45; cursor: not-allowed; transform: none; }
+.btn[aria-busy="true"] { position: relative; color: transparent; pointer-events: none; }
+.btn[aria-busy="true"]::after {
+  content: ""; position: absolute; width: 16px; height: 16px; border-radius: 50%;
+  border: 2px solid currentColor; border-color: var(--no-acento) var(--no-acento) transparent transparent;
+  animation: girar 700ms linear infinite;
+}
+.btn-2[aria-busy="true"]::after, .btn-fantasma[aria-busy="true"]::after { border-color: var(--texto) var(--texto) transparent transparent; }
+@keyframes girar { to { transform: rotate(360deg); } }
+
+/* .lnk (R2, 2.6): cara de botão fantasma na cor de link. Link dentro de frase corrida: .lnk-texto (sublinha) */
+.lnk {
+  display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 10px; border: 0; border-radius: var(--raio-b);
+  font: 500 var(--t-14) / 1 var(--fonte); color: var(--acento-texto); background: none; text-decoration: none; white-space: nowrap; cursor: pointer;
+  transition: background-color var(--dur-rapida) var(--curva), transform var(--dur-rapida) var(--curva);
+}
+.lnk:hover { background: var(--acento-claro); }
+.lnk:active { transform: scale(0.97); }
+.lnk-texto { font-weight: 500; color: var(--acento-texto); text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); text-underline-offset: 3px; }
+.lnk-texto:hover { text-decoration-color: currentColor; }
+/* ícone animado REAL do animateicons (icones/animateicons.js troca svg.ico por span.ico-animado): vale tudo que vale para .ico */
+.ico-animado { display: inline-flex; align-items: center; justify-content: center; flex: none; color: inherit; line-height: 0; }
+.ico-animado > div { display: inline-flex; }
+.ico { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ===== Seleção: a da Névoa (ui/selecao.css), igual, com --azul trocado por --acento. Toda lista que abre usa ESTA pele e
+   ESTE movimento (popover, sobe 4px e cresce de 0,96). Data, filtro, etapa, responsável, menu "...": o mesmo.
+   HTML: <button class="selecao-botao" popovertarget="x">...</button><div id="x" popover class="selecao-pop"><div class="selecao-lista">
+   <button class="selecao-opcao" aria-pressed="true"><span class="selecao-marca"></span>...</button></div></div>
+   Ancoragem: no botão style="anchor-name:--x" e no pop style="position-anchor:--x" (ou o JS da aba posiciona). */
+.selecao-botao {
+  display: inline-flex; align-items: center; gap: var(--s-8); flex: none;
+  height: var(--app-controle); padding: 0 var(--s-12) 0 14px;
+  font: 500 var(--t-14) / 1 var(--fonte); color: var(--texto); white-space: nowrap;
+  background: var(--vidro); border: 1px solid var(--linha); border-radius: var(--raio-b); box-shadow: 0 1px 2px rgb(0 0 0 / 0.06), 0 4px 10px -6px rgb(0 0 0 / 0.14); cursor: pointer;
+  transition: background-color var(--dur-rapida) var(--curva), border-color var(--dur-rapida) var(--curva);
+}
+.selecao-botao:hover, .selecao-botao:has(+ .selecao-pop:popover-open) { background: var(--sup); }
+.selecao-seta {
+  width: 16px; height: 16px; flex: none; fill: none; stroke: var(--fraco); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+  transition: transform var(--dur) var(--curva);
+}
+.selecao-botao:has(+ .selecao-pop:popover-open) .selecao-seta { transform: rotate(180deg); }
+.selecao-rotulo-p { font-size: var(--t-12); font-weight: 500; color: var(--fraco); }
+.selecao-chips { position: relative; display: flex; flex: 1 1 0; gap: var(--s-4); min-width: 0; overflow: hidden; }
+.selecao-chip { display: flex; flex: none; max-width: 100%; min-width: 0; }
+.selecao-mais { flex: none; font-size: var(--t-12); font-weight: 600; color: var(--fraco); }
+.selecao-antes { display: inline-flex; align-items: center; flex: none; }
+.selecao-escolha { max-width: 16ch; overflow: hidden; text-overflow: ellipsis; font-weight: 600; color: var(--texto); }
+.selecao-escolha-vazio { font-weight: 500; color: var(--fraco); }
+.selecao-contador {
+  display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 6px;
+  font: 600 var(--t-12) / 1 var(--fonte); font-variant-numeric: tabular-nums; background: var(--acento); color: var(--no-acento);
+}
+.selecao-pop {
+  inset: auto; margin: 6px 0; padding: 0; border: 0; background: transparent; overflow: visible; color: inherit;
+  position-area: bottom span-right; position-try-fallbacks: flip-block, flip-inline;
+  min-width: max(200px, anchor-size(width)); width: max-content; max-width: min(360px, calc(100vw - 24px));
+  /* R3 (2.1): a lista se DESENROLA de cima para baixo a partir do botão (recorte que desce), em toda lista que abre.
+     O recorte final passa da caixa para não cortar a sombra */
+  clip-path: inset(-24px -24px -48px -24px);
+  transition: opacity var(--dur-rapida) var(--curva), clip-path var(--mov-lista) var(--curva), translate var(--mov-lista) var(--curva);
+}
+@starting-style { .selecao-pop:popover-open { opacity: 0.4; clip-path: inset(-24px -24px 100% -24px); translate: 0 -2px; } }
+.selecao-lista {
+  display: flex; flex-direction: column; gap: 2px; padding: 6px;
+  max-height: min(400px, 60dvh); overflow-y: auto; scrollbar-color: var(--borda) transparent;
+  background: var(--vidro-lista); border: 1px solid var(--vidro-linha); border-radius: var(--raio-c); box-shadow: var(--sombra-lista);
+  -webkit-backdrop-filter: var(--vidro-desfoque); backdrop-filter: var(--vidro-desfoque);
+  color: var(--texto);
+}
+/* lista aberta dentro de janela (Novo lead): vidro quase sólido, os campos de trás não aparecem por baixo das opções (R3, Botão) */
+:is(dialog, .janela) .selecao-lista { background: var(--sup); -webkit-backdrop-filter: none; backdrop-filter: none; }
+.selecao-opcao {
+  display: flex; align-items: center; gap: var(--s-12); min-height: 36px; padding: 0 10px;
+  font: 400 var(--t-14) / 1.2 var(--fonte); color: var(--texto); text-align: left;
+  background: none; border: 0; border-radius: calc(var(--raio-c) - 6px); cursor: pointer;
+  transition: background-color var(--dur-rapida) var(--curva);
+}
+.selecao-opcao[data-separar] { margin-top: 7px; position: relative; }
+.selecao-opcao[data-separar]::before { content: ""; position: absolute; left: 4px; right: 4px; top: -4px; height: 1px; background: var(--linha); }
+.selecao-opcao:hover { background: var(--realce); }
+.selecao-opcao:focus-visible { outline-offset: -3px; }
+.selecao-opcao[aria-pressed="true"] { font-weight: 600; }
+.selecao-opcao-rotulo { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.selecao-perigo { color: var(--perigo); }
+.selecao-todos { position: relative; margin-bottom: 7px; }
+.selecao-todos::after { content: ""; position: absolute; left: 10px; right: 10px; bottom: -5px; height: 1px; background: var(--linha); }
+.selecao-acao { position: relative; margin-top: 7px; color: var(--acento-texto); font-weight: 600; }
+.selecao-acao::before { content: ""; position: absolute; left: 10px; right: 10px; top: -5px; height: 1px; background: var(--linha); }
+.selecao-marca {
+  display: grid; place-items: center; width: 18px; height: 18px; flex: none;
+  border: 1.5px solid var(--borda-campo); border-radius: 5px; background: var(--sup);
+}
+.selecao-opcao[aria-pressed="true"] .selecao-marca { background: var(--acento); border-color: var(--acento); }
+.selecao-opcao[aria-pressed="true"] .selecao-marca::after {
+  content: ""; width: 9px; height: 4.5px; margin-top: -2px;
+  border: solid var(--no-acento); border-width: 0 0 2px 2px; transform: rotate(-45deg);
+}
+
+/* ===== Campo: .campo (rótulo + controle + ajuda/erro). Controle: .campo-input (input, textarea, select).
+   Obrigatório: <span class="campo-obrigatorio">*</span> no rótulo. Erro: aria-invalid="true" + .campo-erro. */
+.campo { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.campo-rotulo { font-size: var(--app-t-rotulo); font-weight: 600; color: var(--texto); }
+.campo-obrigatorio { color: var(--perigo); margin-left: 2px; }
+.campo-input {
+  width: 100%; min-height: var(--app-controle); padding: 0 var(--s-12);
+  font: 400 var(--t-14) / 1.4 var(--fonte); color: var(--texto);
+  background: var(--sup); border: 1px solid var(--borda-campo); border-radius: var(--raio-b);
+  transition: border-color var(--dur-rapida) var(--curva), box-shadow var(--dur-rapida) var(--curva);
+}
+textarea.campo-input { min-height: 96px; padding: 10px var(--s-12); resize: vertical; }
+.campo-input::placeholder { color: var(--fraco); }
+.campo-input:hover { border-color: var(--fraco); }
+.campo-input:focus-visible { outline: 1px solid var(--acento-texto); outline-offset: -1px; border-color: var(--acento-texto); box-shadow: 0 0 0 3px var(--acento-claro); }
+.campo-input[aria-invalid="true"] { border-color: var(--perigo); }
+.campo-input[aria-invalid="true"]:focus-visible { outline-color: var(--perigo); box-shadow: 0 0 0 3px var(--perigo-fundo); }
+.campo-input:disabled { background: var(--sup-2); color: var(--fraco); cursor: not-allowed; }
+.campo-ajuda { font-size: var(--app-t-rotulo); color: var(--fraco); }
+.campo-erro { font-size: var(--app-t-rotulo); font-weight: 500; color: var(--perigo); }
+/* campo com ícone (busca, R$): <div class="campo-com-icone"><svg class="ico">..</svg><input class="campo-input"></div> */
+.campo-com-icone { position: relative; display: flex; align-items: center; }
+.campo-com-icone > .ico, .campo-com-icone > .ico-animado, .campo-com-icone > .campo-prefixo { position: absolute; left: var(--s-12); color: var(--fraco); pointer-events: none; }
+.campo-com-icone > .campo-input { padding-left: 36px; }
+
+/* ===== Card e bloco de destaque ===== */
+.card { padding: var(--s-16); border-radius: var(--raio-c); background: var(--sup); color: var(--texto); box-shadow: var(--sombra); }
+.card-titulo { font-size: var(--t-16); font-weight: 600; letter-spacing: -0.01em; }
+.card-fraco { color: var(--fraco); font-size: var(--app-t-rotulo); }
+.bloco-destaque {
+  --cor-foco: var(--no-acento);
+  padding: var(--s-16); border-radius: var(--raio-bloco);
+  background: var(--acento); color: var(--no-acento); box-shadow: var(--acento-sombra);
+}
+.bloco-destaque :where(:focus-visible) { box-shadow: 0 0 0 4px var(--veu-foco, rgb(255 255 255 / 0.3)); }
+.bloco-destaque ::selection { background: var(--no-acento); color: var(--acento); }
+.bloco-numero { margin: var(--s-4) 0; font-size: var(--t-49); font-weight: var(--numero-peso); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: var(--numero-variante); }
+/* número em destaque fora do bloco (KPI, receita, nota, contagem): .numero; o tamanho é da peça, o peso é sempre este */
+.numero { font-weight: var(--numero-peso); font-variant-numeric: var(--numero-variante); letter-spacing: -0.02em; }
+.bloco-fraco { color: var(--no-acento-fraco); }
+
+/* ===== Etiqueta de etapa (cor cheia, letra branca): <span class="etiqueta" data-etapa="ganho">Ganho</span>
+   Etapas: novo, qualificacao, reuniao, nao-compareceu, negociacao, follow, ganho, perdido. Cor livre: style="--etq: var(--etiqueta-3); --etq-texto: var(--etiqueta-3-texto)" */
+.etiqueta {
+  display: inline-flex; align-items: center; gap: var(--s-4); max-width: 100%; height: 22px; padding: 0 var(--s-8);
+  border-radius: 6px; background: var(--etq, var(--etapa-novo)); color: var(--etq-texto, var(--no-etapa));
+  font: 600 var(--t-12) / 1 var(--fonte); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.etiqueta[data-etapa="novo"] { --etq: var(--etapa-novo); }
+.etiqueta[data-etapa="qualificacao"] { --etq: var(--etapa-qualificacao); }
+.etiqueta[data-etapa="reuniao"] { --etq: var(--etapa-reuniao); }
+.etiqueta[data-etapa="nao-compareceu"] { --etq: var(--etapa-nao-compareceu); }
+.etiqueta[data-etapa="negociacao"] { --etq: var(--etapa-negociacao); }
+.etiqueta[data-etapa="follow"] { --etq: var(--etapa-follow); }
+.etiqueta[data-etapa="ganho"] { --etq: var(--etapa-ganho); }
+.etiqueta[data-etapa="perdido"] { --etq: var(--etapa-perdido); }
+
+/* ===== Selo (fundo leve + texto): .selo + .selo-sucesso | -atencao | -perigo | -info | -neutro | -acento | -bronze | -prata | -ouro
+   Variação: <span class="selo selo-sobe">▲ 154%</span> / <span class="selo selo-desce">▼ 12%</span> */
+.selo {
+  display: inline-flex; align-items: center; gap: var(--s-4); height: 22px; padding: 0 var(--s-8); border-radius: 999px;
+  font: 600 var(--t-12) / 1 var(--fonte); font-variant-numeric: tabular-nums; white-space: nowrap;
+  background: var(--sup-2); color: var(--fraco);
+}
+.selo-sucesso, .selo-sobe { background: var(--sucesso-fundo); color: var(--sucesso); }
+.selo-atencao { background: var(--atencao-fundo); color: var(--atencao); }
+.selo-perigo, .selo-desce { background: var(--perigo-fundo); color: var(--perigo); }
+.selo-info { background: var(--info-fundo); color: var(--info); }
+.selo-acento { background: var(--acento-claro); color: var(--acento-texto); }
+/* nomes antigos: apontam para as faixas novas (use .selo-faixa[data-faixa]) */
+.selo-bronze { background: var(--faixa-bronze); color: var(--faixa-bronze-texto); }
+.selo-prata { background: var(--faixa-prata); color: var(--faixa-prata-texto); }
+.selo-ouro { background: var(--faixa-ouro); color: var(--faixa-ouro-texto); }
+
+/* ===== Avatar: <span class="avatar avatar-m"><img src="../icones/avatares/homem.svg" alt=""></span> ou com iniciais <span class="avatar">DC</span> */
+.avatar {
+  display: inline-grid; flex: none; place-items: center; overflow: hidden; width: var(--avatar-m); height: var(--avatar-m);
+  border-radius: 50%; background: var(--acento-claro); color: var(--acento-texto);
+  font: 600 var(--t-12) / 1 var(--fonte); vertical-align: middle; user-select: none;
+}
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+.avatar-p { width: var(--avatar-p); height: var(--avatar-p); font-size: 10px; }
+.avatar-g { width: var(--avatar-g); height: var(--avatar-g); font-size: var(--t-14); }
+
+/* ===== Janela: <dialog class="janela"> (central) ou <dialog class="janela janela-lateral"> (painel à direita).
+   Abrir: el.showModal(); fechar: el.close() (Esc fecha sozinho). Véu escurecido = ::backdrop. Mesmo movimento da seleção
+   (sobe 4px e cresce de 0,96; a lateral entra 16px da direita), sem 3D. Partes: .janela-topo, .janela-corpo, .janela-pe. */
+.janela {
+  width: min(560px, calc(100vw - 24px)); max-height: calc(100dvh - 48px); padding: 0; margin: auto;
+  border: 1px solid var(--vidro-linha); border-radius: var(--raio-v); background: var(--sup); color: var(--texto);
+  box-shadow: var(--sombra-janela); overflow: hidden;
+  display: none; flex-direction: column;
+  opacity: 1; transform: none; transform-origin: center;
+  transition: opacity var(--dur-rapida) var(--curva), transform var(--dur) var(--curva),
+    overlay var(--dur) allow-discrete, display var(--dur) allow-discrete;
+}
+.janela[open] { display: flex; }
+.janela:not([open]) { opacity: 0; transform: translateY(-4px) scale(0.96); }
+@starting-style { .janela[open] { opacity: 0; transform: translateY(-4px) scale(0.96); } }
+.janela::backdrop {
+  background: var(--janela-veu); opacity: 1;
+  transition: opacity var(--dur) var(--curva), overlay var(--dur) allow-discrete, display var(--dur) allow-discrete;
+}
+.janela:not([open])::backdrop { opacity: 0; }
+@starting-style { .janela[open]::backdrop { opacity: 0; } }
+.janela-lateral {
+  width: min(480px, 100vw); height: 100dvh; max-height: 100dvh; margin: 0 0 0 auto;
+  border-radius: var(--raio-v) 0 0 var(--raio-v); border-right: 0;
+}
+.janela-lateral:not([open]) { transform: translateX(16px); }
+@starting-style { .janela-lateral[open] { opacity: 0; transform: translateX(16px); } }
+.janela-topo { display: flex; align-items: center; gap: var(--s-12); padding: var(--s-16) var(--s-16) var(--s-12) var(--s-24); border-bottom: 1px solid var(--linha); }
+.janela-topo h2 { flex: 1; min-width: 0; font-size: var(--t-20); }
+.janela-corpo { flex: 1; min-height: 0; overflow-y: auto; padding: var(--s-24); }
+.janela-pe { display: flex; justify-content: flex-end; gap: var(--s-8); padding: var(--s-12) var(--s-24) var(--s-16); border-top: 1px solid var(--linha); }
+
+/* ===== Marcar, opção e interruptor (promovidos da aba 3, Campo, 30/10). Caixa: <label class="marcar"><input type="checkbox"><span class="marcar-caixa"></span>Texto</label>
+   Opção: o mesmo com type="radio" e .marcar-bola. Interruptor: <label class="interruptor"><input type="checkbox" role="switch"><span class="interruptor-trilho"></span>Texto</label>. Grupo: <fieldset class="grupo-opcoes"><legend>. */
+.grupo-opcoes { display: grid; gap: var(--s-12); border: 0; padding: 0; margin: 0; min-width: 0; }
+.grupo-opcoes legend { padding: 0; margin-bottom: var(--s-8); }
+.marcar, .interruptor { position: relative; display: flex; align-items: center; gap: var(--s-12); min-height: 28px; font-size: var(--t-14); color: var(--texto); cursor: pointer; }
+.marcar input, .interruptor input { position: absolute; opacity: 0; width: 20px; height: 20px; margin: 0; cursor: pointer; }
+.marcar-caixa, .marcar-bola { display: grid; place-items: center; width: 20px; height: 20px; flex: none; background: var(--sup); border: 1.5px solid var(--borda-campo); transition: background-color var(--dur-rapida) var(--curva), border-color var(--dur-rapida) var(--curva); }
+.marcar-caixa { border-radius: 6px; }
+.marcar-bola { border-radius: 50%; }
+.marcar input:checked + .marcar-caixa { background: var(--acento); border-color: var(--acento); }
+.marcar input:checked + .marcar-caixa::after { content: ""; width: 10px; height: 5px; margin-top: -2px; border: solid var(--no-acento); border-width: 0 0 2px 2px; transform: rotate(-45deg); }
+.marcar input:checked + .marcar-bola { border-color: var(--acento); }
+.marcar input:checked + .marcar-bola::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--acento); }
+.marcar input:focus-visible + .marcar-caixa, .marcar input:focus-visible + .marcar-bola, .interruptor input:focus-visible + .interruptor-trilho { outline: 1px solid var(--acento-texto); outline-offset: 2px; box-shadow: 0 0 0 4px var(--acento-claro); }
+.marcar:has(input:disabled), .interruptor:has(input:disabled) { color: var(--fraco); cursor: not-allowed; }
+.marcar input:disabled, .interruptor input:disabled { cursor: not-allowed; }
+.marcar input:disabled + .marcar-caixa, .marcar input:disabled + .marcar-bola { background: var(--sup-2); }
+.interruptor-trilho { position: relative; width: 40px; height: 24px; flex: none; border-radius: 999px; background: var(--borda-campo); transition: background-color var(--dur) var(--curva); }
+.interruptor-trilho::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: var(--sup); box-shadow: 0 1px 2px rgb(0 0 0 / 0.3); transition: transform var(--dur) var(--curva); }
+.interruptor input:checked + .interruptor-trilho { background: var(--acento); }
+.interruptor input:checked + .interruptor-trilho::after { transform: translateX(16px); background: var(--no-acento); }
+.interruptor input:disabled + .interruptor-trilho { opacity: 0.5; }
+
+/* ===== Calendário do período e da data (promovido da aba 3, Campo). Mesmo desenho do campo-data da Névoa, com o acento.
+   Painel: <div popover class="selecao-pop cal-pop"><div class="selecao-lista cal-painel">. Dia: .cal-dia com [data-fora] [data-hoje] [data-entre] [aria-pressed]. */
+.selecao-pop.cal-pop { min-width: 0; width: auto; max-width: calc(100vw - 24px); position-try-fallbacks: flip-block, flip-inline, flip-block flip-inline; }   /* sem o teto de 360: o calendário com atalhos cabia cortado (Campo, R2) */
+.selecao-lista.cal-painel { gap: var(--s-4); padding: var(--s-8); max-height: none; overflow: visible; }
+.cal-topo { display: flex; align-items: center; gap: 2px; padding: 0 0 var(--s-4) 10px; }
+.cal-mes { flex: 1; font: 600 var(--t-14) / 1 var(--fonte); color: var(--texto); }
+.cal-seta { display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 0; border-radius: calc(var(--raio-c) - 6px); background: none; color: var(--fraco); cursor: pointer; }
+.cal-seta:hover { background: var(--realce); color: var(--texto); }
+.cal-grade { display: grid; grid-template-columns: repeat(7, 36px); gap: 2px 0; }
+.cal-semana { display: grid; place-items: center; height: 24px; font: 600 var(--t-12) / 1 var(--fonte); color: var(--fraco); }
+.cal-dia { display: grid; place-items: center; height: 36px; padding: 0; border: 0; border-radius: calc(var(--raio-c) - 6px); background: none; color: var(--texto); font: 400 var(--t-14) / 1 var(--fonte); font-variant-numeric: tabular-nums; cursor: pointer; transition: background-color var(--dur-rapida) var(--curva); }
+.cal-dia:hover { background: var(--realce); }
+.cal-dia[data-fora] { color: var(--fraco); }
+.cal-dia[data-hoje] { color: var(--acento-texto); font-weight: 600; box-shadow: inset 0 0 0 1.5px var(--acento-texto); }
+.cal-dia[data-entre] { background: var(--acento-claro); border-radius: 0; color: var(--acento-texto); }
+.cal-dia[aria-pressed="true"] { background: var(--acento); color: var(--no-acento); font-weight: 600; box-shadow: none; }
+.cal-dia[aria-pressed="true"]:hover { background: var(--acento-hover); }
+.cal-pe { display: flex; justify-content: flex-end; gap: var(--s-4); margin-top: var(--s-4); padding-top: var(--s-8); border-top: 1px solid var(--linha); }
+.cal-duplo { display: flex; }
+.cal-atalhos { display: flex; flex-direction: column; gap: 2px; min-width: 160px; padding-right: var(--s-8); margin-right: var(--s-8); border-right: 1px solid var(--linha); }
+.cal-horas { display: flex; gap: var(--s-8); }
+.cal-coluna { display: flex; flex-direction: column; gap: 2px; width: 64px; max-height: 220px; overflow-y: auto; padding: 0 2px; scrollbar-color: var(--borda) transparent; }
+.cal-coluna .selecao-opcao { justify-content: center; font-variant-numeric: tabular-nums; }
+.cal-coluna .selecao-opcao[aria-pressed="true"] { background: var(--acento); color: var(--no-acento); }
+@media (max-width: 520px) {
+  .cal-duplo { flex-direction: column; }
+  .cal-atalhos { flex-direction: row; flex-wrap: wrap; min-width: 0; border-right: 0; border-bottom: 1px solid var(--linha); padding: 0 0 var(--s-8); margin: 0 0 var(--s-8); }
+  .cal-grade { grid-template-columns: repeat(7, 34px); }
+}
+
+
+/* ===== Segmentado e contador (promovidos da aba 2, Botão, 30/10). Segmentado: <div class="seg" role="group"><button aria-pressed="true">Mês</button>...</div>
+   Contador: <div class="contador"><span class="contador-rotulo">Contatos: <b>1/10</b></span><button class="contador-btn" aria-label="Menos">..</button><button class="contador-btn" aria-label="Mais">..</button></div> */
+/* Grupo segmentado: vidro como o .btn-2; o escolhido vira o acento cheio. 40px no total (3px + botão de 32px + 3px + borda) */
+.seg {
+  display: inline-flex; gap: 2px; padding: 3px; max-width: 100%; overflow-x: auto;
+  background: var(--vidro); border: 1px solid var(--vidro-linha); border-radius: var(--raio-b); box-shadow: var(--sombra);
+}
+.seg > button {
+  display: inline-flex; align-items: center; gap: var(--s-8); height: 32px; padding: 0 var(--s-12); border: 0; border-radius: 7px;
+  background: none; color: var(--texto); font: 500 var(--t-14) / 1 var(--fonte); white-space: nowrap; cursor: pointer;
+  transition: background-color var(--dur-rapida) var(--curva), color var(--dur-rapida) var(--curva);
+}
+.seg > button:hover { background: var(--realce); }
+.seg > button[aria-pressed="true"] { background: var(--acento); color: var(--no-acento); font-weight: 600; }
+.seg > button[aria-pressed="true"]:hover { background: var(--acento-hover); }
+.seg > button:focus-visible { outline-offset: -2px; }
+.seg .selo { height: 18px; padding: 0 6px; }
+.selo-neutro-seg { background: var(--sup-2); color: var(--fraco); }
+.seg > button[aria-pressed="true"] .selo-neutro-seg { background: var(--veu, rgb(0 0 0 / 0.22)); color: var(--no-acento); }
+
+/* Contador − / + (Contatos: 1/10) */
+.contador {
+  display: inline-flex; align-items: center; gap: var(--s-8); height: var(--app-controle); padding: 0 var(--s-8) 0 var(--s-12);
+  background: var(--sup-2); border: 1px solid var(--borda-campo); border-radius: var(--raio-b);
+  font-size: var(--t-14); font-variant-numeric: tabular-nums;
+}
+.contador-rotulo { margin-right: var(--s-8); color: var(--fraco); }
+.contador-rotulo b { color: var(--texto); font-weight: 600; }
+.contador-btn {
+  display: grid; place-items: center; width: 26px; height: 26px; padding: 0; border: 1px solid var(--borda-campo); border-radius: 6px;
+  background: var(--sup); color: var(--texto); cursor: pointer;
+  transition: background-color var(--dur-rapida) var(--curva), transform var(--dur-rapida) var(--curva);
+}
+.contador-btn:hover { background: var(--realce); }
+.contador-btn:active { transform: scale(0.94); }
+.contador-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; background: var(--sup-2); }
+
+
+/* ===== Aviso (toast) e dica (promovidos da aba 7, Botão, 30/10). Toast: <div class="toast" data-tipo="sucesso|erro|atencao" role="status"><svg class="ico">..</svg><div class="toast-t"><b>Título</b><small>Detalhe</small></div><a class="lnk">Desfazer</a></div>
+   Fixo no canto: dentro de <div class="toast-area">; para sair, ponha .saindo e remova depois de --dur. Dica: <span class="dica" data-dica="Copiar telefone"><button ...></span> (aparece no mouse e no foco). */
+.toast-area { position: fixed; z-index: 100; right: var(--s-16); bottom: var(--s-16); display: grid; gap: var(--s-8); width: min(92vw, 380px); pointer-events: none; }
+.toast-area .toast { pointer-events: auto; }
+.toast {
+  --tc: var(--info); display: flex; align-items: center; gap: var(--s-12); padding: var(--s-12) var(--s-16);
+  background: var(--sup); color: var(--texto); border-radius: var(--raio-c); box-shadow: var(--sombra-alta);
+  transition: opacity var(--dur-rapida) var(--curva), transform var(--dur) var(--curva);
+}
+.toast[data-tipo="sucesso"] { --tc: var(--sucesso); }
+.toast[data-tipo="erro"] { --tc: var(--perigo); }
+.toast[data-tipo="atencao"] { --tc: var(--atencao); }
+.toast > .ico { width: 20px; height: 20px; color: var(--tc); }
+.toast > .ico-animado { width: 20px !important; height: 20px !important; color: var(--tc); }   /* o script põe 16px no style */
+.toast > .ico-animado svg { width: 20px; height: 20px; }
+.toast-t { display: grid; gap: 2px; flex: 1; min-width: 0; }
+.toast-t b { font-weight: 600; }
+.toast-t small { font-size: var(--t-12); color: var(--fraco); }
+.toast .lnk { flex: none; font-size: var(--t-14); }
+.toast-area .toast { opacity: 1; transform: none; }
+@starting-style { .toast-area .toast { opacity: 0; transform: translateY(8px) scale(0.96); } }
+.toast-area .toast.saindo { opacity: 0; transform: translateY(4px) scale(0.98); }
+
+.dica { position: relative; display: inline-flex; }
+.dica::after {
+  content: attr(data-dica); position: absolute; z-index: 60; left: 50%; bottom: calc(100% + 8px); translate: -50% 0;
+  padding: 6px 10px; border-radius: 8px; background: var(--texto); color: var(--sup);
+  font: 500 var(--t-12) / 1.2 var(--fonte); white-space: nowrap; pointer-events: none;
+  opacity: 0; transform: translateY(4px) scale(0.96); transform-origin: bottom center;
+  transition: opacity var(--dur-rapida) var(--curva), transform var(--dur) var(--curva);
+}
+.dica:hover::after, .dica:focus-within::after, .dica-fixa::after { opacity: 1; transform: none; }
+.dica.sem-dica::after { opacity: 0; }
+
+/* .btn-2 sobre superfície branca (card, janela): o vidro some no branco, então ganha fundo e borda de campo (aba 7) */
+.card .btn-2, .janela .btn-2 { background: var(--sup-2); border-color: var(--borda-campo); box-shadow: none; }
+.card .btn-2:hover, .janela .btn-2:hover { background: var(--realce); }
+.card .seg, .janela .seg { background: var(--sup-2); border-color: var(--borda-campo); box-shadow: none; }
+
+/* ===== Movimento (vídeo "Glassy Dashboard V2", 30/10). Comportamento em base/movimento.js; tempos em tokens (5). Só 2D, sem inclinar.
+   data-entra: filhos em cascata (troca A, como o vídeo, é a única) · data-saindo: tela velha some (crmTroca põe) · .card-sobe · indicador do .seg e [data-indicador] */
+/* antes de entrar fica escondido (só com o movimento ligado: casca.js põe .crm-mov no <html>) */
+.crm-mov [data-entra]:not([data-entrou]) > * { opacity: 0; }
+[data-entra][data-entrando] > * {
+  animation: crm-entra var(--mov-entrada) var(--curva) both;
+  animation-delay: calc(var(--i, 0) * var(--cascata));
+}
+@keyframes crm-entra {
+  from { opacity: 0; filter: blur(var(--entra-desfoque)); translate: 0 var(--entra-sobe); }
+  to { opacity: 1; filter: blur(0); translate: 0 0; }
+}
+[data-saindo] { animation: crm-sai var(--mov-saida) var(--curva-sai) both; pointer-events: none; }
+@keyframes crm-sai { to { opacity: 0; filter: blur(var(--mov-saida-desfoque)); } }
+[data-conta] { font-variant-numeric: var(--numero-variante); }
+
+/* Card que sobe ao passar o mouse: .card-sobe, ou qualquer card clicável (a.card, button.card, .card[tabindex]) */
+.card-sobe, a.card, button.card, .card[tabindex] { transition: translate var(--dur) var(--curva), box-shadow var(--dur) var(--curva); }
+.card-sobe:hover, a.card:hover, button.card:hover, .card[tabindex]:hover { translate: 0 var(--mov-card-sobe); box-shadow: var(--sombra-alta); }
+
+/* Indicador que desliza até o ativo. .seg: a pílula do acento passa a ser o indicador. [data-indicador="pilula"]: fundo leve do acento;
+   [data-indicador="linha"]: traço de 2px embaixo. O ativo é o filho com aria-pressed="true", aria-selected="true" ou aria-current */
+.seg, [data-indicador] { position: relative; }
+.indicador { position: absolute; z-index: 0; top: 0; left: 0; width: 0; height: 0; pointer-events: none; opacity: 0; }
+[data-indicador-anda] > .indicador { transition: transform var(--dur) var(--curva), width var(--dur) var(--curva), height var(--dur) var(--curva), opacity var(--dur-rapida) var(--curva); }
+[data-indicador-pronto] > :not(.indicador) { position: relative; z-index: 1; }
+.seg > .indicador { border-radius: 7px; background: var(--acento); }
+/* parado, o botão ativo tem o próprio fundo (contraste medido nele); só enquanto a pílula anda ele fica transparente */
+.seg[data-indicador-movendo] > button[aria-pressed="true"], .seg[data-indicador-movendo] > button[aria-pressed="true"]:hover { background: transparent; }
+[data-indicador="pilula"] > .indicador { border-radius: var(--raio-b); background: var(--acento-claro); }
+[data-indicador="linha"] > .indicador { background: none; box-shadow: inset 0 -2px 0 var(--acento-texto); }
+
+/* Dica ao lado (menu recolhido): .dica.dica-lado mostra o nome à direita do ícone */
+.dica-lado::after { left: calc(100% + 8px); bottom: auto; top: 50%; translate: 0 -50%; transform: translateX(-4px) scale(0.96); transform-origin: left center; }
+.dica-lado:hover::after, .dica-lado:focus-within::after, .dica-lado.dica-fixa::after { transform: none; }
+
+/* ===== R2 · Faixa de faturamento (1.5 + adendo): 7 faixas, cada uma com a sua cor discreta.
+   Etiqueta neutra: <span class="faixa" data-faixa="ouro">Ouro <small>R$ 100 a 300 mil</small></span> (fundo neutro, pontinho na cor da faixa).
+   Selo na cor da faixa (filtro escolhido, ficha): <span class="selo selo-faixa" data-faixa="ouro">Ouro</span>.
+   Faixas: ferro, bronze, prata, ouro, platina, diamante, sem. Tokens --faixa-<nome> e --faixa-<nome>-texto */
+.faixa {
+  display: inline-flex; align-items: center; gap: 6px; height: 22px; padding: 0 8px; border-radius: 6px;
+  background: var(--faixa-fundo); color: var(--faixa-texto); font: 600 var(--t-12) / 1 var(--fonte); white-space: nowrap;
+}
+.faixa small { font-weight: 500; color: var(--fraco); font-size: var(--t-12); }
+.faixa::before { content: ""; width: 8px; height: 8px; flex: none; border-radius: 2px; background: var(--faixa-marca); box-shadow: inset 0 0 0 1px var(--linha); }
+.faixa[data-faixa="sem"] { color: var(--fraco); }
+:is(.faixa, .selo-faixa)[data-faixa="ferro"] { --faixa-marca: var(--faixa-ferro); --faixa-cor: var(--faixa-ferro); --faixa-cor-texto: var(--faixa-ferro-texto); }
+:is(.faixa, .selo-faixa)[data-faixa="bronze"] { --faixa-marca: var(--faixa-bronze); --faixa-cor: var(--faixa-bronze); --faixa-cor-texto: var(--faixa-bronze-texto); }
+:is(.faixa, .selo-faixa)[data-faixa="prata"] { --faixa-marca: var(--faixa-prata); --faixa-cor: var(--faixa-prata); --faixa-cor-texto: var(--faixa-prata-texto); }
+:is(.faixa, .selo-faixa)[data-faixa="ouro"] { --faixa-marca: var(--faixa-ouro); --faixa-cor: var(--faixa-ouro); --faixa-cor-texto: var(--faixa-ouro-texto); }
+:is(.faixa, .selo-faixa)[data-faixa="platina"] { --faixa-marca: var(--faixa-platina); --faixa-cor: var(--faixa-platina); --faixa-cor-texto: var(--faixa-platina-texto); }
+:is(.faixa, .selo-faixa)[data-faixa="diamante"] { --faixa-marca: var(--faixa-diamante); --faixa-cor: var(--faixa-diamante); --faixa-cor-texto: var(--faixa-diamante-texto); }
+:is(.faixa, .selo-faixa)[data-faixa="sem"] { --faixa-marca: var(--faixa-sem); --faixa-cor: var(--faixa-sem); --faixa-cor-texto: var(--faixa-sem-texto); }
+.selo-faixa { background: var(--faixa-cor, var(--faixa-sem)); color: var(--faixa-cor-texto, var(--faixa-sem-texto)); }
+
+/* ===== Abas horizontais com indicador que desliza (R4: venceu a B, fundo leve e sublinhado do acento, como o CRM atual).
+   <div class="abas-luz" role="tablist"><button role="tab" aria-selected="true">Visão geral</button>...</div>
+   Troque aria-selected ao clicar; o indicador (base/movimento.js) desliza até a aba. A luz só existe aqui, nunca no menu lateral */
+.abas-luz { position: relative; display: flex; gap: 4px; max-width: 100%; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--linha); }
+.abas-luz > [role="tab"] {
+  flex: none; height: 40px; padding: 0 14px; border: 0; border-radius: var(--raio-b) var(--raio-b) 0 0; background: none; cursor: pointer;
+  font: 500 var(--t-14) / 1 var(--fonte); color: var(--fraco); white-space: nowrap;
+  transition: color var(--dur-rapida) var(--curva);
+}
+.abas-luz > [role="tab"]:hover { color: var(--texto); }
+.abas-luz > [role="tab"][aria-selected="true"] { color: var(--texto); font-weight: 600; }
+.abas-luz > [role="tab"]:focus-visible { outline-offset: -2px; }
+.abas-luz > .indicador { border-radius: var(--raio-b) var(--raio-b) 0 0; background: var(--realce); box-shadow: inset 0 -2px 0 var(--acento-texto); }
+
+/* ===== Hora em rodas (promovida da aba 3, Campo, R2; desenho do campo-data da Névoa). Monte com crmRodaHora(h, m, aoMudar) do
+   base/rodas.js: .campo-rodas > .roda (Hora) + .campo-dois-pontos + .roda (Minuto). Faixa do meio em acento claro, degradê nas pontas */
+.campo-rodas { position: relative; display: flex; align-items: center; justify-content: center; gap: 2px; padding: 0 var(--s-8); }
+.campo-rodas::before { content: ""; position: absolute; z-index: 0; left: 0; right: 0; top: 50%; height: 32px; translate: 0 -50%; border-radius: calc(var(--raio-c) - 6px); background: var(--acento-claro); }
+.campo-dois-pontos { position: relative; font: 600 var(--t-16) / 1 var(--fonte); color: var(--acento-texto); }
+.roda { position: relative; width: 52px; height: 160px; overflow: clip; touch-action: none; user-select: none; -webkit-user-select: none; cursor: grab; border-radius: calc(var(--raio-c) - 6px); mask-image: linear-gradient(transparent, var(--texto) 35%, var(--texto) 65%, transparent); }
+.roda:active { cursor: grabbing; }
+.roda:focus-visible { mask-image: none; outline: 1px solid var(--acento-texto); outline-offset: -1px; }
+.roda-item { position: absolute; left: 0; right: 0; top: 64px; display: grid; place-items: center; height: 32px; font: 400 var(--t-16) / 1 var(--fonte); font-variant-numeric: tabular-nums; color: var(--fraco); transition: transform var(--dur) var(--curva), opacity var(--dur) var(--curva); }
+.roda-item[data-meio] { font-weight: 600; color: var(--acento-texto); }
+
+/* ===== Casca das páginas de aprovação (base/casca.js monta): barra fina no topo com as abas e as 2 chaves ===== */
+.casca-topo {
+  position: sticky; top: 0; z-index: 50; display: flex; align-items: center; gap: var(--s-12);
+  height: 48px; padding: 0 var(--app-margem);
+  background: var(--vidro-forte); border-bottom: 1px solid var(--linha);
+  -webkit-backdrop-filter: var(--vidro-desfoque); backdrop-filter: var(--vidro-desfoque);
+}
+.casca-marca { font-weight: 700; letter-spacing: -0.02em; white-space: nowrap; color: var(--texto); text-decoration: none; }
+.casca-marca span { color: var(--acento-texto); }
+.casca-abas { display: flex; gap: 0; flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+/* quando as abas não cabem (1024, celular), rolam na horizontal e a ponta some em degradê para mostrar que tem mais */
+.casca-abas[data-rola] { mask-image: linear-gradient(to right, var(--texto) calc(100% - 32px), transparent); }
+.casca-abas[data-rola="fim"] { mask-image: linear-gradient(to right, transparent, var(--texto) 32px); }
+.casca-abas[data-rola="meio"] { mask-image: linear-gradient(to right, transparent, var(--texto) 32px, var(--texto) calc(100% - 32px), transparent); }
+.casca-aba {
+  flex: none; padding: 6px 8px; border-radius: var(--raio-b); color: var(--fraco); text-decoration: none;
+  font: 500 var(--t-12) / 1 var(--fonte); white-space: nowrap;
+  transition: background-color var(--dur-rapida) var(--curva), color var(--dur-rapida) var(--curva);
+}
+button.casca-aba { border: 0; background: none; cursor: pointer; }
+.casca-todas { font-style: italic; }
+.casca-aba:hover { background: var(--realce); color: var(--texto); }
+.casca-aba[aria-current="page"] { background: var(--acento-claro); color: var(--acento-texto); font-weight: 600; }
+.casca-chaves { display: flex; align-items: center; gap: var(--s-8); flex: none; }
+.casca-chave { display: inline-flex; padding: 2px; border-radius: var(--raio-b); background: var(--realce); }
+.casca-chave button {
+  height: 28px; padding: 0 8px; border: 0; border-radius: calc(var(--raio-b) - 2px); background: none; cursor: pointer;
+  font: 500 var(--t-12) / 1 var(--fonte); color: var(--fraco);
+}
+.casca-chave button[aria-pressed="true"] { background: var(--sup); color: var(--texto); box-shadow: var(--sombra); font-weight: 600; }
+.casca-pagina { max-width: 1440px; margin: 0 auto; padding: var(--s-24) var(--app-margem) var(--s-64); }
+@media (max-width: 767px) { .casca-topo { flex-wrap: wrap; height: auto; padding-block: var(--s-8); } .casca-abas { order: 3; flex-basis: 100%; } }
+
+/* ===== Aprovação (base/aprovacao.js põe depois de cada [data-item]) ===== */
+[data-item] { scroll-margin-top: 64px; }
+.aprov { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-8); margin: var(--s-8) 0 var(--s-16); font-size: var(--t-12); }
+.aprov-nome { color: var(--fraco); font-weight: 500; }
+.aprov-btn {
+  height: 26px; padding: 0 10px; border: 1px solid var(--borda-campo); border-radius: 999px; background: var(--sup); cursor: pointer;
+  font: 600 var(--t-12) / 1 var(--fonte); color: var(--texto);
+}
+.aprov-btn:hover { background: var(--realce); }
+.aprov-btn[data-v="aprovado"][aria-pressed="true"] { background: var(--sucesso-fundo); border-color: var(--sucesso); color: var(--sucesso); }
+.aprov-btn[data-v="ajustar"][aria-pressed="true"] { background: var(--atencao-fundo); border-color: var(--atencao); color: var(--atencao); }
+.aprov-aviso { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-8) var(--s-12); width: fit-content; max-width: 100%; margin-bottom: var(--s-16); padding: 4px 4px 4px var(--s-12); border-radius: var(--raio-b); background: var(--sup-2); color: var(--fraco); font-size: var(--t-12); }
+.aprov-aviso .lnk { height: 28px; font-size: var(--t-12); }
+.aprov-aviso .aprov-proxima { height: 28px; font-size: var(--t-12); }
+.aprov-tudo { color: var(--sucesso); font-weight: 600; }
+.aprov-nota { flex: 1 1 260px; min-height: 28px; padding: 4px 10px; font-size: var(--t-12); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after, ::backdrop { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; scroll-behavior: auto !important; }
+  *, *::before, *::after, ::backdrop { animation-delay: 0ms !important; transition-delay: 0ms !important; }
+  :root, * { --cascata: 0ms !important; }   /* atraso calculado com a cascata (gráficos, aba 14) também zera */
+  .btn:active { transform: none; }
+  .card-sobe:hover, a.card:hover, button.card:hover, .card[tabindex]:hover { translate: none; }
+  [data-entra] > *, [data-saindo] { filter: none !important; translate: none !important; }
+}

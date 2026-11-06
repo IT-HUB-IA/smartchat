@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM padrão · 3 Campos e seleções</title>
+<script src="../base/casca.js?v=you1"></script>
+<link rel="stylesheet" href="../base/tokens.css?v=you1">
+<link rel="stylesheet" href="../base/componentes.css?v=you1">
+<link rel="stylesheet" href="03-campos.css?v=you1">
+</head>
+<body>
+<main class="casca-pagina">
+  <header class="cp-cabeca">
+    <h1>Campos e seleções</h1>
+    <p class="card-fraco">Todo campo tem 40px de altura, borda que passa contraste 3 nos dois modos e foco de 1px no acento. Toda lista que abre (seleção, filtro, período, data, hora) usa o mesmo vidro e o mesmo movimento: sobe 4px e cresce de 0,96. Dados de exemplo.</p>
+  </header>
+
+  <section class="cp-secao">
+    <h2>Digitar</h2>
+    <div class="cp-grade">
+      <div class="card" data-item="3.1 Campo de texto">
+        <h3 class="card-titulo">Texto</h3>
+        <div class="campo"><label class="campo-rotulo" for="t1">Nome do contato</label><input id="t1" class="campo-input" placeholder="Ex.: Marcos Prado" autocomplete="off"></div>
+      </div>
+      <div class="card" data-item="3.2 Busca">
+        <h3 class="card-titulo">Busca</h3>
+        <div class="campo"><label class="campo-rotulo" for="t2">Buscar lead</label>
+          <div class="campo-com-icone"><svg class="ico" data-anima aria-hidden="true"><use href="#search"/></svg><input id="t2" class="campo-input" type="search" placeholder="Nome, empresa ou WhatsApp" value="Prado"></div>
+          <span class="campo-ajuda">3 leads encontrados em outubro de 2026.</span></div>
+      </div>
+      <div class="card" data-item="3.3 Moeda R$">
+        <h3 class="card-titulo">Moeda</h3>
+        <div class="campo"><label class="campo-rotulo" for="t3">Mensalidade (R$/mês) <span class="campo-obrigatorio" aria-hidden="true">*</span></label>
+          <div class="campo-com-icone"><span class="campo-prefixo cp-rs" aria-hidden="true">R$</span><input id="t3" class="campo-input cp-num" inputmode="numeric" data-mascara="moeda" value="1.350,00" aria-required="true"></div>
+          <span class="campo-ajuda">Digite só os números: a vírgula entra sozinha.</span></div>
+      </div>
+      <div class="card" data-item="3.4 Telefone com cópia">
+        <h3 class="card-titulo">Telefone com cópia</h3>
+        <div class="campo"><label class="campo-rotulo" for="t4">WhatsApp</label>
+          <div class="cp-copia"><input id="t4" class="campo-input" type="tel" inputmode="tel" data-mascara="telefone" value="+55 (11) 98877-1020" autocomplete="off">
+            <button class="btn btn-2 btn-icone" type="button" data-copiar="t4" aria-label="Copiar WhatsApp"><svg class="ico" data-anima aria-hidden="true"><use href="#copy"/></svg></button></div>
+          <span class="campo-ajuda cp-aviso" role="status" aria-live="polite">Clique no botão para copiar o número.</span></div>
+      </div>
+      <div class="card" data-item="3.5 E-mail">
+        <h3 class="card-titulo">E-mail</h3>
+        <div class="campo"><label class="campo-rotulo" for="t5">E-mail</label>
+          <div class="campo-com-icone"><svg class="ico" data-anima aria-hidden="true"><use href="#mail"/></svg><input id="t5" class="campo-input" type="email" placeholder="nome@empresa.com.br" value="marcos@pradostore.com.br" autocomplete="off"></div></div>
+      </div>
+      <div class="card" data-item="3.6 Área de texto">
+        <h3 class="card-titulo">Área de texto</h3>
+        <div class="campo"><label class="campo-rotulo" for="t6">Observação</label><textarea id="t6" class="campo-input" maxlength="300" placeholder="Anote o que combinou com o lead">Pediu proposta com 3 canais. Retornar na terça, 03/11, depois das 14h.</textarea>
+          <span class="campo-ajuda cp-contagem" data-contar="t6">0/300</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-secao">
+    <h2>Escolher em lista</h2>
+    <div class="cp-grade">
+      <div class="card" data-item="3.7 Seleção única">
+        <h3 class="card-titulo">Seleção única</h3>
+        <div class="campo"><span class="campo-rotulo">Origem <span class="campo-obrigatorio" aria-hidden="true">*</span></span>
+          <div data-selecao="unica" data-rotulo="Origem" data-tipo="origem" data-opcoes="Meta|Google|WhatsApp|Site|Bio|Indicação|Google orgânico" data-padrao="0"></div></div>
+      </div>
+      <div class="card" data-item="3.8 Seleção múltipla com chips e +N">
+        <h3 class="card-titulo">Seleção múltipla</h3>
+        <div class="campo"><span class="campo-rotulo">Empresas do grupo</span>
+          <div data-selecao="multi" data-tipo="empresa" data-rotulo="Empresas" data-opcoes="You|Beec|Realizze|Tu Ecom|Winny|Lavoro Piu|BL|NeoWear" data-padrao="0,1,2,3,4" data-vazio="Selecione as empresas" data-largo></div>
+          <span class="campo-ajuda">Cada chip leva a logo da empresa. Os que não cabem no campo viram +N.</span></div>
+      </div>
+      <div class="card" data-item="3.9 Filtro com contador">
+        <h3 class="card-titulo">Filtro</h3>
+        <div class="cp-linha">
+          <div data-selecao="filtro" data-tipo="responsavel" data-rotulo="Responsável" data-opcoes="Natham Monteiro|Camila Rocha|Rafael Dias|Bianca Torres" data-padrao="0,2"></div>
+          <div data-selecao="filtro" data-rotulo="Etapa" data-opcoes="Lead novo|Em qualificação|Reunião agendada|Em negociação|Ganho|Perdido" data-padrao=""></div>
+        </div>
+        <span class="campo-ajuda">Com escolha, o contador aparece em cor de acento. Sem escolha, o filtro fica limpo.</span>
+      </div>
+      <div class="card" data-item="3.10 Período Últimos 30 dias com calendário">
+        <h3 class="card-titulo">Período</h3>
+        <div class="campo"><span class="campo-rotulo">Período do dashboard</span>
+          <div data-periodo></div></div>
+      </div>
+      <div class="card" data-item="3.11 Data">
+        <h3 class="card-titulo">Data</h3>
+        <div class="campo"><span class="campo-rotulo">Data da reunião</span><div data-data="2026-10-30"></div></div>
+      </div>
+      <div class="card" data-item="3.12 Hora">
+        <h3 class="card-titulo">Hora</h3>
+        <div class="campo"><span class="campo-rotulo">Horário</span><div data-hora="14:30"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-secao">
+    <h2>Marcar e ligar</h2>
+    <div class="cp-grade">
+      <div class="card" data-item="3.13 Caixa de marcar">
+        <h3 class="card-titulo">Caixa de marcar</h3>
+        <fieldset class="grupo-opcoes"><legend class="campo-rotulo">Avisar por</legend>
+          <label class="marcar"><input type="checkbox" checked><span class="marcar-caixa"></span>WhatsApp</label>
+          <label class="marcar"><input type="checkbox" checked><span class="marcar-caixa"></span>E-mail</label>
+          <label class="marcar"><input type="checkbox"><span class="marcar-caixa"></span>Notificação no CRM</label>
+          <label class="marcar"><input type="checkbox" disabled><span class="marcar-caixa"></span>SMS (indisponível)</label></fieldset>
+      </div>
+      <div class="card" data-item="3.14 Opção (uma entre várias)">
+        <h3 class="card-titulo">Opção</h3>
+        <fieldset class="grupo-opcoes"><legend class="campo-rotulo">Tipo de lead</legend>
+          <label class="marcar"><input type="radio" name="tipo" checked><span class="marcar-bola"></span>Tráfego pago</label>
+          <label class="marcar"><input type="radio" name="tipo"><span class="marcar-bola"></span>Indicação</label>
+          <label class="marcar"><input type="radio" name="tipo"><span class="marcar-bola"></span>Orgânico</label>
+          <label class="marcar"><input type="radio" name="tipo" disabled><span class="marcar-bola"></span>Parceiro (indisponível)</label></fieldset>
+      </div>
+      <div class="card" data-item="3.15 Interruptor">
+        <h3 class="card-titulo">Interruptor</h3>
+        <div class="grupo-opcoes">
+          <label class="interruptor"><input type="checkbox" role="switch" checked><span class="interruptor-trilho"></span>Som de novo lead</label>
+          <label class="interruptor"><input type="checkbox" role="switch"><span class="interruptor-trilho"></span>Resumo diário às 08:00</label>
+          <label class="interruptor"><input type="checkbox" role="switch" disabled><span class="interruptor-trilho"></span>Integração (desativada)</label></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-secao">
+    <h2>Estados do campo</h2>
+    <div class="cp-grade">
+      <div class="card" data-item="3.16 Campo obrigatório">
+        <h3 class="card-titulo">Obrigatório</h3>
+        <div class="campo"><label class="campo-rotulo" for="e1">Nome do contato <span class="campo-obrigatorio" aria-hidden="true">*</span></label><input id="e1" class="campo-input" placeholder="Ex.: Marcos Prado" aria-required="true"><span class="campo-ajuda">O asterisco vermelho marca o que não pode ficar vazio.</span></div>
+      </div>
+      <div class="card" data-item="3.17 Erro">
+        <h3 class="card-titulo">Erro</h3>
+        <div class="campo"><label class="campo-rotulo" for="e2">E-mail</label><input id="e2" class="campo-input" type="email" value="marcos@pradostore" aria-invalid="true" aria-describedby="e2-erro"><span class="campo-erro" id="e2-erro">Informe um e-mail completo, como nome@empresa.com.br.</span></div>
+      </div>
+      <div class="card" data-item="3.18 Texto de ajuda">
+        <h3 class="card-titulo">Ajuda</h3>
+        <div class="campo"><label class="campo-rotulo" for="e3">Faturamento (R$/mês)</label><div class="campo-com-icone"><span class="campo-prefixo cp-rs" aria-hidden="true">R$</span><input id="e3" class="campo-input cp-num" inputmode="numeric" data-mascara="moeda" placeholder="Não apurado" aria-describedby="e3-a"></div><span class="campo-ajuda" id="e3-a">Deixe vazio se o lead ainda não informou. A faixa Bronze, Prata ou Ouro sai daqui.</span></div>
+      </div>
+      <div class="card" data-item="3.19 Campo desativado">
+        <h3 class="card-titulo">Desativado</h3>
+        <div class="campo"><label class="campo-rotulo" for="e4">Responsável</label><input id="e4" class="campo-input" value="Natham Monteiro" disabled><span class="campo-ajuda">Só o gestor altera o responsável.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cp-secao">
+    <h2>Formulário</h2>
+    <form class="card cp-form" data-item="3.21 Formulário em duas colunas com seções (fotos dos responsáveis, logos)" onsubmit="return false">
+      <p class="card-fraco">Origem é obrigatória. Origem "Indicação" entra direto no funil de Indicação.</p>
+      <h3 class="cp-secao-form">Contato</h3>
+      <div class="cp-duas">
+        <div class="campo"><label class="campo-rotulo" for="f1">Nome do contato <span class="campo-obrigatorio" aria-hidden="true">*</span></label><input id="f1" class="campo-input" placeholder="Ex.: Marcos Prado" aria-required="true"></div>
+        <div class="campo"><span class="campo-rotulo">Empresa</span>
+          <div data-selecao="unica" data-tipo="empresa" data-rotulo="Empresa" data-opcoes="You|Beec|Realizze|Tu Ecom|Winny|Lavoro Piu|BL|NeoWear" data-vazio="Selecione a empresa..." data-largo></div></div>
+        <div class="campo"><label class="campo-rotulo" for="f3">WhatsApp</label><input id="f3" class="campo-input" type="tel" data-mascara="telefone" placeholder="+55 (11) 90000-0000"></div>
+        <div class="campo"><label class="campo-rotulo" for="f4">E-mail</label><input id="f4" class="campo-input" type="email" placeholder="nome@empresa.com.br"></div>
+      </div>
+      <h3 class="cp-secao-form">Origem e funil</h3>
+      <div class="cp-duas">
+        <div class="campo"><span class="campo-rotulo">Origem <span class="campo-obrigatorio" aria-hidden="true">*</span></span>
+          <div data-selecao="unica" data-tipo="origem" data-rotulo="Origem" data-opcoes="Meta|Google|WhatsApp|Site|Bio|Indicação|Google orgânico" data-vazio="Selecione a origem..." data-largo></div></div>
+        <div class="campo"><span class="campo-rotulo">Funil <span class="campo-obrigatorio" aria-hidden="true">*</span></span>
+          <div data-selecao="unica" data-rotulo="Funil" data-opcoes="Tráfego Pago|Indicação" data-padrao="0" data-largo></div></div>
+        <div class="campo cp-inteira"><span class="campo-rotulo">Responsável <span class="campo-obrigatorio" aria-hidden="true">*</span></span>
+          <div data-selecao="unica" data-tipo="responsavel" data-rotulo="Responsável" data-opcoes="Natham Monteiro|Camila Rocha|Rafael Dias|Bianca Torres" data-padrao="0" data-largo></div></div>
+      </div>
+      <h3 class="cp-secao-form">Financeiro</h3>
+      <div class="cp-duas">
+        <div class="campo"><span class="campo-rotulo">Faturamento (R$/mês)</span>
+          <div data-selecao="unica" data-rotulo="Faturamento" data-opcoes="Não apurado|Até R$ 10 mil|R$ 10 a 50 mil|Acima de R$ 50 mil" data-padrao="0" data-largo></div></div>
+        <div class="campo"><label class="campo-rotulo" for="f5">Mensalidade (R$/mês) <span class="campo-obrigatorio" aria-hidden="true">*</span></label>
+          <div class="campo-com-icone"><span class="campo-prefixo cp-rs" aria-hidden="true">R$</span><input id="f5" class="campo-input cp-num" inputmode="numeric" data-mascara="moeda" value="650,00" aria-required="true"></div></div>
+      </div>
+      <div class="cp-acoes"><button class="btn btn-2" type="button">Cancelar</button><button class="btn" type="submit">Criar lead</button></div>
+    </form>
+  </section>
+</main>
+<script src="../base/icones.js?v=you1"></script>
+<script src="04-avatar.js?v=you1"></script>
+<script src="03-campos.js?v=you1"></script>
+<script src="../base/aprovacao.js?v=you1"></script>
+</body>
+</html>

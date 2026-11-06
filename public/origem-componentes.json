@@ -1,0 +1,1114 @@
+{
+  "inputs": {
+    "src/formatters.js": {
+      "bytes": 892,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/react/cjs/react.production.js": {
+      "bytes": 18040,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/react/index.js": {
+      "bytes": 186,
+      "imports": [
+        {
+          "path": "node_modules/react/cjs/react.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/scheduler/cjs/scheduler.production.js": {
+      "bytes": 10181,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/scheduler/index.js": {
+      "bytes": 194,
+      "imports": [
+        {
+          "path": "node_modules/scheduler/cjs/scheduler.production.js",
+          "kind": "require-call",
+          "original": "./cjs/scheduler.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/cjs/react-dom.production.js": {
+      "bytes": 7326,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "require-call",
+          "original": "react"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/index.js": {
+      "bytes": 1359,
+      "imports": [
+        {
+          "path": "node_modules/react-dom/cjs/react-dom.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react-dom.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/cjs/react-dom-client.production.js": {
+      "bytes": 625168,
+      "imports": [
+        {
+          "path": "node_modules/scheduler/index.js",
+          "kind": "require-call",
+          "original": "scheduler"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "require-call",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react-dom/index.js",
+          "kind": "require-call",
+          "original": "react-dom"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/react-dom/client.js": {
+      "bytes": 1373,
+      "imports": [
+        {
+          "path": "node_modules/react-dom/cjs/react-dom-client.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react-dom-client.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/better-auth/dist/utils/wildcard.mjs": {
+      "bytes": 4310,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@better-auth/core/dist/env/env-impl.mjs": {
+      "bytes": 2467,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@better-auth/core/dist/env/color-depth.mjs": {
+      "bytes": 2723,
+      "imports": [
+        {
+          "path": "node_modules/@better-auth/core/dist/env/env-impl.mjs",
+          "kind": "import-statement",
+          "original": "./env-impl.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@better-auth/core/dist/context/global.mjs": {
+      "bytes": 1109,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@better-auth/core/dist/env/logger.mjs": {
+      "bytes": 3059,
+      "imports": [
+        {
+          "path": "node_modules/@better-auth/core/dist/context/global.mjs",
+          "kind": "import-statement",
+          "original": "../context/global.mjs"
+        },
+        {
+          "path": "node_modules/@better-auth/core/dist/env/color-depth.mjs",
+          "kind": "import-statement",
+          "original": "./color-depth.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@better-auth/core/dist/env/index.mjs": {
+      "bytes": 431,
+      "imports": [
+        {
+          "path": "node_modules/@better-auth/core/dist/env/env-impl.mjs",
+          "kind": "import-statement",
+          "original": "./env-impl.mjs"
+        },
+        {
+          "path": "node_modules/@better-auth/core/dist/env/color-depth.mjs",
+          "kind": "import-statement",
+          "original": "./color-depth.mjs"
+        },
+        {
+          "path": "node_modules/@better-auth/core/dist/env/logger.mjs",
+          "kind": "import-statement",
+          "original": "./logger.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@better-auth/core/dist/utils/error-codes.mjs": {
+      "bytes": 253,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@better-auth/core/dist/error/codes.mjs": {
+      "bytes": 2838,
+      "imports": [
+        {
+          "path": "node_modules/@better-auth/core/dist/utils/error-codes.mjs",
+          "kind": "import-statement",
+          "original": "../utils/error-codes.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/better-call/dist/error.mjs": {
+      "bytes": 4010,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@better-auth/core/dist/error/index.mjs": {
+      "bytes": 817,
+      "imports": [
+        {
+          "path": "node_modules/@better-auth/core/dist/error/codes.mjs",
+          "kind": "import-statement",
+          "original": "./codes.mjs"
+        },
+        {
+          "path": "node_modules/better-call/dist/error.mjs",
+          "kind": "import-statement",
+          "original": "better-call/error"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/utils/url.mjs": {
+      "bytes": 10626,
+      "imports": [
+        {
+          "path": "node_modules/better-auth/dist/utils/wildcard.mjs",
+          "kind": "import-statement",
+          "original": "./wildcard.mjs"
+        },
+        {
+          "path": "node_modules/@better-auth/core/dist/env/index.mjs",
+          "kind": "import-statement",
+          "original": "@better-auth/core/env"
+        },
+        {
+          "path": "node_modules/@better-auth/core/dist/error/index.mjs",
+          "kind": "import-statement",
+          "original": "@better-auth/core/error"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/parser.mjs": {
+      "bytes": 2403,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@better-auth/core/dist/utils/url.mjs": {
+      "bytes": 3353,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/fetch-plugins.mjs": {
+      "bytes": 491,
+      "imports": [
+        {
+          "path": "node_modules/@better-auth/core/dist/utils/url.mjs",
+          "kind": "import-statement",
+          "original": "@better-auth/core/utils/url"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/nanostores/task/index.js": {
+      "bytes": 830,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/nanostores/clean-stores/index.js": {
+      "bytes": 437,
+      "imports": [
+        {
+          "path": "node_modules/nanostores/task/index.js",
+          "kind": "import-statement",
+          "original": "../task/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/nanostores/atom/index.js": {
+      "bytes": 4115,
+      "imports": [
+        {
+          "path": "node_modules/nanostores/clean-stores/index.js",
+          "kind": "import-statement",
+          "original": "../clean-stores/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/nanostores/lifecycle/index.js": {
+      "bytes": 4243,
+      "imports": [
+        {
+          "path": "node_modules/nanostores/clean-stores/index.js",
+          "kind": "import-statement",
+          "original": "../clean-stores/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/nanostores/warn/index.js": {
+      "bytes": 290,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/nanostores/computed/index.js": {
+      "bytes": 2027,
+      "imports": [
+        {
+          "path": "node_modules/nanostores/atom/index.js",
+          "kind": "import-statement",
+          "original": "../atom/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/clean-stores/index.js",
+          "kind": "import-statement",
+          "original": "../clean-stores/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/lifecycle/index.js",
+          "kind": "import-statement",
+          "original": "../lifecycle/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/warn/index.js",
+          "kind": "import-statement",
+          "original": "../warn/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/nanostores/deep-map/path.js": {
+      "bytes": 1418,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/nanostores/deep-map/index.js": {
+      "bytes": 795,
+      "imports": [
+        {
+          "path": "node_modules/nanostores/atom/index.js",
+          "kind": "import-statement",
+          "original": "../atom/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/warn/index.js",
+          "kind": "import-statement",
+          "original": "../warn/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/deep-map/path.js",
+          "kind": "import-statement",
+          "original": "./path.js"
+        },
+        {
+          "path": "node_modules/nanostores/deep-map/path.js",
+          "kind": "import-statement",
+          "original": "./path.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/nanostores/effect/index.js": {
+      "bytes": 549,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/nanostores/keep-mount/index.js": {
+      "bytes": 65,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/nanostores/listen-keys/index.js": {
+      "bytes": 1128,
+      "imports": [
+        {
+          "path": "node_modules/nanostores/deep-map/path.js",
+          "kind": "import-statement",
+          "original": "../deep-map/path.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/nanostores/map/index.js": {
+      "bytes": 576,
+      "imports": [
+        {
+          "path": "node_modules/nanostores/atom/index.js",
+          "kind": "import-statement",
+          "original": "../atom/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/nanostores/map-creator/index.js": {
+      "bytes": 894,
+      "imports": [
+        {
+          "path": "node_modules/nanostores/clean-stores/index.js",
+          "kind": "import-statement",
+          "original": "../clean-stores/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/lifecycle/index.js",
+          "kind": "import-statement",
+          "original": "../lifecycle/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/map/index.js",
+          "kind": "import-statement",
+          "original": "../map/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/nanostores/index.js": {
+      "bytes": 704,
+      "imports": [
+        {
+          "path": "node_modules/nanostores/atom/index.js",
+          "kind": "import-statement",
+          "original": "./atom/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/clean-stores/index.js",
+          "kind": "import-statement",
+          "original": "./clean-stores/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/computed/index.js",
+          "kind": "import-statement",
+          "original": "./computed/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/deep-map/index.js",
+          "kind": "import-statement",
+          "original": "./deep-map/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/effect/index.js",
+          "kind": "import-statement",
+          "original": "./effect/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/keep-mount/index.js",
+          "kind": "import-statement",
+          "original": "./keep-mount/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/lifecycle/index.js",
+          "kind": "import-statement",
+          "original": "./lifecycle/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/listen-keys/index.js",
+          "kind": "import-statement",
+          "original": "./listen-keys/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/map-creator/index.js",
+          "kind": "import-statement",
+          "original": "./map-creator/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/map/index.js",
+          "kind": "import-statement",
+          "original": "./map/index.js"
+        },
+        {
+          "path": "node_modules/nanostores/task/index.js",
+          "kind": "import-statement",
+          "original": "./task/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/equality.mjs": {
+      "bytes": 1440,
+      "imports": [
+        {
+          "path": "node_modules/nanostores/index.js",
+          "kind": "import-statement",
+          "original": "nanostores"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/query-atom.mjs": {
+      "bytes": 455,
+      "imports": [
+        {
+          "path": "node_modules/nanostores/index.js",
+          "kind": "import-statement",
+          "original": "nanostores"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/broadcast-channel.mjs": {
+      "bytes": 1388,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/focus-manager.mjs": {
+      "bytes": 1039,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/online-manager.mjs": {
+      "bytes": 1169,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/session-refresh.mjs": {
+      "bytes": 4017,
+      "imports": [
+        {
+          "path": "node_modules/better-auth/dist/client/broadcast-channel.mjs",
+          "kind": "import-statement",
+          "original": "./broadcast-channel.mjs"
+        },
+        {
+          "path": "node_modules/better-auth/dist/client/focus-manager.mjs",
+          "kind": "import-statement",
+          "original": "./focus-manager.mjs"
+        },
+        {
+          "path": "node_modules/better-auth/dist/client/online-manager.mjs",
+          "kind": "import-statement",
+          "original": "./online-manager.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/session-atom.mjs": {
+      "bytes": 5375,
+      "imports": [
+        {
+          "path": "node_modules/better-auth/dist/client/equality.mjs",
+          "kind": "import-statement",
+          "original": "./equality.mjs"
+        },
+        {
+          "path": "node_modules/better-auth/dist/client/query-atom.mjs",
+          "kind": "import-statement",
+          "original": "./query-atom.mjs"
+        },
+        {
+          "path": "node_modules/better-auth/dist/client/session-refresh.mjs",
+          "kind": "import-statement",
+          "original": "./session-refresh.mjs"
+        },
+        {
+          "path": "node_modules/nanostores/index.js",
+          "kind": "import-statement",
+          "original": "nanostores"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/defu/dist/defu.mjs": {
+      "bytes": 2053,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@better-fetch/fetch/dist/index.js": {
+      "bytes": 29429,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/config.mjs": {
+      "bytes": 4266,
+      "imports": [
+        {
+          "path": "node_modules/better-auth/dist/utils/url.mjs",
+          "kind": "import-statement",
+          "original": "../utils/url.mjs"
+        },
+        {
+          "path": "node_modules/better-auth/dist/client/parser.mjs",
+          "kind": "import-statement",
+          "original": "./parser.mjs"
+        },
+        {
+          "path": "node_modules/better-auth/dist/client/fetch-plugins.mjs",
+          "kind": "import-statement",
+          "original": "./fetch-plugins.mjs"
+        },
+        {
+          "path": "node_modules/better-auth/dist/client/session-atom.mjs",
+          "kind": "import-statement",
+          "original": "./session-atom.mjs"
+        },
+        {
+          "path": "node_modules/defu/dist/defu.mjs",
+          "kind": "import-statement",
+          "original": "defu"
+        },
+        {
+          "path": "node_modules/@better-fetch/fetch/dist/index.js",
+          "kind": "import-statement",
+          "original": "@better-fetch/fetch"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/utils/is-atom.mjs": {
+      "bytes": 245,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@better-auth/core/dist/utils/string.mjs": {
+      "bytes": 982,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/proxy.mjs": {
+      "bytes": 2562,
+      "imports": [
+        {
+          "path": "node_modules/better-auth/dist/utils/is-atom.mjs",
+          "kind": "import-statement",
+          "original": "../utils/is-atom.mjs"
+        },
+        {
+          "path": "node_modules/@better-auth/core/dist/utils/string.mjs",
+          "kind": "import-statement",
+          "original": "@better-auth/core/utils/string"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/react/react-store.mjs": {
+      "bytes": 1261,
+      "imports": [
+        {
+          "path": "node_modules/better-auth/dist/client/query-atom.mjs",
+          "kind": "import-statement",
+          "original": "../query-atom.mjs"
+        },
+        {
+          "path": "node_modules/nanostores/index.js",
+          "kind": "import-statement",
+          "original": "nanostores"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/better-auth/dist/client/react/index.mjs": {
+      "bytes": 893,
+      "imports": [
+        {
+          "path": "node_modules/better-auth/dist/client/config.mjs",
+          "kind": "import-statement",
+          "original": "../config.mjs"
+        },
+        {
+          "path": "node_modules/better-auth/dist/client/proxy.mjs",
+          "kind": "import-statement",
+          "original": "../proxy.mjs"
+        },
+        {
+          "path": "node_modules/better-auth/dist/client/react/react-store.mjs",
+          "kind": "import-statement",
+          "original": "./react-store.mjs"
+        },
+        {
+          "path": "node_modules/@better-auth/core/dist/utils/string.mjs",
+          "kind": "import-statement",
+          "original": "@better-auth/core/utils/string"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/react/cjs/react-jsx-runtime.production.js": {
+      "bytes": 976,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/react/jsx-runtime.js": {
+      "bytes": 210,
+      "imports": [
+        {
+          "path": "node_modules/react/cjs/react-jsx-runtime.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react-jsx-runtime.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "src/ui.jsx": {
+      "bytes": 7616,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/Recovery.jsx": {
+      "bytes": 2004,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/better-auth/dist/client/react/index.mjs",
+          "kind": "import-statement",
+          "original": "better-auth/react"
+        },
+        {
+          "path": "src/ui.jsx",
+          "kind": "import-statement",
+          "original": "./ui.jsx"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/Shell.jsx": {
+      "bytes": 6433,
+      "imports": [
+        {
+          "path": "src/formatters.js",
+          "kind": "import-statement",
+          "original": "./formatters.js"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/ui.jsx",
+          "kind": "import-statement",
+          "original": "./ui.jsx"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/Dashboard.jsx": {
+      "bytes": 5854,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/ui.jsx",
+          "kind": "import-statement",
+          "original": "./ui.jsx"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/DataTable.jsx": {
+      "bytes": 2273,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/ui.jsx",
+          "kind": "import-statement",
+          "original": "./ui.jsx"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "vendor/tarefas/lib/cores-empresa.ts": {
+      "bytes": 1963,
+      "imports": [],
+      "format": "esm"
+    },
+    "vendor/tarefas/components/pastas/arte.ts": {
+      "bytes": 9710,
+      "imports": [
+        {
+          "path": "vendor/tarefas/lib/cores-empresa.ts",
+          "kind": "import-statement",
+          "original": "@/lib/cores-empresa"
+        }
+      ],
+      "format": "esm"
+    },
+    "vendor/tarefas/components/pastas/ArteCanvas.tsx": {
+      "bytes": 2859,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "vendor/tarefas/components/pastas/arte.ts",
+          "kind": "import-statement",
+          "original": "./arte"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "vendor/tarefas/components/pastas/pastas.css": {
+      "bytes": 32544,
+      "imports": []
+    },
+    "vendor/tarefas/components/pastas/PastaDeVidro.tsx": {
+      "bytes": 11891,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "vendor/tarefas/components/pastas/arte.ts",
+          "kind": "import-statement",
+          "original": "./arte"
+        },
+        {
+          "path": "vendor/tarefas/components/pastas/ArteCanvas.tsx",
+          "kind": "import-statement",
+          "original": "./ArteCanvas"
+        },
+        {
+          "path": "vendor/tarefas/components/pastas/pastas.css",
+          "kind": "import-statement",
+          "original": "./pastas.css"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/VisualLibrary.jsx": {
+      "bytes": 4258,
+      "imports": [
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "vendor/tarefas/components/pastas/PastaDeVidro.tsx",
+          "kind": "import-statement",
+          "original": "../vendor/tarefas/components/pastas/PastaDeVidro"
+        },
+        {
+          "path": "vendor/tarefas/components/pastas/arte.ts",
+          "kind": "import-statement",
+          "original": "../vendor/tarefas/components/pastas/arte"
+        },
+        {
+          "path": "src/ui.jsx",
+          "kind": "import-statement",
+          "original": "./ui.jsx"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/main.jsx": {
+      "bytes": 37990,
+      "imports": [
+        {
+          "path": "src/formatters.js",
+          "kind": "import-statement",
+          "original": "./formatters.js"
+        },
+        {
+          "path": "node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/react-dom/client.js",
+          "kind": "import-statement",
+          "original": "react-dom/client"
+        },
+        {
+          "path": "node_modules/better-auth/dist/client/react/index.mjs",
+          "kind": "import-statement",
+          "original": "better-auth/react"
+        },
+        {
+          "path": "src/Recovery.jsx",
+          "kind": "import-statement",
+          "original": "./Recovery.jsx"
+        },
+        {
+          "path": "src/ui.jsx",
+          "kind": "import-statement",
+          "original": "./ui.jsx"
+        },
+        {
+          "path": "src/Shell.jsx",
+          "kind": "import-statement",
+          "original": "./Shell.jsx"
+        },
+        {
+          "path": "src/Dashboard.jsx",
+          "kind": "import-statement",
+          "original": "./Dashboard.jsx"
+        },
+        {
+          "path": "src/DataTable.jsx",
+          "kind": "import-statement",
+          "original": "./DataTable.jsx"
+        },
+        {
+          "path": "src/VisualLibrary.jsx",
+          "kind": "import-statement",
+          "original": "./VisualLibrary.jsx"
+        },
+        {
+          "path": "node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "public/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/main.jsx",
+      "cssBundle": "public/app.css",
+      "inputs": {
+        "node_modules/react/cjs/react.production.js": {
+          "bytesInOutput": 7969
+        },
+        "node_modules/react/index.js": {
+          "bytesInOutput": 51
+        },
+        "node_modules/scheduler/cjs/scheduler.production.js": {
+          "bytesInOutput": 3662
+        },
+        "node_modules/scheduler/index.js": {
+          "bytesInOutput": 51
+        },
+        "node_modules/react-dom/cjs/react-dom.production.js": {
+          "bytesInOutput": 3666
+        },
+        "node_modules/react-dom/index.js": {
+          "bytesInOutput": 253
+        },
+        "node_modules/react-dom/cjs/react-dom-client.production.js": {
+          "bytesInOutput": 205341
+        },
+        "node_modules/react-dom/client.js": {
+          "bytesInOutput": 253
+        },
+        "node_modules/react/cjs/react-jsx-runtime.production.js": {
+          "bytesInOutput": 364
+        },
+        "node_modules/react/jsx-runtime.js": {
+          "bytesInOutput": 51
+        },
+        "src/formatters.js": {
+          "bytesInOutput": 843
+        },
+        "src/main.jsx": {
+          "bytesInOutput": 39807
+        },
+        "node_modules/@better-auth/core/dist/env/env-impl.mjs": {
+          "bytesInOutput": 995
+        },
+        "node_modules/better-call/dist/error.mjs": {
+          "bytesInOutput": 2193
+        },
+        "node_modules/@better-auth/core/dist/error/index.mjs": {
+          "bytesInOutput": 114
+        },
+        "node_modules/better-auth/dist/utils/url.mjs": {
+          "bytesInOutput": 1801
+        },
+        "node_modules/better-auth/dist/client/parser.mjs": {
+          "bytesInOutput": 1394
+        },
+        "node_modules/@better-auth/core/dist/utils/url.mjs": {
+          "bytesInOutput": 127
+        },
+        "node_modules/better-auth/dist/client/fetch-plugins.mjs": {
+          "bytesInOutput": 207
+        },
+        "node_modules/nanostores/atom/index.js": {
+          "bytesInOutput": 859
+        },
+        "node_modules/nanostores/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/nanostores/lifecycle/index.js": {
+          "bytesInOutput": 922
+        },
+        "node_modules/nanostores/deep-map/path.js": {
+          "bytesInOutput": 240
+        },
+        "node_modules/nanostores/listen-keys/index.js": {
+          "bytesInOutput": 276
+        },
+        "node_modules/better-auth/dist/client/equality.mjs": {
+          "bytesInOutput": 526
+        },
+        "node_modules/better-auth/dist/client/query-atom.mjs": {
+          "bytesInOutput": 161
+        },
+        "node_modules/better-auth/dist/client/broadcast-channel.mjs": {
+          "bytesInOutput": 763
+        },
+        "node_modules/better-auth/dist/client/focus-manager.mjs": {
+          "bytesInOutput": 558
+        },
+        "node_modules/better-auth/dist/client/online-manager.mjs": {
+          "bytesInOutput": 646
+        },
+        "node_modules/better-auth/dist/client/session-refresh.mjs": {
+          "bytesInOutput": 1917
+        },
+        "node_modules/better-auth/dist/client/session-atom.mjs": {
+          "bytesInOutput": 2303
+        },
+        "node_modules/defu/dist/defu.mjs": {
+          "bytesInOutput": 823
+        },
+        "node_modules/@better-fetch/fetch/dist/index.js": {
+          "bytesInOutput": 11786
+        },
+        "node_modules/better-auth/dist/client/config.mjs": {
+          "bytesInOutput": 2195
+        },
+        "node_modules/better-auth/dist/utils/is-atom.mjs": {
+          "bytesInOutput": 121
+        },
+        "node_modules/@better-auth/core/dist/utils/string.mjs": {
+          "bytesInOutput": 257
+        },
+        "node_modules/better-auth/dist/client/proxy.mjs": {
+          "bytesInOutput": 957
+        },
+        "node_modules/better-auth/dist/client/react/react-store.mjs": {
+          "bytesInOutput": 288
+        },
+        "node_modules/better-auth/dist/client/react/index.mjs": {
+          "bytesInOutput": 295
+        },
+        "src/Recovery.jsx": {
+          "bytesInOutput": 1876
+        },
+        "src/ui.jsx": {
+          "bytesInOutput": 7313
+        },
+        "src/Shell.jsx": {
+          "bytesInOutput": 6801
+        },
+        "src/Dashboard.jsx": {
+          "bytesInOutput": 6550
+        },
+        "src/DataTable.jsx": {
+          "bytesInOutput": 2245
+        },
+        "src/VisualLibrary.jsx": {
+          "bytesInOutput": 4049
+        },
+        "vendor/tarefas/components/pastas/PastaDeVidro.tsx": {
+          "bytesInOutput": 6165
+        },
+        "vendor/tarefas/lib/cores-empresa.ts": {
+          "bytesInOutput": 112
+        },
+        "vendor/tarefas/components/pastas/arte.ts": {
+          "bytesInOutput": 3977
+        },
+        "vendor/tarefas/components/pastas/ArteCanvas.tsx": {
+          "bytesInOutput": 1181
+        },
+        "vendor/tarefas/components/pastas/pastas.css": {
+          "bytesInOutput": 0
+        }
+      },
+      "bytes": 337422
+    },
+    "public/app.css": {
+      "imports": [],
+      "inputs": {
+        "vendor/tarefas/components/pastas/pastas.css": {
+          "bytesInOutput": 25735
+        }
+      },
+      "bytes": 25736
+    }
+  }
+}

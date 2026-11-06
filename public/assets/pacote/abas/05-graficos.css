@@ -1,0 +1,24 @@
+/* Aba 5 Gráficos: só o arranjo desta página. As peças do gráfico vêm de 05-graficos.js; cor e espaço de base/tokens.css */
+.graf-cabeca { display: grid; gap: var(--s-8); margin-bottom: var(--s-24); max-width: 72ch; }
+.graf-secao { display: grid; gap: var(--s-16); margin-bottom: var(--s-32); }
+.graf-secao > .card-fraco { margin-top: calc(var(--s-12) * -1); }
+.graf-sub { margin: var(--s-4) 0 var(--s-16); }
+.graf-titulo { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s-4) var(--s-12); margin-bottom: var(--s-16); }
+.graf-separa { height: 1px; margin: var(--s-24) 0; background: var(--linha); }
+
+.graf-tres { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-16); align-items: start; }
+.graf-dois { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-16); align-items: start; }
+.graf-progressos { display: grid; gap: var(--s-24); }
+
+.graf-minis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s-16); }
+.graf-mini { display: grid; gap: var(--s-4); justify-items: start; padding: var(--s-16); border-radius: var(--raio-b); background: var(--sup-2); }
+.graf-mini > b { font-size: var(--t-31); }
+.graf-mini [data-grafico] { height: 56px; margin-top: var(--s-8); }
+
+@media (max-width: 1100px) { .graf-tres, .graf-dois { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 720px) { .graf-minis { grid-template-columns: minmax(0, 1fr); } }
+.graf-item { display: grid; gap: var(--s-8); align-content: start; min-width: 0; }
+.graf-titulo-acao .btn { margin-left: auto; }
+.graf-entrada { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-16); }
+.graf-entrada .graf-mini [data-grafico] { height: auto; width: 100%; }
+@media (max-width: 1100px) { .graf-entrada { grid-template-columns: minmax(0, 1fr); } }

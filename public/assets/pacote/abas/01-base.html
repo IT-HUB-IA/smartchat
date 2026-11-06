@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM padrão · 1 Base</title>
+<script src="../base/casca.js?v=you1"></script>
+<script src="../base/icones.js?v=you1"></script>
+<link rel="stylesheet" href="../base/tokens.css?v=you1">
+<link rel="stylesheet" href="../base/componentes.css?v=you1">
+<link rel="stylesheet" href="05-graficos.css?v=you1">
+<link rel="stylesheet" href="01-base.css?v=you1">
+</head>
+<body>
+<main class="casca-pagina">
+  <header class="base-cabeca">
+    <h1>Base</h1>
+    <p class="card-fraco">Cores, tipografia, espaço, raios, sombras, vidro e movimento. Troque Claro/Escuro e Névoa/Beec no topo: o contraste de cada par é calculado na hora (fórmula da W3C).</p>
+  </header>
+
+  <section class="base-secao">
+    <h2>Cores</h2>
+    <div class="card" data-item="1.1 Fundo, superfícies e texto"><h3 class="card-titulo">Fundo, superfícies e texto</h3><div class="amostras" data-grupo="nucleo"></div></div>
+    <div class="card" data-item="1.2 Acento da empresa"><h3 class="card-titulo">Acento da empresa <span class="card-fraco">(a única cor que troca com a empresa)</span></h3><div class="amostras" data-grupo="acento"></div>
+      <div class="base-acento-demo">
+        <div class="bloco-destaque"><p class="bloco-fraco">Ganhos no período</p><p class="bloco-numero">R$ 5.900</p><button class="btn btn-claro btn-p" type="button">Ver ganhos</button></div>
+        <div class="base-acento-acoes"><button class="btn" type="button">Novo lead</button><button class="btn btn-2" type="button">Filtro</button><button class="btn btn-2" type="button"><svg class="ico" aria-hidden="true"><use href="#file-text"/></svg>Ver ficha</button><a class="lnk" href="#">Ver caminho</a><span class="selo selo-acento">Tráfego pago</span></div>
+      </div>
+    </div>
+    <div class="card" data-item="1.3 Estados: sucesso, atenção, perigo, informação"><h3 class="card-titulo">Estados</h3><div class="amostras" data-grupo="estados"></div></div>
+    <div class="card" data-item="1.4 Variação ▲▼"><h3 class="card-titulo">Variação</h3><div class="base-linha"><span class="selo selo-sobe">▲ 154% vs 54 anteriores</span><span class="selo selo-desce">▼ 12% vs outubro</span></div><div class="amostras" data-grupo="variacao"></div></div>
+    <div class="card" data-item="1.5 Faixas de faturamento Bronze, Prata e Ouro"><h3 class="card-titulo">Faixas de faturamento <span class="card-fraco">(etiqueta neutra com a cor da faixa, e o selo na cor dela)</span></h3><div class="base-linha"><span class="faixa" data-faixa="ferro">Ferro <small>até R$ 20 mil</small></span><span class="faixa" data-faixa="bronze">Bronze <small>R$ 20 a 50 mil</small></span><span class="faixa" data-faixa="prata">Prata <small>R$ 50 a 100 mil</small></span><span class="faixa" data-faixa="ouro">Ouro <small>R$ 100 a 300 mil</small></span><span class="faixa" data-faixa="platina">Platina <small>R$ 300 a 500 mil</small></span><span class="faixa" data-faixa="diamante">Diamante <small>acima de R$ 500 mil</small></span><span class="faixa" data-faixa="sem">Sem faixa <small>não apurado</small></span></div><div class="base-linha"><span class="selo selo-faixa" data-faixa="ferro">Ferro</span><span class="selo selo-faixa" data-faixa="bronze">Bronze</span><span class="selo selo-faixa" data-faixa="prata">Prata</span><span class="selo selo-faixa" data-faixa="ouro">Ouro</span><span class="selo selo-faixa" data-faixa="platina">Platina</span><span class="selo selo-faixa" data-faixa="diamante">Diamante</span><span class="selo selo-faixa" data-faixa="sem">Sem faixa</span></div><div class="amostras" data-grupo="faixas"></div></div>
+    <div class="card" data-item="1.6 Cores das etapas do funil"><h3 class="card-titulo">Etapas do funil</h3><div class="base-linha">
+      <span class="etiqueta" data-etapa="novo">Lead novo</span><span class="etiqueta" data-etapa="qualificacao">Em qualificação</span><span class="etiqueta" data-etapa="reuniao">Reunião agendada</span><span class="etiqueta" data-etapa="nao-compareceu">Não compareceu à reunião</span><span class="etiqueta" data-etapa="negociacao">Em negociação</span><span class="etiqueta" data-etapa="follow">Follow-up</span><span class="etiqueta" data-etapa="ganho">Ganho</span><span class="etiqueta" data-etapa="perdido">Perdido</span>
+    </div><div class="amostras" data-grupo="etapas"></div></div>
+    <div class="card" data-item="1.7 Cores dos 7 canais (gráfico)"><h3 class="card-titulo">Canais</h3><p class="card-fraco">Estas são as cores de cada origem de lead nos gráficos. Passe o mouse para ver os leads de cada uma por dia.</p><div data-grafico="linha" data-exemplo="canais" data-legenda data-logos="../icones/origens/" data-altura="260" data-altura-celular="220" style="margin: var(--s-16) 0"></div><div class="amostras" data-grupo="canais"></div></div>
+    <div class="card" data-item="1.8 Cores do WhatsApp (fundo liso e bolhas)"><h3 class="card-titulo">WhatsApp</h3>
+      <div class="base-wa">
+        <div class="base-bolha base-bolha-rec">Oi! Vi o anúncio de vocês no Instagram, como funciona a abertura de empresa?<span>09:41</span></div>
+        <div class="base-bolha base-bolha-env">Olá, Delma! Funciona em 3 passos, te explico agora. Pode ser por aqui mesmo?<span>09:43 ✓✓</span></div>
+      </div>
+      <div class="amostras" data-grupo="wa"></div>
+    </div>
+    <div class="card" data-item="1.9 Etiquetas da Névoa (cor livre)"><h3 class="card-titulo">Etiquetas da Névoa <span class="card-fraco">(16 cores para tag e evento)</span></h3><div class="base-linha" id="etiquetas-nevoa"></div></div>
+  </section>
+
+  <section class="base-secao">
+    <h2>Tipografia · Inter</h2>
+    <div class="card base-tipo" data-item="1.10 Tipografia com acentos">
+      <p class="base-t" style="font-size: var(--t-39); font-weight: var(--titulo-peso); letter-spacing: var(--titulo-espaco); line-height: var(--titulo-entrelinha)">Ação, coração e negociação <span class="card-fraco">39 · 600</span></p>
+      <p class="base-t" style="font-size: var(--app-t-titulo); font-weight: var(--titulo-peso); letter-spacing: var(--titulo-espaco)">Funil de vendas · Conceição <span class="card-fraco">31 · título da tela</span></p>
+      <p class="base-t" style="font-size: var(--app-t-secao); font-weight: var(--titulo-peso); letter-spacing: var(--titulo-espaco)">Leads por dia e canal <span class="card-fraco">20 · título de bloco</span></p>
+      <p class="base-t" style="font-size: var(--t-16)">João Araújo agendou reunião às 14h30 com a Ótica São Benedito. <span class="card-fraco">16 · texto</span></p>
+      <p class="base-t" style="font-size: var(--app-t-texto)">Último contato: 23/10/2026 · Próxima ação: 25/10/2026 (atrasada) <span class="card-fraco">14 · lista e cartão</span></p>
+      <p class="base-t card-fraco" style="font-size: var(--app-t-rotulo)">Contatos: 4/10 · R$ 650/mês · Indicação · ÁÉÍÓÚ ÂÊÔ ÃÕ Ç àèìòù <span>12 · rótulo</span></p>
+      <p class="base-t numero" style="font-size: var(--t-49)">R$ 98.150,00 <span class="card-fraco">49 · --numero-peso 700 · número grande</span></p>
+    </div>
+  </section>
+
+  <section class="base-secao">
+    <h2>Espaço, raios e sombras</h2>
+    <div class="card" data-item="1.11 Espaço (grade de 4)"><h3 class="card-titulo">Espaço</h3><div class="base-espacos" id="espacos"></div></div>
+    <div class="card" data-item="1.12 Raios"><h3 class="card-titulo">Raios</h3><div class="base-linha base-raios">
+      <div style="border-radius: var(--raio-b)"><b>10</b>botão, campo</div><div style="border-radius: var(--raio-c)"><b>14</b>card, lista</div><div style="border-radius: var(--raio-v)"><b>14</b>vidro, janela</div><div style="border-radius: var(--raio-bloco)"><b>14</b>bloco de destaque</div>
+    </div></div>
+    <div class="base-sombras" data-item="1.13 Sombras">
+      <div class="base-sombra" style="box-shadow: var(--sombra)"><b>--sombra</b>card</div>
+      <div class="base-sombra" style="box-shadow: var(--sombra-alta)"><b>--sombra-alta</b>card levantado</div>
+      <div class="base-sombra" style="box-shadow: var(--sombra-lista)"><b>--sombra-lista</b>lista que abre</div>
+      <div class="base-sombra" style="box-shadow: var(--sombra-janela)"><b>--sombra-janela</b>janela</div>
+      <div class="base-sombra base-sombra-acento"><b>--acento-sombra</b>bloco de destaque</div>
+    </div>
+  </section>
+
+  <section class="base-secao">
+    <h2>Vidro e movimento</h2>
+    <div class="base-vidro-palco" data-item="1.22 Vidro das listas que abrem (mais opaco)">
+      <div class="base-vidro-fundo" aria-hidden="true"><span class="etiqueta" data-etapa="novo">Lead novo</span><span class="etiqueta" data-etapa="ganho">Ganho</span><span class="etiqueta" data-etapa="negociacao">Em negociação</span><span class="etiqueta" data-etapa="qualificacao">Em qualificação</span></div>
+      <div class="selecao-lista base-vidro-lista">
+        <button class="selecao-opcao" type="button" aria-pressed="true"><span class="selecao-marca"></span>Tráfego pago</button>
+        <button class="selecao-opcao" type="button" aria-pressed="false"><span class="selecao-marca"></span>Indicação</button>
+        <button class="selecao-opcao" type="button" aria-pressed="false"><span class="selecao-marca"></span>Google orgânico</button>
+      </div>
+    </div>
+    <div class="card" data-item="1.15 Movimento (seleção que abre e janela)">
+      <h3 class="card-titulo">Movimento</h3>
+      <p class="card-fraco">Rápida 160ms · padrão 240ms · lenta 420ms · curva macia sem quique. A lista sobe 4px e cresce de 0,96; a janela faz o mesmo. Sem 3D.</p>
+      <div class="base-linha" style="margin-top: var(--s-12)">
+        <button class="selecao-botao" type="button" popovertarget="mov-pop" style="anchor-name: --mov"><span class="selecao-rotulo-p">Etapa</span><span class="selecao-escolha">Em negociação</span><svg class="selecao-seta" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button>
+        <div id="mov-pop" popover class="selecao-pop" style="position-anchor: --mov">
+          <div class="selecao-lista">
+            <button class="selecao-opcao" type="button" aria-pressed="false"><span class="etiqueta" data-etapa="novo">Lead novo</span></button>
+            <button class="selecao-opcao" type="button" aria-pressed="true"><span class="etiqueta" data-etapa="negociacao">Em negociação</span></button>
+            <button class="selecao-opcao" type="button" aria-pressed="false"><span class="etiqueta" data-etapa="ganho">Ganho</span></button>
+          </div>
+        </div>
+        <button class="btn btn-2" type="button" id="abrir-janela">Abrir janela</button>
+        <button class="btn btn-2" type="button" id="abrir-lateral">Abrir painel lateral</button>
+      </div>
+    </div>
+    <div class="card" data-item="1.19 Abas com indicador, opção B · Fundo leve e sublinhado">
+      <h3 class="card-titulo">Abas, opção B · Fundo leve e sublinhado <span class="card-fraco">(como as abas do CRM atual, deslizando; clique nas abas)</span></h3>
+      <div class="abas-luz" role="tablist" aria-label="Exemplo B"><button type="button" role="tab" aria-selected="true">Visão geral</button><button type="button" role="tab" aria-selected="false">Por canal</button><button type="button" role="tab" aria-selected="false">Por etapa</button><button type="button" role="tab" aria-selected="false">Motivos de perda</button></div>
+    </div>
+  </section>
+</main>
+
+<dialog class="janela" id="janela-demo" aria-labelledby="jd-t">
+  <div class="janela-topo"><h2 id="jd-t">Mover lead</h2><button class="btn btn-fantasma btn-icone btn-p" type="button" data-fechar aria-label="Fechar"><svg class="ico" aria-hidden="true"><use href="#x"/></svg></button></div>
+  <div class="janela-corpo"><p>Mover <b>Delma Ávila Canto</b> de Em qualificação para Reunião agendada?</p></div>
+  <div class="janela-pe"><button class="btn btn-2" type="button" data-fechar>Cancelar</button><button class="btn" type="button" data-fechar>Mover</button></div>
+</dialog>
+<dialog class="janela janela-lateral" id="lateral-demo" aria-labelledby="jl-t">
+  <div class="janela-topo"><span class="avatar avatar-g">DC</span><h2 id="jl-t">Delma Ávila Canto</h2><button class="btn btn-fantasma btn-icone btn-p" type="button" data-fechar aria-label="Fechar"><svg class="ico" aria-hidden="true"><use href="#x"/></svg></button></div>
+  <div class="janela-corpo"><div class="base-linha"><span class="etiqueta" data-etapa="qualificacao">Em qualificação</span><span class="selo selo-acento">Indicação</span><span class="faixa" data-faixa="prata">Prata</span></div><p style="margin-top: var(--s-16)">R$ 650/mês · Contatos: 2/10</p></div>
+  <div class="janela-pe"><button class="btn" type="button" data-fechar>Salvar</button></div>
+</dialog>
+
+<script src="05-graficos.js?v=you1"></script>
+<script src="01-base.js?v=you1"></script>
+<script src="../base/aprovacao.js?v=you1"></script>
+</body>
+</html>

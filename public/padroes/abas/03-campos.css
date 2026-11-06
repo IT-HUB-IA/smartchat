@@ -1,0 +1,41 @@
+/* Aba 3 Campos: só o arranjo e as peças que a base ainda não tem (marcar, opção, interruptor, calendário). Tudo com tokens. */
+.cp-cabeca { display: grid; gap: var(--s-8); margin-bottom: var(--s-24); max-width: 72ch; }
+.cp-secao { display: grid; gap: var(--s-4); margin-bottom: var(--s-32); }
+.cp-secao > h2 { margin-bottom: var(--s-12); }
+.cp-grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: var(--s-16); align-items: start; }
+.cp-grade .card-titulo { margin-bottom: var(--s-12); }
+.cp-linha { display: flex; flex-wrap: wrap; gap: var(--s-8); margin-bottom: var(--s-8); }
+.cp-rs { font-size: var(--t-14); font-weight: 500; }
+.cp-num { padding-left: 40px; font-variant-numeric: tabular-nums; }
+.cp-copia { display: flex; gap: var(--s-8); }
+.cp-copia .campo-input { flex: 1; min-width: 0; }
+.cp-aviso[data-ok] { color: var(--sucesso); font-weight: 500; }
+.cp-contagem { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* seleção dentro do campo */
+[data-selecao], [data-periodo], [data-data], [data-hora] { display: flex; min-width: 0; }
+[data-largo] > .selecao-botao { width: 100%; }
+.selecao-botao { max-width: 100%; }
+.selecao-botao .selecao-seta { margin-left: auto; }
+.selecao-chips .selo { flex: none; }
+.cp-valor { font-variant-numeric: tabular-nums; padding: 4px 8px; border-radius: 6px; background: var(--realce); font-size: var(--t-12); font-weight: 600; }
+
+/* formulário */
+.cp-form { display: grid; gap: var(--s-16); max-width: 760px; }
+.cp-secao-form { font-size: var(--t-12); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fraco); margin-top: var(--s-8); }
+.cp-duas { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-16); }
+.cp-inteira { grid-column: 1 / -1; }
+.cp-acoes { display: flex; justify-content: flex-end; gap: var(--s-12); }
+@media (max-width: 560px) { .cp-duas { grid-template-columns: 1fr; } .cp-acoes .btn { flex: 1; } }
+
+/* 3.7 a 3.9, 3.20: foto, logo e ícone ao lado do nome */
+.cp-foto, .cp-logo { flex: none; display: inline-grid; place-items: center; object-fit: cover; }
+.cp-foto { width: 24px; height: 24px; border-radius: 50%; background: var(--sup-2); }
+.cp-logo { width: 20px; height: 20px; object-fit: contain; }
+.cp-ini { background: var(--acento-claro); color: var(--acento-texto); font: 600 10px / 1 var(--fonte); border-radius: 50%; }
+.cp-chip { display: inline-flex; align-items: center; gap: 6px; }
+.cp-chip .cp-logo, .cp-chip .cp-foto { width: 16px; height: 16px; }
+.selecao-botao > .cp-foto, .selecao-botao > .cp-logo { margin-right: 2px; }
+
+/* o ícone animado (animateicons) troca o svg.ico por span.ico-animado: sem isto o ícone sai de dentro do campo */
+.campo-com-icone > .ico-animado { position: absolute; left: var(--s-12); color: var(--fraco); pointer-events: none; display: inline-flex; }

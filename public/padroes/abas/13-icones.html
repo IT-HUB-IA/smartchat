@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><script src="/assets/catalogo.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM padrão · 13 Ícones</title>
+<script src="../base/casca.js?v=you1"></script>
+<link rel="stylesheet" href="../base/tokens.css?v=you1">
+<link rel="stylesheet" href="../base/componentes.css?v=you1">
+<link rel="stylesheet" href="13-icones.css?v=you1">
+<link rel="stylesheet" href="/assets/smartchat-tokens.css"><link rel="stylesheet" href="/assets/catalogo.css"></head>
+<body>
+<main class="casca-pagina">
+  <header class="ic-cabeca">
+    <h1>Ícones</h1>
+    <p class="card-fraco">Interface: traço de 24px com cor do texto, igual em todo o CRM. A versão animada é a do animateicons, sem mudar nada, e mexe ao passar o mouse e ao clicar. Origens: colorido, mesma caixa de 24px.</p>
+  </header>
+
+  <section class="ic-secao">
+    <h2>Interface</h2>
+    <div class="card" data-item="13.1 Ícones de interface animados (passe o mouse)">
+      <h3 class="card-titulo">Animados <span class="card-fraco">(os componentes do animateicons; o smile não existe lá e fica parado)</span></h3>
+      <div class="ic-grade" id="grade-animada"></div>
+    </div>
+    <div class="card" data-item="13.2 Ícones de interface estáticos (os que vão no CRM)">
+      <h3 class="card-titulo">Estáticos <span class="card-fraco">(SVG em icones/ui, herdam a cor do texto)</span></h3>
+      <div class="ic-grade" id="grade-estatica"></div>
+    </div>
+    <div class="card" data-item="13.3 Tamanhos e cores do ícone">
+      <h3 class="card-titulo">Tamanhos e cores</h3>
+      <div class="ic-tamanhos" id="tamanhos"></div>
+    </div>
+    <div class="card" data-item="13.4 Ícones dentro de botões e campos">
+      <h3 class="card-titulo">Em uso</h3>
+      <div class="ic-uso" id="uso"></div>
+    </div>
+  </section>
+
+  <section class="ic-secao">
+    <h2>Animação dos ícones</h2>
+    <div class="card" data-item="13.9 Ícones-chave animados (passar o mouse, clicar ou Tocar todos)">
+      <div class="ic-topo-item"><h3 class="card-titulo">Ícones-chave <span class="card-fraco">são os do animateicons nos pontos de ícone do CRM</span></h3><button class="btn btn-2 btn-p" type="button" id="tocar-todos">Tocar todos</button></div>
+      <div class="ic-grade" id="chave"></div>
+      <p class="card-fraco ic-parados">Ficam parados de propósito: <span id="parados"></span>.</p>
+    </div>
+  </section>
+
+  <section class="ic-secao">
+    <h2>Origem do lead</h2>
+    <div class="card" data-item="13.5 Ícones de origem (Meta, Google, WhatsApp, Site, Bio, Indicação)">
+      <h3 class="card-titulo">Origens <span class="card-fraco">(mesma caixa de 24px; o Google é só o G oficial)</span></h3>
+      <div class="ic-origens">
+        <figure><img src="../icones/origens/meta.svg" alt="" width="24" height="24"><figcaption>Meta</figcaption></figure>
+        <figure><img src="../icones/origens/google.svg" alt="" width="24" height="24"><figcaption>Google</figcaption></figure>
+        <figure><img src="../icones/origens/whatsapp.svg" alt="" width="24" height="24"><figcaption>WhatsApp</figcaption></figure>
+        <figure><img src="../icones/origens/site.svg" alt="" width="24" height="24"><figcaption>Site</figcaption></figure>
+        <figure><img src="../icones/origens/bio.svg" alt="" width="24" height="24"><figcaption>Bio</figcaption></figure>
+        <figure><img src="../icones/origens/indicacao.svg" alt="" width="24" height="24"><figcaption>Indicação</figcaption></figure>
+        <figure><img src="../icones/origens/google-organico.svg" alt="" width="24" height="24"><figcaption>Google orgânico</figcaption></figure>
+      </div>
+    </div>
+    <div class="card" data-item="13.6 Google orgânico: opção A (G e folha) ou B (lupa)">
+      <h3 class="card-titulo">Google orgânico precisa se distinguir do Google pago <span class="card-fraco">(escolha A ou B)</span></h3>
+      <div class="ic-opcoes">
+        <div class="ic-opcao">
+          <span class="ic-par"><img src="../icones/origens/google.svg" alt="" width="24" height="24"><small>Google pago</small></span>
+          <span class="ic-par"><img src="../icones/origens/google-organico.svg" alt="" width="24" height="24"><small>A · G e folha</small></span>
+          <span class="ic-par"><img src="../icones/origens/google-organico.svg" alt="" width="40" height="40"><small>A grande</small></span>
+        </div>
+        <div class="ic-opcao">
+          <span class="ic-par"><img src="../icones/origens/google.svg" alt="" width="24" height="24"><small>Google pago</small></span>
+          <span class="ic-par"><img src="../icones/origens/google-organico-b.svg" alt="" width="24" height="24"><small>B · lupa</small></span>
+          <span class="ic-par"><img src="../icones/origens/google-organico-b.svg" alt="" width="40" height="40"><small>B grande</small></span>
+        </div>
+      </div>
+    </div>
+    <div class="card" data-item="13.7 Origem dentro de linha, selo e legenda">
+      <h3 class="card-titulo">Em uso</h3>
+      <div class="ic-linhas" id="origens-uso"></div>
+    </div>
+  </section>
+
+  <section class="ic-secao">
+    <h2>Logos das empresas</h2>
+    <div class="card" data-item="13.8 Logos da empresa (topo do menu)">
+      <h3 class="card-titulo">Logo da empresa <span class="card-fraco">(troca com a chave Névoa/Beec no topo)</span></h3>
+      <div class="ic-logos">
+        <figure><span class="ic-logo-fundo"><img class="logo-sobre-claro " src="../icones/empresas/you-logo.svg" alt="You" height="32"><img class="logo-sobre-escuro " src="../icones/empresas/you-logo-claro.svg" alt="You" height="32"></span><figcaption>You (padrão Névoa)</figcaption></figure>
+        <figure><span class="ic-logo-fundo"><img class="logo-sobre-claro " src="../icones/empresas/beec-logo.svg" alt="Beec" height="32"><img class="logo-sobre-escuro " src="../icones/empresas/beec-logo-claro.svg" alt="Beec" height="32"></span><figcaption>Beec</figcaption></figure>
+        <figure><span class="ic-logo-fundo"><img class="logo-sobre-claro " src="../icones/empresas/you.svg" alt="You" height="32"><img class="logo-sobre-escuro " src="../icones/empresas/you-icone-claro.svg" alt="You" height="32"></span><figcaption>You, ícone</figcaption></figure>
+        <figure><span class="ic-logo-fundo"><img class="logo-sobre-claro " src="../icones/empresas/beec.svg" alt="Beec" height="32"><img class="logo-sobre-escuro " src="../icones/empresas/beec-icone-claro.svg" alt="Beec" height="32"></span><figcaption>Beec, ícone</figcaption></figure>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="../icones/animateicons.js?v=you1"></script>
+<script src="13-icones.dados.js?v=you1"></script>
+<script src="13-icones.js?v=you1"></script>
+
+</body>
+</html>

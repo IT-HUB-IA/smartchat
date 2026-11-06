@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><script src="/assets/catalogo.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM padrão · 6 Casca</title>
+<script src="../base/casca.js?v=you1"></script>
+<script src="../base/icones.js?v=you1"></script>
+<link rel="stylesheet" href="../base/tokens.css?v=you1">
+<link rel="stylesheet" href="../base/componentes.css?v=you1">
+<link rel="stylesheet" href="06-casca.css?v=you1">
+<link rel="stylesheet" href="/assets/smartchat-tokens.css"><link rel="stylesheet" href="/assets/catalogo.css"></head>
+<body>
+<main class="casca-pagina">
+  <header class="cs-cabeca">
+    <h1>Casca e navegação</h1>
+    <p class="card-fraco">Menu lateral de vidro (claro e escuro), topo da tela, abas, paginação e migalha. Troque claro/escuro e Névoa/Beec no topo da página.</p>
+  </header>
+
+  <section class="cs-secao">
+    <h2>Menu lateral <span class="card-fraco">(vidro: claro no modo claro, escuro no modo escuro)</span></h2>
+    <div class="cs-par" data-item="6.1 Menu de vidro, aberto e recolhido">
+      <figure class="cs-fig"><div class="cs-palco" data-menu="A"></div><figcaption>Aberto</figcaption></figure>
+      <figure class="cs-fig cs-fig-estreita"><div class="cs-palco" data-menu="A" data-recolhido></div><figcaption>Recolhido</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="cs-secao">
+    <h2>Topo da tela</h2>
+    <div class="card cs-topo-card" data-item="6.3 Topo da tela: título, subtítulo, notificações, som e ações">
+      <header class="cs-topo" id="topo-tela"></header>
+    </div>
+    <div class="card cs-topo-card" data-item="6.4 Topo da tela em tela estreita (celular)">
+      <header class="cs-topo cs-topo-cel" id="topo-cel"></header>
+    </div>
+  </section>
+
+  <section class="cs-secao">
+    <h2>Abas, migalha e paginação</h2>
+    <div class="card" data-item="6.5 Abas da tela (com contador)">
+      <h3 class="card-titulo">Abas</h3>
+      <div class="cs-abas" role="tablist" aria-label="Visões do dashboard" id="abas-tela"></div>
+      <p class="cs-abas-texto card-fraco" id="abas-texto" aria-live="polite"></p>
+    </div>
+    <div class="card" data-item="6.6 Migalha de pão">
+      <h3 class="card-titulo">Migalha</h3>
+      <nav aria-label="Você está em" id="migalha"></nav>
+    </div>
+    <div class="card" data-item="6.7 Paginação com linhas por página">
+      <h3 class="card-titulo">Paginação</h3>
+      <div class="cs-pag" id="paginacao"></div>
+    </div>
+  </section>
+
+  <section class="cs-secao">
+    <h2>Tela montada</h2>
+    <figure class="cs-fig cs-fig-larga" data-item="6.8 Tela montada: menu, topo e conteúdo"><div class="cs-palco cs-palco-tela" id="tela-montada"></div></figure>
+  </section>
+</main>
+<script src="06-casca.js?v=you1"></script>
+<script src="../icones/animateicons.js?v=you1"></script>
+
+</body>
+</html>

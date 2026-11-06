@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><script src="/assets/catalogo.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM padrão · 14 Movimento</title>
+<script src="../base/casca.js?v=you1"></script>
+<script src="../base/icones.js?v=you1"></script>
+<link rel="stylesheet" href="../base/tokens.css?v=you1">
+<link rel="stylesheet" href="../base/componentes.css?v=you1">
+<link rel="stylesheet" href="06-casca.css?v=you1">
+<link rel="stylesheet" href="14-movimento.css?v=you1">
+<link rel="stylesheet" href="/assets/smartchat-tokens.css"><link rel="stylesheet" href="/assets/catalogo.css"></head>
+<body>
+<main class="casca-pagina">
+  <header class="mv-cabeca">
+    <h1>Movimento</h1>
+    <p class="card-fraco">As animações do vídeo que servem para o CRM, aplicadas num mini CRM: troca de tela, números contando, lista em cascata, card que sobe, indicador que desliza e dica no menu recolhido. Sem inclinar nada, tudo 2D. Com "reduzir movimento" ligado no sistema, nada anima.</p>
+  </header>
+
+  <section class="mv-secao">
+    <h2>Troca de tela</h2>
+    <p class="card-fraco mv-leg">Clique em Dashboard, Funil e Clientes no menu de cada mini CRM. O conteúdo velho some desfocando e o novo entra em cascata.</p>
+    <div class="mv-trio" data-item="14.1 Troca de tela (a oficial, como o vídeo)">
+      <figure class="mv-fig">
+        <figcaption><b>Troca de tela</b><span class="card-fraco">como o vídeo: desfoque forte, cascata de 60ms</span><button class="btn btn-2 btn-p mv-repetir" type="button" data-alvo="A" data-ico-btn="refresh-cw">Repetir</button></figcaption>
+        <div class="mv-crm" data-var="A"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="mv-secao">
+    <h2>Números, lista e card</h2>
+    <div class="card" data-item="14.2 Números contando (de 0 até o valor)">
+      <div class="mv-topo-item"><h3 class="card-titulo">Números contando <span class="card-fraco">R$, %, milhar com ponto e vírgula decimal</span></h3><button class="btn btn-2 btn-p mv-repetir" type="button" data-alvo="numeros" data-ico-btn="refresh-cw">Repetir animação</button></div>
+      <div class="mv-numeros" id="numeros"></div>
+    </div>
+    <div class="card" data-item="14.3 Lista em cascata (cada linha logo depois da anterior)">
+      <div class="mv-topo-item"><h3 class="card-titulo">Lista em cascata <span class="card-fraco">tabela de clientes</span></h3><button class="btn btn-2 btn-p mv-repetir" type="button" data-alvo="lista" data-ico-btn="refresh-cw">Repetir animação</button></div>
+      <div id="lista"></div>
+    </div>
+    <div class="card" data-item="14.4 Card que sobe ao passar o mouse (só 2D)">
+      <h3 class="card-titulo">Card que sobe <span class="card-fraco">sobe 4 a 5px e a sombra aumenta, sem inclinar</span></h3>
+      <div class="mv-cards" id="cards-sobe"></div>
+    </div>
+  </section>
+
+  <section class="mv-secao">
+    <h2>Indicador e menu</h2>
+    <div class="card" data-item="14.5 Indicador que desliza no segmentado e nas abas">
+      <h3 class="card-titulo">Indicador deslizando <span class="card-fraco">a pílula vai até o item clicado, sem pular</span></h3>
+      <div class="mv-indicadores">
+        <div class="seg" role="group" aria-label="Período"><button type="button" aria-pressed="true">Mês</button><button type="button" aria-pressed="false">Semana</button><button type="button" aria-pressed="false">Dia</button></div>
+        <div class="seg" role="group" aria-label="Origem"><button type="button" aria-pressed="true">Todos</button><button type="button" aria-pressed="false">Tráfego</button><button type="button" aria-pressed="false">Indicação</button></div>
+        <div class="cs-abas" role="tablist" aria-label="Visões" id="abas-mv"></div>
+      </div>
+    </div>
+    <div class="card" data-item="14.6 Menu recolhido com dica ao passar o mouse">
+      <h3 class="card-titulo">Dica no menu recolhido <span class="card-fraco">passe o mouse (ou use Tab) nos ícones</span></h3>
+      <div class="mv-menu-dica" id="menu-dica"></div>
+    </div>
+  </section>
+
+  <section class="mv-secao">
+    <h2>Abas com indicador <span class="card-fraco">(fundo leve e sublinhado, a escolhida)</span></h2>
+    <div class="card" data-item="14.8 Abas com luz, opção B (fundo leve e sublinhado)"><h3 class="card-titulo">B · Fundo leve e sublinhado</h3><div class="abas-luz" data-luz="b" role="tablist" aria-label="Visões, opção B"></div></div>
+  </section>
+</main>
+<script src="14-movimento.dados.js?v=you1"></script>
+<script src="14-movimento.js?v=you1"></script>
+<script src="../icones/animateicons.js?v=you1"></script>
+
+</body>
+</html>

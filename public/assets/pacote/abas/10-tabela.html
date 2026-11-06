@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM padrão · 10 Tabela e listas</title>
+<script src="../base/casca.js?v=you1"></script>
+<script src="../base/icones.js?v=you1"></script>
+<link rel="stylesheet" href="../base/tokens.css?v=you1">
+<link rel="stylesheet" href="../base/componentes.css?v=you1">
+<link rel="stylesheet" href="10-tabela.css?v=you1">
+</head>
+<body>
+<main class="casca-pagina">
+  <header class="t10-cabeca">
+    <h1>Tabela e listas</h1>
+    <p class="card-fraco">Tabela de clientes com origem, fechamento, barra de contrato e ações. Clique no título da coluna para ordenar. Dados de exemplo.</p>
+  </header>
+
+  <section class="t10-secao">
+    <div class="card t10-card" data-item="10.5 Tabela de clientes com avatares Micah, ordenar, origem, contrato e ações">
+      <div class="t10-rolagem">
+        <table class="t10-tabela" id="tabela-clientes">
+          <thead><tr>
+            <th scope="col" aria-sort="none"><button class="t10-ord" type="button" data-col="nome">Cliente<svg class="ico" data-anima aria-hidden="true"><use href="#arrow-up-down"/></svg></button></th>
+            <th scope="col" class="t10-centro">Origem</th>
+            <th scope="col" class="t10-centro" aria-sort="none"><button class="t10-ord" type="button" data-col="fechamento">Fechamento<svg class="ico" data-anima aria-hidden="true"><use href="#arrow-up-down"/></svg></button></th>
+            <th scope="col" aria-sort="none"><button class="t10-ord" type="button" data-col="pct">Contrato<svg class="ico" data-anima aria-hidden="true"><use href="#arrow-up-down"/></svg></button></th>
+            <th scope="col" class="t10-dir">Indicar</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="card-fraco t10-nota">Clique no nome para abrir a ficha do cliente. A barra mostra quanto do contrato de 18 meses já passou.</p>
+    </div>
+
+    <div class="card t10-card" data-item="10.2 Tabela vazia">
+      <h3 class="card-titulo">Nenhum cliente encontrado</h3>
+      <div class="t10-vazio">
+        <svg class="ico" data-anima aria-hidden="true"><use href="#search"/></svg>
+        <p>Nenhum cliente para este filtro.</p>
+        <p class="card-fraco">Troque o filtro ou busque por outro nome.</p>
+        <button class="btn btn-2" type="button">Limpar filtros</button>
+      </div>
+    </div>
+
+    <div class="card t10-card" data-item="10.3 Tabela carregando (esqueleto)">
+      <h3 class="card-titulo">Carregando</h3>
+      <div class="t10-esq" aria-busy="true" aria-label="Carregando clientes">
+        <div class="t10-esq-linha"><i class="t10-circ"></i><i class="t10-fio" style="width:38%"></i><i class="t10-fio" style="width:14%"></i><i class="t10-fio" style="width:20%"></i></div>
+        <div class="t10-esq-linha"><i class="t10-circ"></i><i class="t10-fio" style="width:30%"></i><i class="t10-fio" style="width:14%"></i><i class="t10-fio" style="width:20%"></i></div>
+        <div class="t10-esq-linha"><i class="t10-circ"></i><i class="t10-fio" style="width:44%"></i><i class="t10-fio" style="width:14%"></i><i class="t10-fio" style="width:20%"></i></div>
+        <div class="t10-esq-linha"><i class="t10-circ"></i><i class="t10-fio" style="width:26%"></i><i class="t10-fio" style="width:14%"></i><i class="t10-fio" style="width:20%"></i></div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="04-avatar.js?v=you1"></script>
+<script src="10-tabela.js?v=you1"></script>
+<script src="../base/aprovacao.js?v=you1"></script>
+</body>
+</html>

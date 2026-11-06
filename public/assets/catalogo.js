@@ -1,0 +1,1 @@
+document.documentElement.dataset.empresa='smartchat';document.documentElement.dataset.tema=new URLSearchParams(location.search).get('tema')||'claro';
