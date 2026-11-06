@@ -1,0 +1,74 @@
+/* Camada SmartChat. O pacote original continua intacto em referencias/PACOTE-WILL.
+   Formas, dimensões, tipografia, componentes e movimentos vêm da base original. */
+:root {
+  --sc-azul: #2457EB;
+  --sc-profundo: #14213D;
+  --sc-menta: #62E6C6;
+  --sc-nevoa: #F5F7FB;
+  --sc-cinza: #53627A;
+  --sc-branco: #FFFFFF;
+  --sc-linha: #DCE3EF;
+  --sc-borda-campo: #748198;
+  --sc-azul-hover: #1947CC;
+  --sc-azul-legivel-escuro: #9BB7FF;
+  --sc-superficie-escura: #1B2B48;
+  --sc-apoio-escuro: #223554;
+  --sc-texto-escuro: #F5F7FB;
+  --sc-fraco-escuro: #B4C1D8;
+}
+:root[data-empresa="smartchat"] {
+  --fundo: var(--sc-nevoa);
+  --texto: var(--sc-profundo);
+  --fraco: var(--sc-cinza);
+  --sup: var(--sc-branco);
+  --sup-2: color-mix(in srgb, var(--sc-nevoa) 80%, var(--sc-branco));
+  --borda: var(--sc-linha);
+  --borda-campo: var(--sc-borda-campo);
+  --azul: var(--sc-azul);
+  --azul-hover: var(--sc-azul-hover);
+  --azul-claro: color-mix(in srgb, var(--sc-azul) 10%, transparent);
+  --acento: var(--sc-azul);
+  --acento-hover: var(--sc-azul-hover);
+  --acento-texto: var(--sc-azul);
+  --acento-claro: var(--azul-claro);
+  --no-acento: var(--sc-branco);
+  --no-acento-fraco: var(--sc-branco);
+  --no-azul: var(--no-acento);
+  --no-azul-fraco: var(--no-acento-fraco);
+  --foco: color-mix(in srgb, var(--sc-azul) 55%, transparent);
+  --acento-foco: var(--foco);
+  --acento-sombra: 0 8px 16px -8px color-mix(in srgb, var(--sc-profundo) 50%, transparent);
+  --acento-sombra-btn: inset 0 1px 0 color-mix(in srgb, var(--sc-branco) 20%, transparent), 0 1px 2px color-mix(in srgb, var(--sc-profundo) 30%, transparent);
+  --wa-fundo: var(--sc-nevoa);
+  --wa-enviada: color-mix(in srgb, var(--sc-azul) 12%, var(--sup));
+  --sc-detalhe: var(--sc-menta);
+  --sc-detalhe-texto: var(--sc-profundo);
+}
+:root[data-empresa="smartchat"][data-tema="escuro"] {
+  --fundo: var(--sc-profundo);
+  --sup: var(--sc-superficie-escura);
+  --sup-2: var(--sc-apoio-escuro);
+  --texto: var(--sc-texto-escuro);
+  --fraco: var(--sc-fraco-escuro);
+  --borda: color-mix(in srgb, var(--sc-fraco-escuro) 30%, var(--sup));
+  --borda-campo: var(--sc-borda-campo);
+  --acento-texto: var(--sc-azul-legivel-escuro);
+  --acento-claro: color-mix(in srgb, var(--sc-azul-legivel-escuro) 12%, transparent);
+  --vidro: color-mix(in srgb, var(--sc-superficie-escura) 80%, transparent);
+  --vidro-forte: color-mix(in srgb, var(--sc-superficie-escura) 92%, transparent);
+  --vidro-lista: color-mix(in srgb, var(--sc-superficie-escura) 97%, transparent);
+  --wa-fundo: var(--sc-profundo);
+  --wa-recebida: var(--sc-apoio-escuro);
+  --wa-enviada: color-mix(in srgb, var(--sc-azul) 38%, var(--sup));
+  --wa-hora: var(--sc-fraco-escuro);
+}
+/* As pastas originais mantêm vidro claro e folhas brancas nos dois modos. */
+:root[data-empresa="smartchat"] .gf-root {
+  --gf-ink: var(--sc-profundo);
+  --gf-ink-soft: var(--sc-cinza);
+}
+:root[data-empresa="smartchat"] .gf-vazio { color: var(--sc-profundo); }
+/* Calendário do Tarefas nasceu claro; a cor de cada empresa continua no evento. */
+:root[data-empresa="smartchat"][data-tema="escuro"] .evento {
+  background: color-mix(in srgb, var(--tarefa-fundo) 24%, var(--sup));
+}

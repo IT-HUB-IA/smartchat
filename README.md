@@ -1,6 +1,6 @@
-# SmartChat — interface web
+# SmartChat — landing e aplicação web
 
-Este projeto é a interface do SmartChat para GitHub → Vercel. O código React fica em src/, os componentes originais necessários em vendor/tarefas/ e todos os recursos visuais em public/. O build é independente das pastas do projeto original.
+Este projeto reúne a landing em / e a aplicação em /app para GitHub → Vercel. O botão Acessar faz a navegação entre as duas. A fonte da landing fica em landing/ e é copiada pelo build sem depender de outra pasta. O código React fica em src/, os componentes originais necessários em vendor/tarefas/ e todos os recursos visuais em public/. O build é independente das pastas do projeto original.
 
 Na Vercel, importar ESTE diretório como raiz do repositório/projeto, com framework Other e Node 24.x. O vercel.json configura npm ci --include=dev, npm run build e saída public/. O arquivo package-lock.json deve ser versionado. Não configurar Functions nem Cron.
 

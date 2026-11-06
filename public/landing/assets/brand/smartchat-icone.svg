@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104" role="img" aria-labelledby="title">
+  <title id="title">Ícone SmartChat</title>
+  <rect x="4" y="4" width="96" height="96" rx="28" fill="#2457EB"/>
+  <path d="M29 24h31a11 11 0 0 1 11 11v5a11 11 0 0 1-11 11H39l-12 9V49a11 11 0 0 1-9-11v-3a11 11 0 0 1 11-11Z" fill="#FFFFFF"/>
+  <path d="M48 53h24a10 10 0 0 1 10 10v5a10 10 0 0 1-8 10v10l-12-9H48a10 10 0 0 1-10-10v-6a10 10 0 0 1 10-10Z" fill="#62E6C6"/>
+</svg>

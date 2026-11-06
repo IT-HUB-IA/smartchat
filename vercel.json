@@ -18,8 +18,16 @@
       "destination": "https://motor-smartchat.it-ia.tec.br/data-deletion"
     },
     {
-      "source": "/:path*",
-      "destination": "/index.html"
+      "source": "/app",
+      "destination": "/app/index.html"
+    },
+    {
+      "source": "/app/:path*",
+      "destination": "/app/index.html"
+    },
+    {
+      "source": "/reset-password",
+      "destination": "/app/index.html"
     }
   ],
   "headers": [

@@ -1,0 +1,9 @@
+Avatares do CRM padrão
+
+Pessoas (homem e mulher, pasta b/ e homem.svg, mulher.svg):
+  "Micah" de Micah Lanier, via DiceBear (https://www.dicebear.com/styles/micah/),
+  licença CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Crédito obrigatório. Foram usadas variações geradas por seed.
+
+Sem nome (pasta c/ e sem-nome.svg):
+  "Notionists" de Zoish, via DiceBear (https://www.dicebear.com/styles/notionists/),
+  licença CC0 1.0 (domínio público). Crédito opcional.
