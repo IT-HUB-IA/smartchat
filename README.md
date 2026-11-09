@@ -14,6 +14,6 @@ No corte: preparar e validar o motor na VPS primeiro; adicionar smartchat.it-ia.
 
 Build local: npm ci --include=dev e npm run build.
 
-A manutenção da interface é feita neste projeto. O motor/API tem pacote e implantação separados na VPS. Os arquivos públicos de biblioteca visual permanecem incluídos. As páginas de privacidade/exclusão ainda são rascunhos do operador, pendentes antes do lançamento comercial.
+A manutenção da interface é feita neste projeto. O motor/API tem pacote e implantação separados na VPS. As referências visuais são material interno e não são publicadas no produto. As páginas de privacidade/exclusão ainda são rascunhos do operador, pendentes antes do lançamento comercial.
 
 Documentação do proxy: https://vercel.com/docs/routing/rewrites
