@@ -11,11 +11,15 @@
     },
     {
       "source": "/privacy",
-      "destination": "https://motor-smartchat.it-ia.tec.br/privacy"
+      "destination": "/legal/privacy.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/legal/terms.html"
     },
     {
       "source": "/data-deletion",
-      "destination": "https://motor-smartchat.it-ia.tec.br/data-deletion"
+      "destination": "/legal/data-deletion.html"
     },
     {
       "source": "/app",

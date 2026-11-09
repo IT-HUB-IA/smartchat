@@ -8,4 +8,5 @@ await mkdir('public/app',{recursive:true});
 await copyFile('src/app.html','public/app/index.html');
 await cp('landing','public/landing',{recursive:true});
 await copyFile('landing/index.html','public/index.html');
+await cp('legal','public/legal',{recursive:true});
 console.log('Landing em / e sistema em /app compilados. API e worker permanecem na VPS.');
