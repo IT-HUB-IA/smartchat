@@ -69,5 +69,12 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/login.html",
+      "destination": "/app",
+      "permanent": false
+    }
   ]
 }
