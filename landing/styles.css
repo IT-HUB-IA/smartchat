@@ -18,17 +18,108 @@
 
 @media(max-width:600px){.resource-search input{font-size:16px}.resource-filters button{min-height:40px}.video-toggle{min-height:32px}}
 
-/* A composição aprovada tem escala editorial estável, inclusive em monitores largos. */
+/* Composição fluida: largura disponível com altura controlada na primeira tela. */
 @media(min-width:901px){
-  .hero{width:calc(100% - 56px);max-width:1200px;min-height:720px;margin-inline:auto;gap:48px;padding-block:38px 40px;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr)}
-  .hero-copy{padding-left:18px;min-width:0}
-  .hero h1{font-size:60px;max-width:560px;line-height:1.06}
-  .hero .lead{font-size:19px;max-width:530px}
-  .hero .hero-visual{width:100%;max-width:600px;min-width:0;justify-self:end}
+ .hero{width:calc(100% - 56px);max-width:none;margin-inline:auto;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);gap:48px;min-height:720px;min-height:max(720px,calc(100svh - 66px));padding-block:38px 40px}
+ .hero-copy{padding-left:18px;min-width:0}
+ .hero h1{font-size:clamp(46px,min(4.8vw,8svh),82px);line-height:1.06;max-width:830px}
+ .hero .lead{font-size:clamp(19px,1.53vw,23px);max-width:660px}
+ .hero .hero-visual{width:100%;min-width:0;max-width:calc((100svh - 220px)*12/11);justify-self:end;align-self:center}
+ .hero-video-container video{width:100%;height:auto;aspect-ratio:12/11}
 }
-@media(min-width:901px) and (max-width:1180px){
-  .hero{gap:28px;min-height:660px}
-  .hero-copy{padding-left:0}
-  .hero h1{font-size:clamp(42px,4.6vw,54px)}
-  .hero .lead{font-size:17px}
+@media(min-width:901px) and (max-width:1180px){.hero{gap:28px;min-height:660px}.hero-copy{padding-left:0}.hero h1{font-size:clamp(42px,4.6vw,54px)}.hero .lead{font-size:17px}}
+/* Texto e exploração à esquerda, exemplo com proporção de aplicativo à direita. */
+.platform{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:center}
+.platform-copy,.platform-demo{min-width:0}
+.platform .section-heading{display:block;margin-bottom:30px}
+.platform .section-heading h2{font-size:clamp(34px,3.2vw,52px);max-width:650px}
+.platform .section-heading>p{margin-top:24px;max-width:510px;font-size:17px}
+.platform .workspace-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:440px;gap:9px;margin:0}
+.platform .workspace-tabs button{justify-content:flex-start;padding:13px 16px;min-width:0}
+.platform .product-window{min-height:490px}
+.platform .product-body{grid-template-columns:48px 205px minmax(0,1fr)}
+.platform .mock-profile{display:none}
+.platform .product-caption{display:block;margin-top:18px}
+.platform .product-caption>p{font-size:14px;line-height:1.7}
+.platform .product-caption>span{display:block;font-size:11px;margin-top:8px}
+.platform .mock-thread .msg{max-width:94%}
+.platform .flow-board{padding:24px}
+.platform .flow-canvas{grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr)}
+.platform .flow-node-head{font-size:10px;padding:11px 9px;gap:5px}
+.platform .flow-node p{font-size:11px;padding:13px 11px}
+.platform .node-pills{padding-inline:11px}
+.platform .kanban{grid-template-columns:repeat(2,minmax(0,1fr))}
+.platform .kanban-card{padding:13px}
+.platform .campaign-board{gap:24px;padding:26px;grid-template-columns:minmax(0,1fr) minmax(0,.9fr)}
+.platform .campaign-config h3{font-size:22px}
+.platform .campaign-field{font-size:11px;gap:12px}
+.platform .campaign-message{padding:18px}
+/* IA: conteúdo e exemplo próximos, com leitura maior e hierarquia clara. */
+.ai-section{padding-block:80px}
+.ai-grid{width:calc(100% - 92px);max-width:1440px;padding-inline:0;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:48px}
+.ai-section h2{font-size:clamp(34px,3vw,48px);max-width:650px}
+.ai-section h2+p{max-width:590px;font-size:17px;line-height:1.8}
+.ai-demo{transform:none;padding:30px;background:linear-gradient(140deg,#172428,#1B2930);border-color:#5B4BC480;border-radius:20px;box-shadow:0 20px 55px #0002}
+.ai-demo-head{padding-bottom:25px}
+.ai-demo-head strong{font-size:15px}
+.ai-demo-head div>span{font-size:12px;margin-top:3px}
+.ai-question{font-size:15px;margin-left:25px;padding:17px 20px;background:#ffffff03}
+.ai-answer{padding:24px 3px 18px;gap:14px}
+.ai-answer p{font-size:16px;line-height:1.8}
+.knowledge-source{margin:0 0 23px 35px;font-size:11px;line-height:1.6;background:#5B4BC41F;border:1px solid #5B4BC44D;padding:8px 11px;border-radius:7px;width:fit-content;max-width:calc(100% - 35px)}
+.handoff{padding:17px;border-color:#6FBAC12B;background:#0B6E791A}
+.handoff strong{font-size:14px}
+.handoff div>span{font-size:12px;margin-top:3px}
+@media(min-width:901px) and (max-width:1350px){
+ .platform{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:28px}
+ .platform .section-heading h2{font-size:38px}
+ .platform .section-heading>p{font-size:15px}
+ .platform .product-body{grid-template-columns:40px minmax(0,1fr)}
+ .platform .product-list{display:none}
+ .platform .campaign-board{grid-template-columns:1fr;gap:20px}
+ .platform .campaign-config h3{font-size:20px;margin-bottom:12px}
+ .platform .campaign-field{padding:10px 0}
+ .platform .campaign-message>span{margin-bottom:15px}
+ .platform .flow-canvas{display:flex;flex-direction:column;gap:0}
+ .platform .flow-node{width:90%}
+ .platform .flow-connector{width:1px;height:20px;flex-shrink:0}
+ .platform .flow-connector:after{top:auto;bottom:0;right:-3px}
+ .platform .node-pills{display:flex;flex-wrap:wrap;padding-bottom:10px}
+}
+@media(max-width:900px){
+ .platform{grid-template-columns:1fr;gap:30px}
+ .platform .section-heading h2{max-width:700px;font-size:43px}
+ .platform .section-heading>p{max-width:650px;font-size:16px}
+ .platform .workspace-tabs{grid-template-columns:repeat(4,minmax(0,1fr));max-width:none}
+ .platform .workspace-tabs button{justify-content:center;padding:12px 8px;font-size:12px}
+ .ai-grid{width:calc(100% - 40px);grid-template-columns:1fr;gap:34px;max-width:760px}
+ .ai-demo{max-width:none}
+}
+@media(max-width:600px){
+ .platform .section-heading h2{font-size:33px}
+ .platform .section-heading>p{font-size:15px}
+ .platform .workspace-tabs{grid-template-columns:1fr 1fr}
+ .platform .workspace-tabs button{font-size:12px;padding:11px 12px}
+ .platform .product-body{grid-template-columns:35px minmax(0,1fr)}
+ .platform .product-list{display:none}
+ .platform .campaign-board{grid-template-columns:1fr;padding:20px}
+ .platform .campaign-field{font-size:11px}
+ .platform .flow-board{padding:19px 14px}
+ .platform .flow-canvas{display:flex;flex-direction:column}
+ .platform .flow-node{width:90%}
+ .platform .flow-connector{width:1px;height:22px;flex-shrink:0}
+ .platform .flow-connector:after{top:auto;bottom:0;right:-3px}
+ .ai-section{padding-block:60px}
+ .ai-grid{width:calc(100% - 28px);gap:28px}
+ .ai-section h2{font-size:33px}
+ .ai-section h2+p{font-size:15px}
+ .ai-demo{padding:20px}
+ .ai-demo-head strong{font-size:13px}
+ .ai-demo-head div>span{font-size:10px}
+ .ai-question{margin-left:12px;font-size:13px;padding:13px}
+ .ai-answer p{font-size:14px}
+ .knowledge-source{margin-left:0;font-size:10px;max-width:100%;padding:7px 9px}
+ .handoff{padding:13px 10px}
+ .handoff strong{font-size:12px}
+ .handoff div>span{font-size:10px}
 }
